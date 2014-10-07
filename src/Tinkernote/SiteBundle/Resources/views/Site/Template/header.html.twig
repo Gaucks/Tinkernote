@@ -1,0 +1,58 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid rowing">
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <nav class="navbar">
+                <div class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="{{ path('site_homepage') }}" class="navbar-brand">Tinkernote</a>
+                    </div> <!-- navbar-header -->
+
+                    <ul class="nav navbar-nav" id="navbar-main">
+
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %} <!-- Si l'utilisateur est identifié -->
+
+                        <li><a href="{{ path('annonce_add') }}">Ajouter une annonce</a></li>
+                        <li class="dropdown">
+                            <a href="{{ path('site_homepage') }}" class="dropdown-toggle" data-toggle="dropdown">Raccourcis <b class="caret"></b></a>
+                            <ul class="dropdown-menu"> <!-- Affiche le dropdown -->
+                                <li><a href="{{ path('fos_user_security_login') }}">Identification</a></li>
+                                <li><a href="{{ path('annonce_homepage') }}">Homepage annonce</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Rechercher sur Tinkernote</a></li>
+                                <li><a href="{{ path('annonce_show') }}">Voir une annonce</a></li>
+                                <li><a href="{{ path('fos_user_profile_show') }}">Voir mon profil</a></li>
+                            </ul>
+                        </li>
+                    {% else %} <!-- Si il n'est pas connecté -->
+
+                        <li class="active"><a href="{{ path('fos_user_registration_register') }}">Devenez un Tinker!</a></li>
+                        <li><a href="{{ path('fos_user_resetting_request') }}">Mot de passe oublié</a></li>
+                        <li class="dropdown">
+                            <a href="{{ path('site_homepage') }}" class="dropdown-toggle" data-toggle="dropdown">En savoir plus <b class="caret"></b></a>
+                            <ul class="dropdown-menu"> <!-- Affiche le dropdown -->
+                                <li><a href="{{ path('fos_user_security_login') }}">Identification</a></li>
+                                <li><a href="{{ path('annonce_homepage') }}">Homepage annonce</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separater</a></li>
+                                <li><a href="{{ path('annonce_show') }}">Voir une annonce</a></li>
+                                <li><a href="{{ path('fos_user_profile_show') }}">Voir mon profil</a></li>
+                            </ul>
+                        </li>
+
+                    {% endif %}
+
+                    </ul>
+
+
+                    {% render(controller('UserBundle:Security:loginPerso')) %}
+
+                </div> <!-- navbar -->
+            </nav> <!-- nav navbar-->
+        </div> <!-- navbar-responsive-collapse -->
+    </div> <!-- container -->
+</div> <!-- navbar-fixed-top -->

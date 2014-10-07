@@ -1,0 +1,62 @@
+{% extends "UserBundle::layout.html.twig" %}
+
+{% block body %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+<div class="container">
+<h1 class="citation-title text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h1>
+
+    <div class="col-xs-4 col-xs-offset-4">
+        <div class="box">
+            <div class="box-header">
+                <div class="title"><i class="fa fa-sign-out"></i>Tinkernote | Identification</div>
+            </div> <!-- box-header -->
+            <div class="box-section">
+                <form action="{{ path("fos_user_security_check") }}" method="post" role="form">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" class="form-control"/>
+                    {% if error %}
+                        <div class="error-message"><span class="glyphicon glyphicon-remove-circle"></span> {{ error|trans }}</div>
+                        <br/>
+                    {% endif %}
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-user"></span></div>
+                            <input type="text" class="form-control input-sm" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="Nom d'utilisateur"/>
+                        </div> <!-- input group -->
+                    </div> <!-- Form group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-lock"></span></div>
+                            <input type="password" class="form-control input-sm" id="password" name="_password" required="required" placeholder="Mot de passe"/>
+                        </div> <!-- input group -->
+                    </div> <!-- Form group -->
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="remember_me" name="_remember_me" value="on" > {{ 'security.login.remember_me'|trans }}
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}"  class="btn btn-blue btn-block"/>
+                    </div>
+                    <div>
+                        <a href="{{ path('fos_user_registration_register') }}">
+                            Pas encore de compte? <strong>Inscrivez vous Maintenant</strong>
+                        </a>
+                    </div>
+                </form>
+            </div> <!-- section -->
+        </div> <!-- box-->
+
+        <div class="row">
+            <div class="col-xs-6"><a href="#" class="btn btn-facebook btn-block"><i class="fa fa-facebook"> </i> Facebook</a></div>
+            <div class="col-xs-6">
+                <a href="#" class="btn btn-twitter btn-block"><i class="fa fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </div> <!-- col-xs-6 -->
+
+    </div> <!-- container -->
+{% endblock body %}

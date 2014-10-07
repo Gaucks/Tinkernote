@@ -1,0 +1,23 @@
+site_homepage:
+    path:     /
+    defaults: { _controller: SiteBundle:Site:index }
+
+bloc_homepage:
+    path:     /board
+    defaults: { _controller: SiteBundle:Board:index }
+
+annonce_homepage:
+    path:     /annonce
+    defaults: { _controller: SiteBundle:Annonce:index }
+
+annonce_show:
+    path:     /show-annonce
+    defaults: { _controller: SiteBundle:Annonce:show }
+
+annonce_add:
+    path:     /add-annonce
+    defaults: { _controller: SiteBundle:Annonce:add }
+
+site_soon:
+    path:     /soon
+    defaults: { _controller: SiteBundle:Site:soon }

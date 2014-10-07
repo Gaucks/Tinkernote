@@ -1,0 +1,22 @@
+{% extends "::base_fos.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+{% block fos_user_content %}
+    <div class="container">
+        <h1 class="citation-title text-center">Etape 1 du processus de réinitialisation engagé</h1>
+        <div class="row space-box-top">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="well">
+                    <p>
+                        {{ 'resetting.check_email'|trans({'%email%': email}) }}
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock fos_user_content%}
+{% endblock body %}

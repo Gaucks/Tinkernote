@@ -1,0 +1,89 @@
+/* Images */
+.usr-profile-bg{
+    height: 180px;
+    overflow: hidden;
+    margin: 10px auto 0;
+    background: #485563;
+    border-radius: 0 0 8px 8px;
+
+}
+
+.usr-profile-bg img {
+    float: right;
+}
+.usr-profile-avatar {
+    position: relative;
+    margin-bottom: 20px;
+}
+.usr-profile-avatar > img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: -35px;
+    z-index: 1;
+}
+.usr-profile-bg ul {
+    width: 100%;
+    padding: 0;
+    margin: 15px 0;
+}
+.no-padding{
+    padding: 0;
+}
+.form-user-profile {
+
+}
+.form-user-profile .form-control{
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+}
+.badge-white {
+    background-color: #FFFFFF;
+    color: #3d4954;
+}
+.badge-success {
+    background-color: #5cb85c;
+    color: #FFFFFF;
+}
+.badge-alert {
+    background-color: #f4aa31;
+    color: #FFFFFF;
+}
+.col-user-show-activity > ul > li > a {
+    color: #ffffff;
+}
+blockquote small {
+    color: #485563;
+}
+.input-group-addon{
+    background: #eaeaea;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #eaeaea));
+    background-image: -webkit-linear-gradient(top, #fdfdfd, #eaeaea);
+    background-image: -moz-linear-gradient(top, #fdfdfd, #eaeaea);
+    background-image: -o-linear-gradient(top, #fdfdfd, #eaeaea);
+    background-image: linear-gradient(top, #fdfdfd, #eaeaea);
+    text-shadow: 0 1px white;
+    border: 1px solid #CDCDCD;
+    color: #636363;
+    font-weight: 600;
+}
+.col-user-show-activity{
+
+}
+.col-user-show-activity ul {
+    margin: -15px;
+}
+.col-user-show-activity .list-group-item{
+    background: transparent;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+
+/* Afficher le profile */
+.nav-show-profile > li {
+    margin: 0 0 10px 0;
+}

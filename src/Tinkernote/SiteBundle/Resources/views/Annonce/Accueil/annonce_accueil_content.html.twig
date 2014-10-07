@@ -1,0 +1,626 @@
+<div class="container">
+    {# Bloc du Breadcrumb #}
+
+    <div class="row" role="breadcrumb">
+        <div class="col-xs-12">
+            <div id="breadcrumbs">
+                <div class="breadcrumb-button blue">
+                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="#" class="breadcrumb-link">Go</a></span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+                <div class="breadcrumb-sort pull-right">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Trier les annonces : <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> Par date</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Par auteur</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-euro"></span>Par prix</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                </div>
+
+                <div class="breadcrumb-button">
+                      <span class="breadcrumb-label"> <span class="glyphicon glyphicon-comment"></span> Annonces </span>
+                      <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div> <!-- row breadcrumb -->
+
+    <div class="row" role="annonces">
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">170 000 €</span></li>
+                    </ul>
+                </div>
+
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>
+                            Mendi enim error expedita incidunt maxime, nesciunt obcaecati omnis quidem quis recusandae rerum sed sint sunt tempora velit voluptate?</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                       <div class="box-annonce-nav">
+                           <ul class="list-inline">
+                               <li><a href="#">Informatique</a></li>
+                               <li><a href="#">Vinon sur verdon (83)</a></li>
+                               <li>
+                                   <a href="#">
+                                       <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                       Christophe Gautier
+                                   </a>
+                                   <div class="star star-blue">
+                                       <span class="glyphicon glyphicon-star"></span>
+                                       <span class="glyphicon glyphicon-star"></span>
+                                       <span class="glyphicon glyphicon-star-empty"></span>
+                                       <span class="glyphicon glyphicon-star-empty"></span>
+                                       <span class="glyphicon glyphicon-star-empty"></span>
+                                   </div>
+                               </li>
+                           </ul>
+                       </div>
+                    </div>
+                </div>
+
+                </a>
+            </div>
+
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce box-annonce-pub">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce <span class="label-warning label-pro">Pro</span> </div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">1708 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/devices.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Distinctio ea earum ex explicabo nobis non odit tempora totam!</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce <span class=" label-warning label-pro">Pro</span></div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">18 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/apple_macbook_pro_retina_mc976na.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore ea, earum facilis harum,
+                           incidunt minus mollitia necessitatibus nesciunt quod recusan.</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/amandine.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Francky
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <!-- Box du professionnel -->
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce <span class="label-danger label-pro">Urgent</span></div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-blue">18 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore ea, earum facilis harum,
+                            incidunt minus mollitia necessitatibus nesciunt quod recusan.</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/world-burn.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-red">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">170 000 €</span></li>
+                    </ul>
+                </div>
+
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/maison.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>
+                            Mendi enim error expedita incidunt maxime, nesciunt obcaecati omnis quidem quis recusandae rerum sed sint sunt tempora velit voluptate?</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce </div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">1708 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/fightclub.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Distinctio ea earum ex explicabo nobis non odit tempora totam!</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/user-13.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">18 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore ea, earum facilis harum,
+                            incidunt minus mollitia necessitatibus nesciunt quod recusan.</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/user-5.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Francky
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">18 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/voiture.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore ea, earum facilis harum,
+                            incidunt minus mollitia necessitatibus nesciunt quod recusan.</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/user-2.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">170 000 €</span></li>
+                    </ul>
+                </div>
+
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/Avatars/user-8.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>
+                            Mendi enim error expedita incidunt maxime, nesciunt obcaecati omnis quidem quis recusandae rerum sed sint sunt tempora velit voluptate?</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/user-8.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce </div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">1708 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/devices.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Distinctio ea earum ex explicabo nobis non odit tempora totam!</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/user-6.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <a href="{{ path('annonce_show') }}" class="box-annonce-link">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">18 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/apple_macbook_pro_retina_mc976na.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore ea, earum facilis harum,
+                            incidunt minus mollitia necessitatibus nesciunt quod recusan.</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/Avatars/user-7.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Francky
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                   </a>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="box-annonce">
+                <div class="box-annonce-header">
+                    <div class="box-annonce-title"><span class="glyphicon glyphicon-tags"></span> Le titre de l'annonce</div>
+                    <ul class="box-toolbar">
+                        <li><span class="label label-green">18 €</span></li>
+                    </ul>
+                </div>
+                <div class="box-annonce-section">
+                    <div class="box-annonce-img">
+                        <img src="{{ asset('bundles/site/images/apple_macbook_pro_retina_mc976na.jpg') }}" alt="Image" class="img-responsive"/>
+                    </div>
+                    <div class="box-annonce-body">
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore ea, earum facilis harum,
+                            incidunt minus mollitia necessitatibus nesciunt quod recusan.</p>
+                    </div>
+                </div>
+                <div class="box-annonce-footer">
+                    <div class="box-annonce-action">
+                        <div class="box-annonce-nav">
+                            <ul class="list-inline">
+                                <li><a href="#">Informatique</a></li>
+                                <li><a href="#">Vinon sur verdon (83)</a></li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                        Christophe Gautier
+                                    </a>
+                                    <div class="star star-blue">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Role annonces -->
+
+    <div class="row" role="pagination">
+        <div class="text-center">
+            <ul class="pagination pagination-sm">
+                <li><a href="#">Précedente</a></li>
+                <li {#class="active"#}><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Suivante</a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- container -->

@@ -1,0 +1,8 @@
+parameters:
+#    user.example.class: Tinkernote\UserBundle\Example
+
+services:
+    tinkernote_user.registration.form.type:
+        class: Tinkernote\UserBundle\Form\Type\RegistrationFormType
+        tags:
+            - { name: form.type, alias: tinkernote_user_registration }

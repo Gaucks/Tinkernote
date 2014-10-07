@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="row" role="breadcrumb">
+        <div class="col-xs-12">
+            <div id="breadcrumbs">
+                <div class="breadcrumb-button blue">
+                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="#" class="breadcrumb-link">Agora</a></span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+
+                <div class="breadcrumb-button">
+                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-user"></span> Editer mon profil </span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+            </div>
+        </div>
+    </div> <!-- row breadcrumb -->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="usr-profile-bg">
+                <div class="col-xs-10 no-padding">
+                    <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="User background" class="img-responsive"/>
+                </div>
+                <div class="col-xs-2 div-no-padding">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-edit"></i> Modifier mon compte</a></li>
+                        <li><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-user"></i> Modifier mon avatar</a></li>
+                        <li><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-image"></i> Modifier mon screen</a></li>
+                        <li><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-key"></i> Modifier mon mot de passe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="usr-profile-avatar">
+            <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="User background" class="img-responsive img-thumbnail img-circle user-avatar"/>
+            <h2 class="text-center">Nom d'utilisateur</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-section">

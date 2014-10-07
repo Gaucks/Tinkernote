@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite' 'bundles/site/css/annonce.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock stylesheets %}
+
+{% block body %}
+{% include ('SiteBundle:Annonce/Add:add_content.html.twig') %}
+{% endblock body %}

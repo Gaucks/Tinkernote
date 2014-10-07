@@ -1,0 +1,45 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="container">
+
+    <h1 class="citation-title text-center">Générez un nouveau mot de passe 2 clicks.</h1>
+
+        <div class="col-xs-4 col-xs-offset-4">
+            <div class="box">
+                <div class="box-header">
+                    <div class="title"><i class="fa fa-key"></i> Réinitialisation du mot de passe</div>
+                </div>
+
+                <div class="box-section">
+                    <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+                        <div>
+
+                            {% if invalid_username is defined %}
+                                <p>{{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}) }}</p>
+                            {% endif %}
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-user"></span></div>
+                                    <input class="form-control input-sm" type="text" id="username" name="username" required="required" placeholder="Nom d'utilisateur ou adresse email" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-blue btn-block" value="{{ 'resetting.request.submit'|trans }}" />
+                        </div>
+
+                        <div>
+                            <a href="{{ path('fos_user_registration_register') }}">
+                                Pas encore de compte? <strong>Inscrivez vous Maintenant</strong>
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+</div>
+

@@ -1,0 +1,19 @@
+{% extends "::base.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+{% block fos_user_content %}
+    <h1 class="citation-title text-center">Félicitations {{ user.username }}, votre compte est maintenant activé. </h1>
+    <div class="container">
+        <div class="row text-center">
+            <a href="{{ path('site_homepage') }}">
+                <button type="button" class="btn btn-success">
+                    <span class="glyphicon glyphicon-share-alt glyphicon-fos-register"></span>
+                    Direction votre compte
+                </button>
+            </a>
+        </div>
+    </div>
+{% endblock fos_user_content %}
+{% endblock %}

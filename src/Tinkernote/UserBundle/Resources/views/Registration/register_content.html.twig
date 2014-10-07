@@ -1,0 +1,89 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div class="container">
+    <h3 class="citation-title text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.e veniam?</h3>
+
+    <div class="col-xs-12 space-box-top">
+        <div class="col-xs-6">
+            <img class="img-responsive" src="{{ asset('bundles/site/images/devices-site.png') }}" alt="Device"/>
+            <br />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Amet eligendi, esse illo ipsum iure nisi, praesentium quia quod reiciendis sapiente similique,
+                sint temporibus veritatis. Expedita illo modi mollitia provident temporibus.
+            </p>
+        </div>
+        <div class="col-xs-6">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="title"><i class="fa fa-sign-in"></i> Tinkernote | Inscription </div>
+                    </div>
+                    <div class="box-section">
+                        <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+
+                            {% if form_errors(form.username)|length > 0 %}{% set errors_username = 'has-error' %}{% else %} {% set errors_username = NULL %}{% endif %}
+                            <div class="form-group {{ errors_username }}">
+                                {{ form_errors(form.username) }}
+                                <div class="input-group">
+                                    <div class="input-group-addon iga-fosUser-register input-sm"><span class="glyphicon glyphicon-user glyphicon-fos-register"></span></div>
+                                    {{ form_widget(form.username,{'attr': {'class': 'form-control input-sm'}}) }}
+                                    {% if(errors_username) %}
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            {% if form_errors(form.email)|length > 0 %}{% set errors_email = 'has-error' %}{% else %} {% set errors_email = NULL %}{% endif %}
+                            <div class="form-group {{ errors_email }}">
+                                {{ form_errors(form.email,{'attr': {'class': 'form-control input-sm'}}) }}
+                                <div class="input-group">
+                                    <div class="input-group-addon iga-fosUser-register input-sm "><span class="glyphicon glyphicon-envelope"></span></div>
+                                    {{ form_widget(form.email,{'attr': {'class': 'form-control input-sm'}}) }}
+                                    {% if(errors_email) %}
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            {% if form_errors(form.plainPassword.first)|length > 0 %}{% set errors_password1 = 'has-error' %}{% else %} {% set errors_password1 = NULL %}{% endif %}
+                            <div class="form-group {{ errors_password1 }}">
+                                {{ form_errors(form.plainPassword.first) }}
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star-empty"></span></div>
+                                    {{ form_widget(form.plainPassword.first,{'attr': {'class': 'form-control input-sm'}}) }}
+                                    {% if(errors_password1) %}
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            {% if form_errors(form.plainPassword.second)|length > 0 %}{% set errors_password2 = 'has-error' %}{% else %} {% set errors_password2 = NULL %}{% endif %}
+                            <div class="form-group {{ errors_password2 }}">
+                                {{ form_errors(form.plainPassword.second) }}
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                                    {{ form_widget(form.plainPassword.second,{'attr': {'class': 'form-control input-sm'}}) }}
+                                    {% if(errors_password2) %}
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            {{ form_rest(form) }}
+
+                            <div class="form-group">
+                                    <input type="submit" value="{{ 'registration.submit'|trans }}" class="btn btn-blue input-sm btn-block"/>
+                            </div>
+                            <a href="{{ path('fos_user_security_login') }}">
+                                Déja membre? <strong>Connectez vous</strong>
+                            </a>
+                        </form>
+                    </div> <!-- box section -->
+                </div> <!-- box -->
+            <div class="row">
+                <div class="col-xs-6"><a href="#" class="btn btn-facebook btn-block"><i class="fa fa-facebook"> </i> Facebook</a></div>
+                <div class="col-xs-6">
+                    <a href="#" class="btn btn-twitter btn-block"><i class="fa fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>

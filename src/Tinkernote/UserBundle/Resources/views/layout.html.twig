@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite' 'bundles/user/css/profile.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock stylesheets %}
+

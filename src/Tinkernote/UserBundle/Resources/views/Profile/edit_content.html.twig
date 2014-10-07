@@ -1,0 +1,98 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
+
+    <div class="row" role="indentité">
+        <div class="col-xs-6">
+            <h3 class="step">Identité</h3>
+                <div class="form-group form-user-profile">
+                    <div class="input-group">
+                        {{ form_errors(form.username) }}
+                        <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-user"></span></div>
+                        {{ form_widget(form.username,{'attr': {'class': 'form-control input-sm disabled', 'placeholder': 'Nom d\'utilisateur' }}) }}
+                    </div>
+                </div>
+
+                <div class="form-group form-user-profile">
+                    <div class="input-group">
+                        {{ form_errors(form.email) }}
+                        <div class="input-group-addon input-sm">@</div>
+                        {{ form_widget(form.email,{'attr': {'class': 'form-control input-sm', 'placeholder': 'Adresse email'}}) }}
+                        </div>
+                </div>
+
+                <div class="form-group form-user-profile">
+                    <div class="input-group">
+                        {{ form_errors(form.current_password) }}
+                        <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-eye-close"></span></div>
+                        {{ form_widget(form.current_password,{'attr': {'class': 'form-control input-sm', 'placeholder': 'Mot de passe'}}) }}
+                    </div>
+                </div>
+
+                <div>
+                    {{ form_rest(form) }}
+                </div>
+        </div> <!-- La partie formulaire -->
+
+        <div class="col-xs-6">
+            <h3 class="step">Bon à savoir</h3>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim quas quis similique?
+                        Asperiores aspernatur consequuntur dicta dolorem in labore natus nostrum numquam!
+                        Alias aut dolorem facilis praesentium sint sit.
+                    </p>
+                </blockquote>
+            </div> <!-- La seconde partie coté droit -->
+
+    </div> <!-- row identité -->
+
+    <div class="row" role="localisation">
+        <div class="col-xs-6">
+            <h3 class="step">Localisation</h3>
+            <div class="form-group form-user-profile">
+                <div class="input-group">
+                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-flag"></span></div>
+                    <select class="form-control input-sm" name="region" id="">
+                        <option value="0">Selectionnez votre région</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group form-user-profile">
+                <div class="input-group">
+                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-phone-alt"></span></div>
+                    <select class="form-control input-sm" name="region" id="">
+                        <option value="0">Selectionnez votre département</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group form-user-profile">
+                <div class="input-group">
+                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-home"></span></div>
+                    <select class="form-control input-sm" name="region" id="">
+                        <option value="0">Selectionnez votre ville</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <br />
+            <br />
+            <br />
+            <br />
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, beatae cum excepturi,
+                exercitationem facere fuga illo in itaque magnam perspiciatis porro ratione recusandae reprehenderit sit voluptatibus?
+                Accusamus amet libero ullam.
+            </p>
+        </blockquote>
+        </div>
+
+    </div> <!-- row localisation-->
+
+    <div>
+        <input type="submit" value="{{ 'profile.edit.submit'|trans }}" class="btn btn-success" />
+    </div>
+
+</form>
