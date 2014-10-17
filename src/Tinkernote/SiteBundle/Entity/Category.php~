@@ -1,0 +1,92 @@
+<?php
+
+namespace Tinkernote\SiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * category
+ *
+ * @ORM\Table(name="category")
+ * @ORM\Entity(repositoryClass="Tinkernote\SiteBundle\Entity\CategoryRepository")
+ */
+class Category
+{
+    /**
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\ParentCategory", cascade={"persist"}))
+     * @ORM\JoinColumn(nullable = false)
+     */
+    private $parentcategory;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="category", type="string", length=255)
+     */
+    private $category;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set category
+     *
+     * @param string $category
+     * @return Category
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return string 
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Set parentcategory
+     *
+     * @param \Tinkernote\SiteBundle\Entity\ParentCategory $parentcategory
+     * @return Category
+     */
+    public function setParentcategory(\Tinkernote\SiteBundle\Entity\ParentCategory $parentcategory)
+    {
+        $this->parentcategory = $parentcategory;
+
+        return $this;
+    }
+
+    /**
+     * Get parentcategory
+     *
+     * @return \Tinkernote\SiteBundle\Entity\ParentCategory 
+     */
+    public function getParentcategory()
+    {
+        return $this->parentcategory;
+    }
+}

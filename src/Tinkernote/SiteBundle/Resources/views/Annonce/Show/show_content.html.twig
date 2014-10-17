@@ -3,7 +3,7 @@
         <div class="col-xs-12">
             <div id="breadcrumbs">
                 <div class="breadcrumb-button blue">
-                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="#" class="breadcrumb-link">Go</a></span>
+                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="{{ path('annonce_homepage') }}" class="breadcrumb-link">Annonces</a></span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
                 <div class="breadcrumb-sort pull-right">
@@ -20,12 +20,17 @@
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-comment"></span> Annonces </span>
+                    <span class="breadcrumb-label"> <i class="fa fa-folder-open"></i> Annonce </span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-comment"></span> Une timecapsule Apple 3Terra comme neuve </span>
+                    <span class="breadcrumb-label"> <i class="fa fa-folder-open-o"></i> {{ annonce.category.category }} </span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+
+                <div class="breadcrumb-button">
+                    <span class="breadcrumb-label"> <i class="fa fa-bullhorn"></i> {{ annonce.title }} </span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
             </div>
@@ -37,7 +42,11 @@
 
         <div class="col-xs-5">
             <div class="show-annonce-img">
-                <img src="{{ asset('bundles/site/images/maison.jpg') }}" alt="img" class="img-responsive"/>
+                {% if annonce.picture is not empty %}
+                    <img src="{{ asset('bundles/site/images/temp/'~annonce.picture) }}" alt="img" class="img-responsive"/>
+                {% else %}
+                    <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img" class="img-responsive"/>
+                {% endif %}
             </div>
         </div>
 
@@ -45,10 +54,10 @@
             <div class="show-annonce">
                 <div class="news-time"><span>16</span>Juin</div>
                 <div class="show-annonce-title">
-                    <h2> Une timecapsule Apple 3Terra neuve</h2>
+                    <h3> {{ annonce.title }}</h3>
                     <div class="show-annonce-option">
                         <span> <a href="#">
-                                <img src="{{ asset('bundles/site/images/Avatars/user-3.jpg') }}" alt="" class="img-responsive circle"/>Christophe Gautier
+                                <img src="{{ asset('bundles/site/images/Avatars/user-3.jpg') }}" alt="" class="img-responsive circle"/>{{ annonce.user.username }}
                             </a>
                         </span>
                         <div class="star star-blue">
@@ -58,17 +67,11 @@
                             <span class="glyphicon glyphicon-star-empty"></span>
                             <span class="glyphicon glyphicon-star-empty"></span>
                         </div>
-                        <span class="tarif">1700€</span>
+                        <span class="tarif">{{ annonce.price }}€</span>
                     </div>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Atque dolorum ducimus eligendi eum illo incidunt ipsam laudantium magnam nam,
-                    nostrum nulla quis quo voluptates? Error obcaecati sit totam voluptatem voluptates.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Atque dolorum ducimus eligendi eum illo incidunt ipsam laudantium magnam nam,
-                    nostrum nulla quis quo voluptates? Error obcaecati sit totam voluptatem voluptates.
+                <p>{{ annonce.content|nl2br }}
                 </p>
 
                 <div class="show-annonce-action">
@@ -78,6 +81,16 @@
                         <li><button class="btn btn-success btn-sm">Ca m'interesse</button></li>
                     </ul>
                 </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm" placeholder="Une question ou un commentaire ?"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-blue input-sm" type="submit">Envoyer!</button>
+                        </span>
+                     </div>
+                </div> <!-- Module du commentaire -->
+
             </div> <!-- show annonce -->
         </div>
     </div>
@@ -141,5 +154,5 @@
         </div> <!-- Fin du Box -->
         <button class="btn btn-danger btn-sm pull-right">Signaler cette annonce</button>
     </div>
-
 </div><!-- Container -->
+

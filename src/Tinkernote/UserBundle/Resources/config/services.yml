@@ -6,3 +6,9 @@ services:
         class: Tinkernote\UserBundle\Form\Type\RegistrationFormType
         tags:
             - { name: form.type, alias: tinkernote_user_registration }
+
+    tinkernote_user.profile.form.type:
+        class: Tinkernote\UserBundle\Form\Type\ProfileFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: tinkernote_user_profile }

@@ -18,7 +18,11 @@
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "stof/doctrine-extensions-bundle": "1.2.*@dev",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "friendsofsymfony/jsrouting-bundle": "@stable",
+        "twig/extensions": "~1.1.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

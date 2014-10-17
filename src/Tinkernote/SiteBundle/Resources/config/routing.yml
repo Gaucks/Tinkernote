@@ -11,7 +11,7 @@ annonce_homepage:
     defaults: { _controller: SiteBundle:Annonce:index }
 
 annonce_show:
-    path:     /show-annonce
+    path:     /show-annonce/{id}
     defaults: { _controller: SiteBundle:Annonce:show }
 
 annonce_add:
@@ -21,3 +21,27 @@ annonce_add:
 site_soon:
     path:     /soon
     defaults: { _controller: SiteBundle:Site:soon }
+
+site_rempli:
+    path:     /rempli
+    defaults: { _controller: SiteBundle:Site:rempli }
+
+site_rempli_category:
+    path:    /rempli-category
+    defaults: { _controller: SiteBundle:Site:rempliCategory }
+
+recherche_annonce:
+    path:     /rechercher
+    defaults: { _controller: SiteBundle:Recherche:rechercheTraitement }
+
+recherche_annonce_principal:
+    path:     /rechercher-annonce
+    defaults: { _controller: SiteBundle:Recherche:recherchePrincipal }
+
+categorie_annonce:
+    path:    /categorie/{categorie}
+    defaults: { _controller: SiteBundle:Annonce:categorie }
+
+ville_annonce:
+    path:    /ville/{ville}
+    defaults: { _controller: SiteBundle:Annonce:ville }

@@ -26,7 +26,39 @@
     <favorites_list name="Tinkernote" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="SiteController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="58" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.4184168" vertical-offset="581" max-vertical-offset="1200">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myfunction.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="29" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1425">
+              <folding>
+                <element signature="e#1244#2038#0" expanded="false" />
+                <element signature="e#2086#2162#0" expanded="false" />
+                <element signature="e#2266#2492#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_content.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="106" selection-start="2856" selection-end="2856" vertical-scroll-proportion="-18.041666" vertical-offset="332" max-vertical-offset="4050">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -36,57 +68,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Add/add.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/step2.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/step3.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/step3_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/step2_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BlocController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bloc.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/tablesorter.js" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/appli.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content_save.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/site/css/annonce.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Template/search_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/site/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Registration/register.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Resetting/request.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/site/css/board.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/RechercheController.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Soon/soon.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Soon/soon_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base_accueil.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/correctif.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Template/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/Template/footer_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/accueil_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Registration/register_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Resetting/request_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/Template/header_edit_profile.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/public/css/profile.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Soon/soon_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/TellType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/Type/TellType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Form/form_div_layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/form_div_layout.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Tests/Extension/theme_extends.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Form/fields.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/Type/TelType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar/changePassword.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/DataFixtures/ORM/LoadUserData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/AvatarRepository.php" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/RegistrationController.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ChangeAvatarController.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/ProfileFormType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/public/css/profile.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar/changeAvatar.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar/changeAvatar_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/Template/header_edit_profile.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/Avatar.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/AnnonceType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/categoryRepository.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Annonce.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Picture.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadParentCategoryData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadCategoryData.php" />
+        <option value="$PROJECT_DIR$/app/logs/dev.log" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/CategoryRepository.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php" />
       </list>
     </option>
   </component>
@@ -115,11 +147,17 @@
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/twig/extensions" />
-      <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/jsrouting-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -169,6 +207,22 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Tests" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Tinkernote">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,9 +255,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SiteBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tinkernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SiteBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,17 +339,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/images" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller" />
+      <recent name="$PROJECT_DIR$/web/uploads/avatar" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/Type" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Template" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/images" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.edit_content.html.twig">
@@ -252,8 +372,16 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.edit_content.html.twig" />
+    <configuration default="false" name="User.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.User.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.edit_content.html.twig" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -310,10 +438,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2997076" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27419356" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.319063" sideWeight="0.5009862" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7600969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33764136" sideWeight="0.4990138" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260234" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -323,17 +478,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35980937" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35945073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -349,262 +500,384 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/accueil_content.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="34" selection-end="253" vertical-scroll-proportion="0.047468353" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Form/Type/ProfileFormType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="39" selection-start="1272" selection-end="1288" vertical-scroll-proportion="0.7357595" vertical-offset="0" max-vertical-offset="1080" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="77" selection-start="140" selection-end="140" vertical-scroll-proportion="0.07120253" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="44" selection-start="0" selection-end="45" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="0.11867089" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="58" selection-start="717" selection-end="717" vertical-scroll-proportion="0.6170886" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="300" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/jquery.tablesorter.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Template/search_annonce.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="42" selection-start="1193" selection-end="1193" vertical-scroll-proportion="-10.791667" vertical-offset="86" max-vertical-offset="705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="34" selection-end="253" vertical-scroll-proportion="0.047468353" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="988" selection-end="988" vertical-scroll-proportion="0.22116904" vertical-offset="400" max-vertical-offset="1230" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="145" selection-end="145" vertical-scroll-proportion="0.094936706" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Resetting/request.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="148" selection-end="148" vertical-scroll-proportion="0.094936706" vertical-offset="0" max-vertical-offset="632" />
+        <state line="2" column="34" selection-start="87" selection-end="87" vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0726979" vertical-offset="0" max-vertical-offset="2250" />
+        <state line="41" column="0" selection-start="2254" selection-end="2254" vertical-scroll-proportion="0.37878788" vertical-offset="390" max-vertical-offset="2460" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/ProfileFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="79" selection-start="223" selection-end="223" vertical-scroll-proportion="0.094936706" vertical-offset="0" max-vertical-offset="632" />
+        <state line="24" column="12" selection-start="836" selection-end="1312" vertical-scroll-proportion="0.534846" vertical-offset="15" max-vertical-offset="690" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="354" selection-end="354" vertical-scroll-proportion="0.26107594" vertical-offset="0" max-vertical-offset="632" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/Avatar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="307" selection-end="307" vertical-scroll-proportion="0.3085443" vertical-offset="0" max-vertical-offset="632" />
+        <state line="35" column="11" selection-start="696" selection-end="696" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1290">
+          <folding>
+            <element signature="e#194#353#0" expanded="false" />
+            <element signature="e#374#517#0" expanded="false" />
+            <element signature="e#709#759#0" expanded="false" />
+            <element signature="e#869#929#0" expanded="false" />
+            <element signature="e#934#1178#0" expanded="false" />
+            <element signature="e#1184#1246#0" expanded="false" />
+            <element signature="e#1251#1709#0" expanded="false" />
+            <element signature="e#1357#1425#0" expanded="false" />
+            <element signature="e#1715#1751#0" expanded="false" />
+            <element signature="e#1756#1883#0" expanded="false" />
+            <element signature="e#1889#2022#0" expanded="false" />
+            <element signature="e#2028#2152#0" expanded="false" />
+            <element signature="e#2158#2366#0" expanded="false" />
+            <element signature="e#2372#2586#0" expanded="false" />
+            <element signature="e#2592#2648#0" expanded="false" />
+            <element signature="e#2653#2714#0" expanded="false" />
+            <element signature="e#2720#2803#0" expanded="false" />
+            <element signature="e#2808#2902#0" expanded="false" />
+            <element signature="e#2908#2965#0" expanded="false" />
+            <element signature="e#2970#3035#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/DataFixtures/ORM/LoadUserData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="497" selection-end="497" vertical-scroll-proportion="0.49763033" vertical-offset="0" max-vertical-offset="633" />
+        <state line="33" column="32" selection-start="986" selection-end="990" vertical-scroll-proportion="0.2907916" vertical-offset="240" max-vertical-offset="1485" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Soon/soon.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="64" selection-start="632" selection-end="632" vertical-scroll-proportion="0.47468355" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Soon/soon_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="37" selection-start="61" selection-end="61" vertical-scroll-proportion="0.023734177" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2136076" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="251" selection-end="251" vertical-scroll-proportion="0.16613925" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="56" selection-start="123" selection-end="123" vertical-scroll-proportion="0.047468353" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="516" selection-end="516" vertical-scroll-proportion="0.5458861" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base_accueil.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="80" selection-start="529" selection-end="529" vertical-scroll-proportion="0.23734178" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/accueil.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.094936706" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/correctif.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="35" selection-start="4848" selection-end="4848" vertical-scroll-proportion="0.54268295" vertical-offset="139" max-vertical-offset="1095" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="25" selection-start="13904" selection-end="13904" vertical-scroll-proportion="6.1066236" vertical-offset="0" max-vertical-offset="3870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/user/css/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.022865854" vertical-offset="0" max-vertical-offset="1290" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="52" selection-start="3053" selection-end="3053" vertical-scroll-proportion="0.31502423" vertical-offset="660" max-vertical-offset="9465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/Template/footer_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="47" selection-start="7727" selection-end="7731" vertical-scroll-proportion="0.7576737" vertical-offset="1676" max-vertical-offset="2940" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/accueil_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="729" selection-end="729" vertical-scroll-proportion="0.26107594" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="87" selection-start="343" selection-end="343" vertical-scroll-proportion="0.1453958" vertical-offset="0" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Resetting/request_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="182" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.32148626" vertical-offset="146" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.9968355" vertical-offset="0" max-vertical-offset="915" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="561" column="29" selection-start="22034" selection-end="22034" vertical-scroll-proportion="0.6734059" vertical-offset="1142" max-vertical-offset="1800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="61" selection-end="802" vertical-scroll-proportion="0.048465267" vertical-offset="0" max-vertical-offset="6855" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="293" selection-end="293" vertical-scroll-proportion="0.2136076" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/Template/header_edit_profile.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="769" vertical-scroll-proportion="0.047468353" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="24" selection-start="6808" selection-end="6808" vertical-scroll-proportion="-20.708334" vertical-offset="283" max-vertical-offset="930" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/public/css/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="18" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="20" selection-start="1951" selection-end="2207" vertical-scroll-proportion="0.41195476" vertical-offset="255" max-vertical-offset="1005" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="454" selection-end="454" vertical-scroll-proportion="0.3429878" vertical-offset="0" max-vertical-offset="656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="19" selection-start="3138" selection-end="3154" vertical-scroll-proportion="0.60653186" vertical-offset="15" max-vertical-offset="2910" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="1" selection-start="0" selection-end="11862" vertical-scroll-proportion="1.2363919" vertical-offset="0" max-vertical-offset="5475" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2086" column="33" selection-start="36689" selection-end="36695" vertical-scroll-proportion="0.09953344" vertical-offset="31226" max-vertical-offset="96555" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Template/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="67" selection-start="3267" selection-end="3277" vertical-scroll-proportion="0.7531645" vertical-offset="289" max-vertical-offset="945" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="163" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.39418417" vertical-offset="26" max-vertical-offset="675" />
+        <state line="13" column="14" selection-start="331" selection-end="331" vertical-scroll-proportion="0.3085443" vertical-offset="0" max-vertical-offset="632" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.403481" vertical-offset="300" max-vertical-offset="1545">
+        <state line="106" column="34" selection-start="5043" selection-end="5043" vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/RegistrationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="8" selection-start="1624" selection-end="1646" vertical-scroll-proportion="0.6291946" vertical-offset="120" max-vertical-offset="2055" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.65436244" vertical-offset="390" max-vertical-offset="1320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ChangeAvatarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="716" selection-end="881" vertical-scroll-proportion="-0.044334974" vertical-offset="222" max-vertical-offset="855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="57" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.7256098" vertical-offset="874" max-vertical-offset="1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Annonces/LoadAnnoncesData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.043844856" vertical-offset="26" max-vertical-offset="1140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AnnonceRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Annonce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="2265">
+          <folding>
+            <element signature="e#82#214#0" expanded="false" />
+            <element signature="e#236#319#0" expanded="false" />
+            <element signature="e#380#465#0" expanded="false" />
+            <element signature="e#517#607#0" expanded="false" />
+            <element signature="e#657#741#0" expanded="false" />
+            <element signature="e#1048#1135#0" expanded="false" />
+            <element signature="e#1163#1306#0" expanded="false" />
+            <element signature="e#1329#1426#0" expanded="false" />
+            <element signature="e#1452#1551#0" expanded="false" />
+            <element signature="e#1579#1668#0" expanded="false" />
+            <element signature="e#1693#1795#0" expanded="false" />
+            <element signature="e#1821#1901#0" expanded="false" />
+            <element signature="e#1907#1966#0" expanded="false" />
+            <element signature="e#1971#2042#0" expanded="false" />
+            <element signature="e#2048#2138#0" expanded="false" />
+            <element signature="e#2143#2249#0" expanded="false" />
+            <element signature="e#2255#2311#0" expanded="false" />
+            <element signature="e#2316#2377#0" expanded="false" />
+            <element signature="e#2383#2440#0" expanded="false" />
+            <element signature="e#2445#2512#0" expanded="false" />
+            <element signature="e#2518#2604#0" expanded="false" />
+            <element signature="e#2609#2707#0" expanded="false" />
+            <element signature="e#2713#2772#0" expanded="false" />
+            <element signature="e#2777#2848#0" expanded="false" />
+            <element signature="e#2854#2944#0" expanded="false" />
+            <element signature="e#2949#3055#0" expanded="false" />
+            <element signature="e#3061#3120#0" expanded="false" />
+            <element signature="e#3125#3190#0" expanded="false" />
+            <element signature="e#3196#3283#0" expanded="false" />
+            <element signature="e#3288#3382#0" expanded="false" />
+            <element signature="e#3388#3446#0" expanded="false" />
+            <element signature="e#3451#3518#0" expanded="false" />
+            <element signature="e#3524#3611#0" expanded="false" />
+            <element signature="e#3616#3714#0" expanded="false" />
+            <element signature="e#3720#3804#0" expanded="false" />
+            <element signature="e#3809#3874#0" expanded="false" />
+            <element signature="e#3880#3992#0" expanded="false" />
+            <element signature="e#3997#4133#0" expanded="false" />
+            <element signature="e#4139#4227#0" expanded="false" />
+            <element signature="e#4232#4301#0" expanded="false" />
+            <element signature="e#4307#4425#0" expanded="false" />
+            <element signature="e#4430#4576#0" expanded="false" />
+            <element signature="e#4582#4680#0" expanded="false" />
+            <element signature="e#4685#4764#0" expanded="false" />
+            <element signature="e#4770#4903#0" expanded="false" />
+            <element signature="e#4908#5079#0" expanded="false" />
+            <element signature="e#5085#5171#0" expanded="false" />
+            <element signature="e#5176#5243#0" expanded="false" />
+            <element signature="e#5249#5364#0" expanded="false" />
+            <element signature="e#5369#5510#0" expanded="false" />
+            <element signature="e#5983#6087#0" expanded="false" />
+            <element signature="e#6183#6325#0" expanded="false" />
+            <element signature="e#6330#6516#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Departement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="2370">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/PictureRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Ville.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="2355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/RegionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/RegionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0015822785" vertical-offset="1" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Localisation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Recherche.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Picture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.023734177" vertical-offset="0" max-vertical-offset="2205">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/RechercheController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/AnnonceType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="915" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DependencyInjection/SiteExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadParentCategoryData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/fosjsrouting/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="616" selection-start="830" selection-end="830" vertical-scroll-proportion="0.1399689" vertical-offset="0" max-vertical-offset="643" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadCategoryData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="57" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.0" vertical-offset="30" max-vertical-offset="2820" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.4168012" vertical-offset="2115" max-vertical-offset="3375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="564" column="204" selection-start="101593" selection-end="101629" vertical-scroll-proportion="0.29041097" vertical-offset="8354" max-vertical-offset="18390" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/ParentCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/ParentCategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="646" selection-end="646" vertical-scroll-proportion="0.4512195" vertical-offset="124" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="224" selection-end="232" vertical-scroll-proportion="-0.8544304" vertical-offset="720" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3322785" vertical-offset="0" max-vertical-offset="632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/DepartementRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="106" selection-start="2856" selection-end="2856" vertical-scroll-proportion="-18.041666" vertical-offset="332" max-vertical-offset="4050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="29" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1425">
+          <folding>
+            <element signature="e#1244#2038#0" expanded="false" />
+            <element signature="e#2086#2162#0" expanded="false" />
+            <element signature="e#2266#2492#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="58" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.4184168" vertical-offset="581" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>

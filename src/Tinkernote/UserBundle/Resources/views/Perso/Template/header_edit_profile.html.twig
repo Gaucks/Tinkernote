@@ -24,8 +24,8 @@
                 </div>
                 <div class="col-xs-2 div-no-padding">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-edit"></i> Modifier mon compte</a></li>
-                        <li><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-user"></i> Modifier mon avatar</a></li>
+                        <li class="active"><a href="{{ path('fos_user_profile_edit') }}"><i class="fa fa-edit"></i> Modifier mon compte</a></li>
+                        <li><a href="{{ path('user_change_avatar') }}"><i class="fa fa-user"></i> Modifier mon avatar</a></li>
                         <li><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-image"></i> Modifier mon screen</a></li>
                         <li><a href="{{ path('fos_user_change_password') }}"><i class="fa fa-key"></i> Modifier mon mot de passe</a></li>
                     </ul>
@@ -35,8 +35,8 @@
     </div>
     <div class="row">
         <div class="usr-profile-avatar">
-            <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="User background" class="img-responsive img-thumbnail img-circle user-avatar"/>
-            <h2 class="text-center">Nom d'utilisateur</h2>
+            <img src="{{ asset('uploads/avatar/'~app.user.avatar.path) }}" alt="User background" class="img-responsive img-thumbnail img-circle user-avatar"/>
+            <h2 class="text-center">{{ app.user.username }}</h2>
         </div>
     </div>
 

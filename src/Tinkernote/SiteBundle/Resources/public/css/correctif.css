@@ -142,6 +142,7 @@
 .star {
     display: inline-block;
     margin-left: 0px;
+    margin-bottom: 0;
 }
 .star-blue {
     color : #73acd0;

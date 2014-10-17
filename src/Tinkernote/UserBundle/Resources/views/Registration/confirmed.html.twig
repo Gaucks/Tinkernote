@@ -3,8 +3,7 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block body %}
-{% block fos_user_content %}
-    <h1 class="citation-title text-center">Félicitations {{ user.username }}, votre compte est maintenant activé. </h1>
+    <h3 class="citation-title text-center">Félicitations {{ user.username }}, votre compte est maintenant activé. </h3>
     <div class="container">
         <div class="row text-center">
             <a href="{{ path('site_homepage') }}">
@@ -15,5 +14,4 @@
             </a>
         </div>
     </div>
-{% endblock fos_user_content %}
 {% endblock %}

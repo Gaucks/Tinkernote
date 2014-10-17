@@ -28,6 +28,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources:
+            - 'SiteBundle:Form:fields.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -75,3 +78,20 @@ fos_user:
     registration:
             form:
                 type: tinkernote_user_registration
+    profile:
+            form:
+                type: tinkernote_user_profile
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            sluggable: true
+
+fos_js_routing:
+    routes_to_expose: [ site_rempli, site_rempli_category ]
+
+services:
+    twig.extension.text:
+           class: Twig_Extensions_Extension_Text
+           tags:
+                - { name: twig.extension }

@@ -149,43 +149,19 @@
 
     <div class="row">
             <ul class="list-inline france-nav">
-                <li><a href="#">Alsace</a></li>
-                <li><a href="#">Aquitaine</a></li>
-                <li><a href="#">Auvergne</a></li>
-                <li><a href="#">Basse-Normandie</a></li>
-                <li><a href="#">Bourgogne</a></li>
-                <li><a href="#">Bretagne</a></li>
-                <li><a href="#">Centre</a></li>
-                <li><a href="#">Champagne-Ardenne</a></li>
-                <li><a href="#">Corse</a></li>
-                <li><a href="#">Franche-Comté</a></li>
-                <li><a href="#">Haute-Normandie</a></li>
-                <li><a href="#">Ile-de-France</a></li>
-                <li><a href="#">Languedoc-Roussillon</a></li>
-                <li><a href="#">Limousin</a></li>
-                <li><a href="#">Lorraine</a></li>
-                <li><a href="#">Midi-Pyrénnées</a></li>
-                <li><a href="#">Nord-Pas-de-Calais</a></li>
-                <li><a href="#">Pays de la Loire</a></li>
-                <li><a href="#">Picardie</a></li>
-                <li><a href="#">Poitou-Charentes</a></li>
-                <li><a href="#">Provence alpes cotes d'azur</a></li>
-                <li><a href="#">Rhones-Alpes</a></li>
-                <li><a href="#">Guadeloupe</a></li>
-                <li><a href="#">Martinique</a></li>
-                <li><a href="#">Guyanne</a></li>
-                <li><a href="#">Réunion</a></li>
+                {% for r in regions %}
+                <li><a href="#">{{ r.nom }}</a></li>
+                {% endfor %}
             </ul>
         </div>
 
     <div class="row">
         <ul class="list-inline footer-nav">
-            <li><a href="#">Alsace</a></li>
-            <li><a href="#">Aquitaine</a></li>
-            <li><a href="#">Auvergne</a></li>
-            <li><a href="#">Basse-Normandie</a></li>
-            <li><a href="#">Bourgogne</a></li>
-            <li><a href="#">Bretagne</a></li>
+            <li><a href="#">&copy; Tinkernote 2014</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
     </div>
 </div>

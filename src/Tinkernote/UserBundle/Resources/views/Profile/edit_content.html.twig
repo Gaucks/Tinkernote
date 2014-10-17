@@ -2,9 +2,9 @@
 
 <form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
 
-    <div class="row" role="indentité">
+    <div class="row" role="identité">
         <div class="col-xs-6">
-            <h3 class="step">Identité</h3>
+            <h3 class="step">Identifiant</h3>
                 <div class="form-group form-user-profile">
                     <div class="input-group">
                         {{ form_errors(form.username) }}
@@ -29,50 +29,109 @@
                     </div>
                 </div>
 
-                <div>
-                    {{ form_rest(form) }}
-                </div>
         </div> <!-- La partie formulaire -->
 
         <div class="col-xs-6">
-            <h3 class="step">Bon à savoir</h3>
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim quas quis similique?
-                        Asperiores aspernatur consequuntur dicta dolorem in labore natus nostrum numquam!
-                        Alias aut dolorem facilis praesentium sint sit.
-                    </p>
-                </blockquote>
+            <h3 class="step">Identité</h3>
+
+            <div class="row">
+                <div class="error">{{ form_errors(form.firstname) }}</div>
+                <div class="error">{{ form_errors(form.name) }}</div>
+                <div class="col-xs-6">
+                    <div class="form-group form-user-profile">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-eye-close"></span></div>
+                            {{ form_widget(form.name, {'attr': {'class': 'form-control input-sm', 'placeholder': 'Votre nom'}}) }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="form-group form-user-profile">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-eye-close"></span></div>
+                            {{ form_widget(form.firstname,{'attr': {'class': 'form-control input-sm', 'placeholder': 'Votre prénom'}}) }}
+                        </div>
+                    </div>
+                </div>
+
             </div> <!-- La seconde partie coté droit -->
 
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group form-user-profile">
+                        {{ form_errors(form.phone) }}
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-eye-close"></span></div>
+                            {{ form_widget(form.phone,{'attr': {'class': 'form-control input-sm', 'placeholder': '0607080910'}}) }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <ul class="list-inline">
+                                <li>
+                                    <label>{{ form_widget(form.showphone)}}Toujours afficher mon téléphone</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group form-user-profile">
+                        <div class="form-inline">
+                            {{ form_label(form.age) }}
+                            {{ form_errors(form.age) }}
+                            {{ form_widget(form.age.day,{'attr':{'class':'form-control input-sm'}}) }}
+                            {{ form_widget(form.age.month,{'attr':{'class':'form-control input-sm'}}) }}
+                            {{ form_widget(form.age.year,{'attr':{'class':'form-control input-sm'}}) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
     </div> <!-- row identité -->
+
 
     <div class="row" role="localisation">
         <div class="col-xs-6">
             <h3 class="step">Localisation</h3>
-            <div class="form-group form-user-profile">
+
+            <div class="form-group">
                 <div class="input-group">
-                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-flag"></span></div>
-                    <select class="form-control input-sm" name="region" id="">
-                        <option value="0">Selectionnez votre région</option>
-                    </select>
+
+                    {% if ( app.user.region.id is defined ) %}
+                        {% set region = app.user.region.id %}
+                        {% set departement = app.user.departement.id %}
+                        {% set ville = app.user.ville.id %}
+                        {% else %}
+                            {% set region = '' %}
+                            {% set departement = '' %}
+                            {% set ville = '' %}
+                    {%  endif %}
+
+                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                    {{ form_widget(form.region,{'attr': {'class': 'form-control input-sm regionclass', 'rel': region }}) }}
                 </div>
             </div>
 
-            <div class="form-group form-user-profile">
+            <div class="form-group">
                 <div class="input-group">
-                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-phone-alt"></span></div>
-                    <select class="form-control input-sm" name="region" id="">
-                        <option value="0">Selectionnez votre département</option>
-                    </select>
+                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                    {{ form_widget(form.departement,{'attr': {'class': 'form-control input-sm departementclass', 'rel': departement }}) }}
                 </div>
             </div>
 
-            <div class="form-group form-user-profile">
+            <div class="form-group">
                 <div class="input-group">
-                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-home"></span></div>
-                    <select class="form-control input-sm" name="region" id="">
-                        <option value="0">Selectionnez votre ville</option>
-                    </select>
+                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                    {{ form_widget(form.ville,{'attr': {'class': 'form-control input-sm villeclass', 'rel': ville }}) }}
                 </div>
             </div>
         </div>
@@ -90,6 +149,10 @@
         </div>
 
     </div> <!-- row localisation-->
+
+    <div>
+        {{ form_rest(form) }}
+    </div>
 
     <div>
         <input type="submit" value="{{ 'profile.edit.submit'|trans }}" class="btn btn-success" />

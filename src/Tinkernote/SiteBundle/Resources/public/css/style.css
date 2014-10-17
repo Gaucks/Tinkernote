@@ -119,7 +119,23 @@ img.circle{
 }
 
 .btn-success{
-    background: #6eb056;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #68b056;
+    font-weight: 500;
+    background-image: -moz-linear-gradient(top, #6eb056, #5fb056);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb056), to(#5fb056));
+    background-image: -webkit-linear-gradient(top, #6eb056, #5fb056);
+    background-image: -o-linear-gradient(top, #6eb056, #5fb056);
+    background-image: linear-gradient(to bottom, #6eb056, #5fb056);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6eb056', endColorstr='#ff5fb056', GradientType=0);
+    border-color: #5fb056 #5fb056 #427e3b;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    *background-color: #5fb056;
+    /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 /* Recherche de l'accueil*/
@@ -143,6 +159,15 @@ img.circle{
 .btn-form-search:focus,.btn-form-search-accueil:focus, .suggestion-search:focus {
     border-left: 3px solid #485563;
     padding-left: 14px;
+}
+.form-search-annonce > .input-group-btn > select{
+    background: transparent;
+    width: 150px;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    height: 40px;
+    margin: 0 5px;
+    /*display: none;*/
 }
 
 /* BOX FOOTER Accueil */
@@ -420,7 +445,9 @@ blockquote {
 .news-time span {
     display: block;
     font-size: 24px;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-left: 10px;
+}
 .badge-blue, .badge-gray, .badge-green, .badge-red, .badge-dark-red, .badge-black, .badge-cyan, .badge-purple {
     display: inline-block;
     padding: 0 4px;

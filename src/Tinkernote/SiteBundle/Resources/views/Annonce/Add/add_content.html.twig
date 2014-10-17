@@ -1,19 +1,21 @@
-<div class="container">
-    <div class="col-xs-12">
-        <div class="row" role="breadcrumb">
-            <div id="breadcrumbs">
-                <div class="breadcrumb-button blue">
-                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="#" class="breadcrumb-link">Home</a></span>
-                    <span class="breadcrumb-arrow"><span></span></span>
-                </div>
+<form action="{{ path('annonce_add') }}" {{ form_enctype(form) }} method="POST">
+    <div class="container">
+        <div class="col-xs-12">
 
-                <div class="breadcrumb-button">
-              <span class="breadcrumb-label">
-                <span class="glyphicon glyphicon-edit "></span> Form Elements
-              </span>
-                    <span class="breadcrumb-arrow"><span></span></span>
+        <div class="row" role="breadcrumb">
+                <div id="breadcrumbs">
+                    <div class="breadcrumb-button blue">
+                        <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="{{ path('bloc_homepage') }}" class="breadcrumb-link">Home</a></span>
+                        <span class="breadcrumb-arrow"><span></span></span>
+                    </div>
+
+                    <div class="breadcrumb-button">
+                  <span class="breadcrumb-label">
+                    <span class="glyphicon glyphicon-edit "></span> Publier une annonce
+                  </span>
+                        <span class="breadcrumb-arrow"><span></span></span>
+                    </div>
                 </div>
-            </div>
         </div> <!-- row breadcrumb -->
 
         <div class="row" role="formulaire">
@@ -23,34 +25,39 @@
                 </div>
                 <!-- Contenu du formulaire -->
                 <div class="box-section">
-
                     <!-- Début du bloc de droite -->
                     <div class="col-xs-6">
+                        {{ form_errors(form) }}
+
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
-                                <input type="text" class="form-control input-sm" placeholder="Un titre pour votre annonce"/>
+                                {{ form_errors(form.title) }}
+                                {{ form_widget(form.title, {'attr' : {'class' : 'form-control input-sm', 'placeholder' : 'Un titre pour votre annonce'}}) }}
                             </div>
                         </div>
                         <!-- Catégorie de l'annonce -->
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon input-sm">@</div>
-                                <select class="form-control input-sm"><option>Choisissez la rubrique</option></select>
+                                {{ form_errors(form.parentCategory) }}
+                                {{ form_widget(form.parentCategory, {'attr' : {'class' : 'form-control input-sm parentcategoryclass'}}) }}
                             </div>
                         </div>
                         <!-- Sous Catégorie de l'annonce -->
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon input-sm">@</div>
-                                <select class="form-control input-sm"><option>Choisissez la sous rubrique</option></select>
+                                {{ form_errors(form.category) }}
+                                {{ form_widget(form.category, {'attr' : {'class' : 'form-control input-sm categoryclass'}}) }}
                             </div>
                         </div>
                         <!-- Tarif de l'annonce -->
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-euro"></span></div>
-                                <input type="text" class="form-control input-sm" placeholder="Le tarif de ce produit"/>
+                                {{ form_errors(form.price) }}
+                                {{ form_widget(form.price, {'attr' : {'class' : 'form-control input-sm', 'placeholder' : 'Le tarif de ce produit'}}) }}
                             </div>
                         </div>
 
@@ -70,37 +77,42 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
-                                <textarea class="form-control form-annonce input-sm" name="" id="" cols="30" rows="7" placeholder="Le contenu de votre annonce"></textarea>
+                                {{ form_errors(form.content) }}
+                                {{ form_widget(form.content) }}
                             </div>
                         </div>
-                        <!-- Selecteurs -->
+
+                        {% if ( app.user.region.id is defined ) %}
+                            {% set region = app.user.region.id %}
+                            {% set departement = app.user.departement.id %}
+                            {% set ville = app.user.ville.id %}
+                        {% else %}
+                            {% set region = '' %}
+                            {% set departement = '' %}
+                            {% set ville = '' %}
+                        {%  endif %}
+                         <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                                {{ form_widget(form.region,{'attr': {'class': 'form-control input-sm regionclass', 'rel': region }}) }}
+                            </div>
+                         </div>
+
                         <div class="form-group">
                             <div class="input-group">
-                                <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
-                                <select class="form-control input-sm">
-                                    <option value="American rose">American rose</option>
-                                    <option value="Air superiority blue">Air superiority blue</option>
-                                    <option value="Aero blue">Aero blue</option>
-                                    <option value="Amaranth">Amaranth</option>
-                                    <option value="Alabama Crimson">Alabama Crimson</option>
-                                    <option value="Air Force blue (RAF)">Air Force blue (RAF)</option>
-                                    <option value="Alloy orange">Alloy orange</option>
-                                    <option value="Antique brass">Antique brass</option>
-                                    <option value="Android Green">Android Green</option>
-                                    <option value="Amethyst">Amethyst</option>
-                                    <option value="Alice blue">Alice blue</option>
-                                    <option value="SAE/ECE Amber (color)">SAE/ECE Amber (color)</option>
-                                    <option value="Antique fuchsia ">Antique fuchsia </option>
-                                    <option value="Amber">Amber</option>
-                                    <option value="Anti-flash white">Anti-flash white</option>
-                                    <option value="Alizarin crimson">Alizarin crimson</option>
-                                    <option value="Antique bronze">Antique bronze</option>
-                                    <option value="Almond">Almond</option>
-                                    <option value="Air Force blue (USAF)">Air Force blue (USAF)</option>
-                                    <option value="Amazon">Amazon</option>
-                                </select>
-                             </div>
+                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                                {{ form_widget(form.departement,{'attr': {'class': 'form-control input-sm departementclass', 'rel': departement }}) }}
+                            </div>
                         </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                                {{ form_widget(form.ville,{'attr': {'class': 'form-control input-sm villeclass', 'rel': ville }}) }}
+                            </div>
+                        </div>
+                    </div>
+
                         <!-- Checkbox -->
                         <div class="form-group">
                             <div class="checkbox">
@@ -121,15 +133,13 @@
 
                             </div>
                         </div>
-                    </div>
 
                     <div class="clearfix"></div>
                 </div>
-
                 <!-- Fin du contenu du formulaire -->
             </div>
 
-            </div> <!-- role = formulaire-->
+        </div> <!-- role = formulaire-->
 
         <div class="row" role="formulaire extended">
             <div class="box">
@@ -249,5 +259,7 @@
                 </div> <!-- box-section -->
             </div> <!-- box -->
         </div><!-- row formulaire validation -->
+    </div> <!-- container -->
+{{ form_rest(form) }}
     </div>
-</div> <!-- container -->
+</form>

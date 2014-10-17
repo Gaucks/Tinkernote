@@ -80,10 +80,21 @@ blockquote small {
     background: transparent;
     border-bottom: 1px solid #cccccc;
 }
-
+#fos_user_profile_form_age_day{
+    margin-left: 10px;
+}
 
 
 /* Afficher le profile */
 .nav-show-profile > li {
     margin: 0 0 10px 0;
+}
+
+/* Changement d'avatar */
+.box-change-avatar{
+
+}
+
+.box-change-avatar img{
+
 }
