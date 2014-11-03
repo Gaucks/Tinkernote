@@ -4,16 +4,21 @@ namespace Tinkernote\SiteBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+
 
 /**
+ * Picture
+ *
  * @ORM\Table(name="picture")
  * @ORM\Entity(repositoryClass="Tinkernote\SiteBundle\Entity\PictureRepository")
+ * @ORM\HasLifecycleCallbacks
  */
+class Picture {
 
-/** @noinspection PhpUndefinedClassInspection */
-class Picture
-{
     /**
+     * @var integer
+     *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -21,59 +26,93 @@ class Picture
     private $id;
 
     /**
-     * @ORM\Column(name="url", type="string", length=255, nullable = true)
+     * @ORM\Column(type="datetime")
      */
-    private $url;
+    private $date;
 
     /**
-     * @ORM\Column(name="alt", type="string", length=255, nullable = true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-
-    private $alt;
+    private $path;
 
     /**
      * @Assert\File(maxSize="6000000")
      */
-    private $file;
+    public $file;
 
+    public function __construct()
+    {
+        $this->date = new \DateTime();
+    }
 
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function preUpload()
+    {
+        if (null !== $this->file) {
+            // faites ce que vous voulez pour générer un nom unique
+            $this->path = sha1(uniqid(mt_rand(), true)).'.'.$this->file->guessExtension();
+        }
+    }
+
+    /**
+     * @ORM\PostPersist()
+     * @ORM\PostUpdate()
+     */
     public function upload()
     {
-        // Si jamais il n'y a pas de fichier (champ facultatif)
         if (null === $this->file) {
             return;
         }
 
-        // On garde le nom original du fichier de l'internaute
-        $name = $this->file->getClientOriginalName();
+        // s'il y a une erreur lors du déplacement du fichier, une exception
+        // va automatiquement être lancée par la méthode move(). Cela va empêcher
+        // proprement l'entité d'être persistée dans la base de données si
+        // erreur il y a
+        $this->file->move($this->getUploadRootDir(), $this->path);
 
-        // On déplace le fichier envoyé dans le répertoire de notre choix
-        $this->file->move($this->getUploadRootDir(), $name);
-
-        // On sauvegarde le nom de fichier dans notre attribut $url
-        $this->url = $name;
-
-        // On crée également le futur attribut alt de notre balise <img>
-        $this->alt = $name;
+        unset($this->file);
     }
 
-    public function getUploadDir()
+    /**
+     * @ORM\PostRemove()
+     */
+    public function removeUpload()
     {
-        // On retourne le chemin relatif vers l'image pour un navigateur
-        return 'uploads/img';
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+
+    public function getAbsolutePath()
+    {
+        return null === $this->path ? null : $this->getUploadRootDir().'/'.$this->path;
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->path ? null : $this->getUploadDir().'/'.$this->path;
     }
 
     protected function getUploadRootDir()
     {
-        // On retourne le chemin relatif vers l'image pour notre code PHP
+        // le chemin absolu du répertoire où les documents uploadés doivent être sauvegardés
         return __DIR__.'/../../../../web/'.$this->getUploadDir();
     }
 
+    protected function getUploadDir()
+    {
+        // on se débarrasse de « __DIR__ » afin de ne pas avoir de problème lorsqu'on affiche
+        // le document/image dans la vue.
+        return 'uploads/annonce';
+    }
 
     /**
      * Get id
      *
-     * @return integer
+     * @return integer 
      */
     public function getId()
     {
@@ -81,62 +120,48 @@ class Picture
     }
 
     /**
-     * Set url
+     * Set date
      *
-     * @param string $url
-     * @return Image
+     * @param \DateTime $date
+     * @return Picture
      */
-    public function setUrl($url)
+    public function setDate($date)
     {
-        $this->url = $url;
+        $this->date = $date;
 
         return $this;
     }
 
     /**
-     * Get url
+     * Get date
      *
-     * @return string
+     * @return \DateTime 
      */
-    public function getUrl()
+    public function getDate()
     {
-        return $this->url;
+        return $this->date;
     }
 
     /**
-     * Set alt
+     * Set path
      *
-     * @param string $alt
-     * @return Image
+     * @param string $path
+     * @return Picture
      */
-    public function setAlt($alt)
+    public function setPath($path)
     {
-        $this->alt = $alt;
+        $this->path = $path;
 
         return $this;
     }
 
     /**
-     * Get alt
+     * Get path
      *
-     * @return string
+     * @return string 
      */
-    public function getAlt()
+    public function getPath()
     {
-        return $this->alt;
-    }
-
-    public function getFile()
-    {
-        return $this->file;
-    }
-
-    // On modifie le setter de File, pour prendre en compte l'upload d'un fichier lorsqu'il en existe déjà un autre
-    public function setFile($file)
-    {
-        $this->file = $file;
-
-        return $this;
-
+        return $this->path;
     }
 }

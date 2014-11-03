@@ -6,6 +6,10 @@ body{
     font-size: 12px;
     font-family: "helvetica neue";
 }
+img.ajax-loader{
+    width: 26px;
+    display: none;
+}
 a {
     color: #4083a9;
     text-decoration: none;
@@ -36,6 +40,15 @@ img.circle{
 }
 .div-no-padding-left {
     padding-left: 0;
+}
+
+/* Input */
+.form-group .input-price{
+    width: auto
+}
+
+.box-section .form-group textarea.form-control {
+    padding-top: 5px;
 }
 
 /* Button sociaux */
@@ -250,15 +263,31 @@ img.circle{
 }
 label{ font-size: 14px; }
 blockquote {
-    font-size: 16px;
+    font-size: 14px;
 }
 .form-control-feedback{
     top: 2px;
 }
+.has-error{ float: left }
 .has-error .form-control {
     border-color: #d9534f;
     color: #d9534f;
 }
+.has-error ul > li{
+    border-color: #d9534f;
+    color: #d9534f;
+    font-size: 11px;
+}
+.box-section .form-group input.has-error{
+    border-color: #d9534f;
+}
+.box-section .form-group select.has-error{
+    border-color: #d9534f;
+}
+.box-section .form-group textarea.has-error{
+    border-color: #d9534f;
+}
+
 .background-red{
     color: red
 }

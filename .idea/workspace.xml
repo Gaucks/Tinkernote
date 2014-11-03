@@ -5,6 +5,41 @@
     <ignored path="Tinkernote.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/annotations/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/collections/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/common/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/data-fixtures/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/dbal/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/inflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/lexer/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/orm/" />
+    <ignored path="$PROJECT_DIR$/vendor/friendsofsymfony/jsrouting-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions/" />
+    <ignored path="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler/" />
+    <ignored path="$PROJECT_DIR$/vendor/jdorn/sql-formatter/" />
+    <ignored path="$PROJECT_DIR$/vendor/kriswallsmith/assetic/" />
+    <ignored path="$PROJECT_DIR$/vendor/monolog/monolog/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensio/distribution-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensio/generator-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensiolabs/security-checker/" />
+    <ignored path="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/assetic-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/icu/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/monolog-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/symfony/" />
+    <ignored path="$PROJECT_DIR$/vendor/twig/extensions/" />
+    <ignored path="$PROJECT_DIR$/vendor/twig/twig/" />
+    <ignored path="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,39 +61,7 @@
     <favorites_list name="Tinkernote" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SiteController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="58" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.4184168" vertical-offset="581" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myfunction.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="29" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1425">
-              <folding>
-                <element signature="e#1244#2038#0" expanded="false" />
-                <element signature="e#2086#2162#0" expanded="false" />
-                <element signature="e#2266#2492#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_content.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="106" selection-start="2856" selection-end="2856" vertical-scroll-proportion="-18.041666" vertical-offset="332" max-vertical-offset="4050">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -68,57 +71,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/RechercheController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base_accueil.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Soon/soon_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/TellType.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/Type/TellType.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Form/form_div_layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/form_div_layout.html.twig" />
-        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Tests/Extension/theme_extends.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Form/fields.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/Type/TelType.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar/changePassword.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/DataFixtures/ORM/LoadUserData.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/AvatarRepository.php" />
-        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/RegistrationController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ChangeAvatarController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/ProfileFormType.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/public/css/profile.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar/changeAvatar.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar/changeAvatar_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/Template/header_edit_profile.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Perso/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Recherche.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/Avatar.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/AnnonceType.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/categoryRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Annonce.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/teste.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/plupload/plupload.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/plupload.js" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/PictureController.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/PictureType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Picture_save.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Picture.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/LoadCityData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadAinData.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadParentCategoryData.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadCategoryData.php" />
-        <option value="$PROJECT_DIR$/app/logs/dev.log" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/CategoryRepository.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/DataFixtures/ORM/LoadUserData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Ville.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/LoadVilleFourData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleTwoData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleThreeData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleHeightData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleFourData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleFiveData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleSixData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleSevenData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleNineData.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadDepartementData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadRegionData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ProfileController.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/ProfileFormType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/public/css/profile.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Annonces/LoadAnnoncesData.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Annonce.php" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/AnnonceType.php" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/annonce.js" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig" />
       </list>
     </option>
   </component>
@@ -161,9 +164,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,7 +198,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -295,32 +298,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -328,7 +305,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.lastSelected" value="Symfony2.SettingsForm" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -336,25 +313,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Archive/AwardMe" />
     <property name="recentsLimit" value="5" />
     <property name="LayoutCode.rearrangeEntriesTwig" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/images" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller" />
-      <recent name="$PROJECT_DIR$/web/uploads/avatar" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangeAvatar" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation" />
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/Type" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Template" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.edit_content.html.twig">
-    <configuration default="false" name="edit_content.html.twig" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/Tinkernote/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig">
+  <component name="RunManager" selected="JavaScript Debug.">
+    <configuration default="false" name="" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -366,10 +344,22 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="User.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php">
@@ -381,37 +371,23 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.User.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.edit_content.html.twig" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug." />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.edit_content.html.twig" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug." />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
     <configuration useDefault="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f615df6e-ae6e-46a2-8cc8-5bfe5fbcd357" name="Default" comment="" />
       <created>1410271765913</created>
+      <option name="number" value="Default" />
       <updated>1410271765913</updated>
     </task>
     <servers />
@@ -437,57 +413,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2997076" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27419356" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.319063" sideWeight="0.5009862" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29136163" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7600969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33764136" sideWeight="0.4990138" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260234" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39095315" sideWeight="0.4990138" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.319063" sideWeight="0.5009862" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27312776" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796487" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39824304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35945073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991228" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -501,384 +457,730 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleThreeData.php</url>
+          <line>78004</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleFiveData.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/annonce.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="26" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleThreeData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="87" selection-end="87" vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="2254" selection-end="2254" vertical-scroll-proportion="0.37878788" vertical-offset="390" max-vertical-offset="2460" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/ProfileFormType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="836" selection-end="1312" vertical-scroll-proportion="0.534846" vertical-offset="15" max-vertical-offset="690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/Avatar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="11" selection-start="696" selection-end="696" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1290">
+        <state vertical-scroll-proportion="0.27892235" vertical-offset="4" max-vertical-offset="1050">
+          <caret line="38967" column="32" selection-start-line="38967" selection-start-column="32" selection-end-line="38967" selection-end-column="32" />
           <folding>
-            <element signature="e#194#353#0" expanded="false" />
-            <element signature="e#374#517#0" expanded="false" />
-            <element signature="e#709#759#0" expanded="false" />
-            <element signature="e#869#929#0" expanded="false" />
-            <element signature="e#934#1178#0" expanded="false" />
-            <element signature="e#1184#1246#0" expanded="false" />
-            <element signature="e#1251#1709#0" expanded="false" />
-            <element signature="e#1357#1425#0" expanded="false" />
-            <element signature="e#1715#1751#0" expanded="false" />
-            <element signature="e#1756#1883#0" expanded="false" />
-            <element signature="e#1889#2022#0" expanded="false" />
-            <element signature="e#2028#2152#0" expanded="false" />
-            <element signature="e#2158#2366#0" expanded="false" />
-            <element signature="e#2372#2586#0" expanded="false" />
-            <element signature="e#2592#2648#0" expanded="false" />
-            <element signature="e#2653#2714#0" expanded="false" />
-            <element signature="e#2720#2803#0" expanded="false" />
-            <element signature="e#2808#2902#0" expanded="false" />
-            <element signature="e#2908#2965#0" expanded="false" />
-            <element signature="e#2970#3035#0" expanded="false" />
+            <element signature="e#357#389#0#PHP" expanded="false" />
+            <element signature="e#471#737092#0#PHP" expanded="false" />
+            <element signature="e#737111#1800000#0#PHP" expanded="false" />
+            <element signature="e#1800041#1800258#0#PHP" expanded="false" />
+            <element signature="e#1800299#1800517#0#PHP" expanded="false" />
+            <element signature="e#1800568#1800790#0#PHP" expanded="false" />
+            <element signature="e#1800835#1801055#0#PHP" expanded="false" />
+            <element signature="e#1801106#1801328#0#PHP" expanded="false" />
+            <element signature="e#1801373#1801595#0#PHP" expanded="false" />
+            <element signature="e#1801635#1801852#0#PHP" expanded="false" />
+            <element signature="e#1801904#1802124#0#PHP" expanded="false" />
+            <element signature="e#1802164#1802381#0#PHP" expanded="false" />
+            <element signature="e#1802427#1802647#0#PHP" expanded="false" />
+            <element signature="e#1802692#1802912#0#PHP" expanded="false" />
+            <element signature="e#1802965#1803185#0#PHP" expanded="false" />
+            <element signature="e#1803503#1803559#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/DataFixtures/ORM/LoadUserData.php">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleTwoData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="32" selection-start="986" selection-end="990" vertical-scroll-proportion="0.2907916" vertical-offset="240" max-vertical-offset="1485" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="331" selection-end="331" vertical-scroll-proportion="0.3085443" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="34" selection-start="5043" selection-end="5043" vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="2490" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/RegistrationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="8" selection-start="1624" selection-end="1646" vertical-scroll-proportion="0.6291946" vertical-offset="120" max-vertical-offset="2055" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.65436244" vertical-offset="390" max-vertical-offset="1320" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ChangeAvatarController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="716" selection-end="881" vertical-scroll-proportion="-0.044334974" vertical-offset="222" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="57" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.7256098" vertical-offset="874" max-vertical-offset="1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Annonces/LoadAnnoncesData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3645" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.043844856" vertical-offset="26" max-vertical-offset="1140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AnnonceRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="750">
-          <folding />
+        <state vertical-scroll-proportion="0.33280507" vertical-offset="0" max-vertical-offset="586080">
+          <caret line="38967" column="32" selection-start-line="38967" selection-start-column="32" selection-end-line="38967" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Annonce.php">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleHeightData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="2265">
+        <state vertical-scroll-proportion="-1464.0729" vertical-offset="1168885" max-vertical-offset="1172580">
+          <caret line="16340" column="18" selection-start-line="16340" selection-start-column="18" selection-end-line="16340" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleFourData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15372425" vertical-offset="244928" max-vertical-offset="288960">
+          <caret line="16340" column="12" selection-start-line="16340" selection-start-column="12" selection-end-line="16340" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleFiveData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82725835" vertical-offset="244503" max-vertical-offset="503235">
+          <caret line="16340" column="18" selection-start-line="16340" selection-start-column="18" selection-end-line="16340" selection-end-column="18" />
           <folding>
-            <element signature="e#82#214#0" expanded="false" />
-            <element signature="e#236#319#0" expanded="false" />
-            <element signature="e#380#465#0" expanded="false" />
-            <element signature="e#517#607#0" expanded="false" />
-            <element signature="e#657#741#0" expanded="false" />
-            <element signature="e#1048#1135#0" expanded="false" />
-            <element signature="e#1163#1306#0" expanded="false" />
-            <element signature="e#1329#1426#0" expanded="false" />
-            <element signature="e#1452#1551#0" expanded="false" />
-            <element signature="e#1579#1668#0" expanded="false" />
-            <element signature="e#1693#1795#0" expanded="false" />
-            <element signature="e#1821#1901#0" expanded="false" />
-            <element signature="e#1907#1966#0" expanded="false" />
-            <element signature="e#1971#2042#0" expanded="false" />
-            <element signature="e#2048#2138#0" expanded="false" />
-            <element signature="e#2143#2249#0" expanded="false" />
-            <element signature="e#2255#2311#0" expanded="false" />
-            <element signature="e#2316#2377#0" expanded="false" />
-            <element signature="e#2383#2440#0" expanded="false" />
-            <element signature="e#2445#2512#0" expanded="false" />
-            <element signature="e#2518#2604#0" expanded="false" />
-            <element signature="e#2609#2707#0" expanded="false" />
-            <element signature="e#2713#2772#0" expanded="false" />
-            <element signature="e#2777#2848#0" expanded="false" />
-            <element signature="e#2854#2944#0" expanded="false" />
-            <element signature="e#2949#3055#0" expanded="false" />
-            <element signature="e#3061#3120#0" expanded="false" />
-            <element signature="e#3125#3190#0" expanded="false" />
-            <element signature="e#3196#3283#0" expanded="false" />
-            <element signature="e#3288#3382#0" expanded="false" />
-            <element signature="e#3388#3446#0" expanded="false" />
-            <element signature="e#3451#3518#0" expanded="false" />
-            <element signature="e#3524#3611#0" expanded="false" />
-            <element signature="e#3616#3714#0" expanded="false" />
-            <element signature="e#3720#3804#0" expanded="false" />
-            <element signature="e#3809#3874#0" expanded="false" />
-            <element signature="e#3880#3992#0" expanded="false" />
-            <element signature="e#3997#4133#0" expanded="false" />
-            <element signature="e#4139#4227#0" expanded="false" />
-            <element signature="e#4232#4301#0" expanded="false" />
-            <element signature="e#4307#4425#0" expanded="false" />
-            <element signature="e#4430#4576#0" expanded="false" />
-            <element signature="e#4582#4680#0" expanded="false" />
-            <element signature="e#4685#4764#0" expanded="false" />
-            <element signature="e#4770#4903#0" expanded="false" />
-            <element signature="e#4908#5079#0" expanded="false" />
-            <element signature="e#5085#5171#0" expanded="false" />
-            <element signature="e#5176#5243#0" expanded="false" />
-            <element signature="e#5249#5364#0" expanded="false" />
-            <element signature="e#5369#5510#0" expanded="false" />
-            <element signature="e#5983#6087#0" expanded="false" />
-            <element signature="e#6183#6325#0" expanded="false" />
-            <element signature="e#6330#6516#0" expanded="false" />
+            <element signature="e#356#388#0#PHP" expanded="false" />
+            <element signature="e#632983#1667928#0#PHP" expanded="false" />
+            <element signature="e#1667973#1668192#0#PHP" expanded="false" />
+            <element signature="e#1668245#1668468#0#PHP" expanded="false" />
+            <element signature="e#1668513#1668732#0#PHP" expanded="false" />
+            <element signature="e#1668776#1668994#0#PHP" expanded="false" />
+            <element signature="e#1669044#1669267#0#PHP" expanded="false" />
+            <element signature="e#1669311#1669529#0#PHP" expanded="false" />
+            <element signature="e#1669579#1669802#0#PHP" expanded="false" />
+            <element signature="e#1669846#1670064#0#PHP" expanded="false" />
+            <element signature="e#1670114#1670337#0#PHP" expanded="false" />
+            <element signature="e#1670383#1670603#0#PHP" expanded="false" />
+            <element signature="e#1670645#1670862#0#PHP" expanded="false" />
+            <element signature="e#1670908#1671128#0#PHP" expanded="false" />
+            <element signature="e#1671185#1671412#0#PHP" expanded="false" />
+            <element signature="e#1671456#1671674#0#PHP" expanded="false" />
+            <element signature="e#1671731#1671958#0#PHP" expanded="false" />
+            <element signature="e#1672002#1672220#0#PHP" expanded="false" />
+            <element signature="e#1672264#1672485#0#PHP" expanded="false" />
+            <element signature="e#1672528#1672748#0#PHP" expanded="false" />
+            <element signature="e#1672789#1673061#0#PHP" expanded="false" />
+            <element signature="e#1673067#1673183#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Departement.php">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleSixData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="2370">
-          <folding />
+        <state vertical-scroll-proportion="0.53882724" vertical-offset="244715" max-vertical-offset="1171110">
+          <caret line="16340" column="18" selection-start-line="16340" selection-start-column="18" selection-end-line="16340" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/PictureRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleSevenData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
-          <folding />
+        <state vertical-scroll-proportion="0.48494452" vertical-offset="244734" max-vertical-offset="1170315">
+          <caret line="16339" column="18" selection-start-line="16339" selection-start-column="18" selection-end-line="16339" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Region.php">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleNineData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="1470">
-          <folding />
+        <state vertical-scroll-proportion="0.33755943" vertical-offset="244827" max-vertical-offset="1169490">
+          <caret line="16339" column="18" selection-start-line="16339" selection-start-column="18" selection-end-line="16339" selection-end-column="18" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Ville.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.52" vertical-offset="26" max-vertical-offset="2355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/RegionRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/RegionType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0015822785" vertical-offset="1" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Localisation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Recherche.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Picture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.023734177" vertical-offset="0" max-vertical-offset="2205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/RechercheController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2025" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/AnnonceType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="915" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DependencyInjection/SiteExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadParentCategoryData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
-          <folding />
+        <state vertical-scroll-proportion="0.681458" vertical-offset="170" max-vertical-offset="840">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/fosjsrouting/js/router.js">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="616" selection-start="830" selection-end="830" vertical-scroll-proportion="0.1399689" vertical-offset="0" max-vertical-offset="643" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Category/LoadCategoryData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="57" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.0" vertical-offset="30" max-vertical-offset="2820" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.4168012" vertical-offset="2115" max-vertical-offset="3375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="564" column="204" selection-start="101593" selection-end="101629" vertical-scroll-proportion="0.29041097" vertical-offset="8354" max-vertical-offset="18390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/ParentCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/ParentCategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="646" selection-end="646" vertical-scroll-proportion="0.4512195" vertical-offset="124" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="224" selection-end="232" vertical-scroll-proportion="-0.8544304" vertical-offset="720" max-vertical-offset="1470">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/CategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3322785" vertical-offset="0" max-vertical-offset="632">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/DepartementRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AnnonceRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125" vertical-offset="75" max-vertical-offset="750">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadRegionData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9077902" vertical-offset="0" max-vertical-offset="2010">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadDepartementData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27363184" vertical-offset="1755" max-vertical-offset="4440">
+          <caret line="128" column="123" selection-start-line="128" selection-start-column="123" selection-end-line="128" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserEvents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34389856" vertical-offset="1358" max-vertical-offset="2895">
+          <caret line="112" column="63" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/RegistrationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5674342" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ChangeAvatarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.022187004" vertical-offset="104" max-vertical-offset="855">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47328246" vertical-offset="185" max-vertical-offset="900">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Event/UserEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/DataTransformer/UserToUsernameTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManagerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6923077" vertical-offset="405" max-vertical-offset="2070">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2846975" vertical-offset="2970" max-vertical-offset="3555">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/FOSUserExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3075">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3735">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3345">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40412045" vertical-offset="0" max-vertical-offset="631">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Factory/FactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2713816" vertical-offset="0" max-vertical-offset="608">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ProfileFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.098684214" vertical-offset="30" max-vertical-offset="1020">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Factory/FormFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5942948" vertical-offset="0" max-vertical-offset="631">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6386688" vertical-offset="1665" max-vertical-offset="8790">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125" vertical-offset="750" max-vertical-offset="2055">
+          <caret line="63" column="138" selection-start-line="63" selection-start-column="138" selection-end-line="63" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2519084" vertical-offset="0" max-vertical-offset="655">
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022900764" vertical-offset="0" max-vertical-offset="96555">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="106" selection-start="2856" selection-end="2856" vertical-scroll-proportion="-18.041666" vertical-offset="332" max-vertical-offset="4050">
+        <state vertical-scroll-proportion="1.2123613" vertical-offset="0" max-vertical-offset="1575">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5769231" vertical-offset="0" max-vertical-offset="8895">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="29" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1425">
+        <state vertical-scroll-proportion="0.09667195" vertical-offset="284" max-vertical-offset="960">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Form/Type/ProfileFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33280507" vertical-offset="390" max-vertical-offset="1545">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="44" />
           <folding>
-            <element signature="e#1244#2038#0" expanded="false" />
-            <element signature="e#2086#2162#0" expanded="false" />
-            <element signature="e#2266#2492#0" expanded="false" />
+            <element signature="e#50#81#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08716323" vertical-offset="1550" max-vertical-offset="2505">
+          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="128" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Annonces/LoadAnnoncesData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16798732" vertical-offset="974" max-vertical-offset="3300">
+          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="300" max-vertical-offset="1740">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6877971" vertical-offset="91" max-vertical-offset="4485">
+          <caret line="35" column="66" selection-start-line="33" selection-start-column="5" selection-end-line="35" selection-end-column="66" />
+          <folding>
+            <element signature="e#48#90#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Annonce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8082409" vertical-offset="765" max-vertical-offset="4755">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="e#48#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/public/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022900764" vertical-offset="0" max-vertical-offset="655">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding>
+            <element signature="e#59#186#0" expanded="false" />
+            <element signature="e#208#229#0" expanded="false" />
+            <element signature="e#250#302#0" expanded="false" />
+            <element signature="e#329#441#0" expanded="false" />
+            <element signature="e#461#517#0" expanded="false" />
+            <element signature="e#529#548#0" expanded="false" />
+            <element signature="e#568#572#0" expanded="false" />
+            <element signature="e#605#664#0" expanded="false" />
+            <element signature="e#678#732#0" expanded="false" />
+            <element signature="e#748#802#0" expanded="false" />
+            <element signature="e#816#870#0" expanded="false" />
+            <element signature="e#909#932#0" expanded="false" />
+            <element signature="e#950#973#0" expanded="false" />
+            <element signature="e#992#1711#0" expanded="false" />
+            <element signature="e#1735#1739#0" expanded="false" />
+            <element signature="e#1767#1789#0" expanded="false" />
+            <element signature="e#1830#1900#0" expanded="false" />
+            <element signature="e#1931#1957#0" expanded="false" />
+            <element signature="e#2009#2036#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="58" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.4184168" vertical-offset="581" max-vertical-offset="1200">
-          <folding />
+        <state vertical-scroll-proportion="0.40412045" vertical-offset="0" max-vertical-offset="631">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <element signature="e#348#862#0#PHP" expanded="false" />
+            <element signature="e#868#978#0#PHP" expanded="false" />
+            <element signature="e#984#1611#0#PHP" expanded="false" />
+            <element signature="e#1617#2246#0#PHP" expanded="false" />
+            <element signature="e#2252#3174#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45801526" vertical-offset="0" max-vertical-offset="655">
+          <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+          <folding>
+            <element signature="e#384#2027#0" expanded="false" />
+            <element signature="e#2299#4489#0" expanded="false" />
+            <element signature="e#2748#4183#0" expanded="false" />
+            <element signature="e#4253#4479#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45166403" vertical-offset="0" max-vertical-offset="631">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="e#701#973#0#PHP" expanded="false" />
+            <element signature="e#979#2183#0#PHP" expanded="false" />
+            <element signature="e#1498#2068#0#PHP" expanded="false" />
+            <element signature="e#2189#2653#0#PHP" expanded="false" />
+            <element signature="e#2659#3089#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/AnnonceType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.02" vertical-offset="879" max-vertical-offset="1590">
+          <caret line="72" column="158" selection-start-line="72" selection-start-column="152" selection-end-line="72" selection-end-column="158" />
+          <folding>
+            <element signature="e#46#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/annonce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58778626" vertical-offset="380" max-vertical-offset="1155">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+          <folding>
+            <element signature="e#668#728#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8396946" vertical-offset="1355" max-vertical-offset="2940">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#4#176#0" expanded="false" />
+            <element signature="e#192#231#0" expanded="false" />
+            <element signature="e#234#284#0" expanded="false" />
+            <element signature="e#295#588#0" expanded="false" />
+            <element signature="e#594#620#0" expanded="false" />
+            <element signature="e#628#676#0" expanded="false" />
+            <element signature="e#756#775#0" expanded="false" />
+            <element signature="e#798#823#0" expanded="false" />
+            <element signature="e#845#869#0" expanded="false" />
+            <element signature="e#907#926#0" expanded="false" />
+            <element signature="e#975#1000#0" expanded="false" />
+            <element signature="e#1041#1824#0" expanded="false" />
+            <element signature="e#1842#2625#0" expanded="false" />
+            <element signature="e#2665#2693#0" expanded="false" />
+            <element signature="e#2709#2737#0" expanded="false" />
+            <element signature="e#2746#2773#0" expanded="false" />
+            <element signature="e#2795#2823#0" expanded="false" />
+            <element signature="e#2841#2908#0" expanded="false" />
+            <element signature="e#2954#2975#0" expanded="false" />
+            <element signature="e#2992#3025#0" expanded="false" />
+            <element signature="e#3068#3181#0" expanded="false" />
+            <element signature="e#3246#3303#0" expanded="false" />
+            <element signature="e#3340#3602#0" expanded="false" />
+            <element signature="e#3616#4574#0" expanded="false" />
+            <element signature="e#4641#4693#0" expanded="false" />
+            <element signature="e#4718#4749#0" expanded="false" />
+            <element signature="e#4778#4800#0" expanded="false" />
+            <element signature="e#4835#4857#0" expanded="false" />
+            <element signature="e#5014#5073#0" expanded="false" />
+            <element signature="e#5154#5217#0" expanded="false" />
+            <element signature="e#5266#5427#0" expanded="false" />
+            <element signature="e#5502#5522#0" expanded="false" />
+            <element signature="e#5551#5613#0" expanded="false" />
+            <element signature="e#5642#5668#0" expanded="false" />
+            <element signature="e#5703#5747#0" expanded="false" />
+            <element signature="e#5764#5787#0" expanded="false" />
+            <element signature="e#5801#5826#0" expanded="false" />
+            <element signature="e#5844#5887#0" expanded="false" />
+            <element signature="e#5920#6019#0" expanded="false" />
+            <element signature="e#6037#6121#0" expanded="false" />
+            <element signature="e#6153#6244#0" expanded="false" />
+            <element signature="e#6263#6283#0" expanded="false" />
+            <element signature="e#6371#6396#0" expanded="false" />
+            <element signature="e#6414#6439#0" expanded="false" />
+            <element signature="e#6451#6478#0" expanded="false" />
+            <element signature="e#6531#6662#0" expanded="false" />
+            <element signature="e#6700#6724#0" expanded="false" />
+            <element signature="e#6747#6764#0" expanded="false" />
+            <element signature="e#6816#6866#0" expanded="false" />
+            <element signature="e#6885#6956#0" expanded="false" />
+            <element signature="e#6997#7027#0" expanded="false" />
+            <element signature="e#7069#7099#0" expanded="false" />
+            <element signature="e#7190#7208#0" expanded="false" />
+            <element signature="e#7223#7245#0" expanded="false" />
+            <element signature="e#7261#7333#0" expanded="false" />
+            <element signature="e#7341#7482#0" expanded="false" />
+            <element signature="e#7496#7555#0" expanded="false" />
+            <element signature="e#7588#7728#0" expanded="false" />
+            <element signature="e#7743#7777#0" expanded="false" />
+            <element signature="e#7793#7994#0" expanded="false" />
+            <element signature="e#8045#8771#0" expanded="false" />
+            <element signature="e#8777#9134#0" expanded="false" />
+            <element signature="e#9184#9286#0" expanded="false" />
+            <element signature="e#9295#9317#0" expanded="false" />
+            <element signature="e#9379#9453#0" expanded="false" />
+            <element signature="e#9466#10269#0" expanded="false" />
+            <element signature="e#10283#11086#0" expanded="false" />
+            <element signature="e#11102#11127#0" expanded="false" />
+            <element signature="e#11135#11182#0" expanded="false" />
+            <element signature="e#11280#11340#0" expanded="false" />
+            <element signature="e#11388#11408#0" expanded="false" />
+            <element signature="e#11422#11649#0" expanded="false" />
+            <element signature="e#11689#11904#0" expanded="false" />
+            <element signature="e#11936#11962#0" expanded="false" />
+            <element signature="e#11969#11994#0" expanded="false" />
+            <element signature="e#12012#12417#0" expanded="false" />
+            <element signature="e#12432#12482#0" expanded="false" />
+            <element signature="e#12495#12610#0" expanded="false" />
+            <element signature="e#12622#12754#0" expanded="false" />
+            <element signature="e#12771#12860#0" expanded="false" />
+            <element signature="e#12971#13486#0" expanded="false" />
+            <element signature="e#13489#13512#0" expanded="false" />
+            <element signature="e#13519#13612#0" expanded="false" />
+            <element signature="e#13644#15341#0" expanded="false" />
+            <element signature="e#15392#15819#0" expanded="false" />
+            <element signature="e#15852#16971#0" expanded="false" />
+            <element signature="e#17011#18057#0" expanded="false" />
+            <element signature="e#18115#18138#0" expanded="false" />
+            <element signature="e#18184#19098#0" expanded="false" />
+            <element signature="e#19167#19484#0" expanded="false" />
+            <element signature="e#19547#19864#0" expanded="false" />
+            <element signature="e#19922#20163#0" expanded="false" />
+            <element signature="e#20226#20289#0" expanded="false" />
+            <element signature="e#20327#21373#0" expanded="false" />
+            <element signature="e#21429#21450#0" expanded="false" />
+            <element signature="e#21494#22408#0" expanded="false" />
+            <element signature="e#22475#22792#0" expanded="false" />
+            <element signature="e#22853#23170#0" expanded="false" />
+            <element signature="e#23226#23489#0" expanded="false" />
+            <element signature="e#23551#23572#0" expanded="false" />
+            <element signature="e#23652#23673#0" expanded="false" />
+            <element signature="e#23734#23797#0" expanded="false" />
+            <element signature="e#23848#23978#0" expanded="false" />
+            <element signature="e#24034#24091#0" expanded="false" />
+            <element signature="e#24142#24165#0" expanded="false" />
+            <element signature="e#24204#25118#0" expanded="false" />
+            <element signature="e#25180#25497#0" expanded="false" />
+            <element signature="e#25553#25870#0" expanded="false" />
+            <element signature="e#25915#26098#0" expanded="false" />
+            <element signature="e#26161#26233#0" expanded="false" />
+            <element signature="e#26277#26460#0" expanded="false" />
+            <element signature="e#26523#26550#0" expanded="false" />
+            <element signature="e#26612#26640#0" expanded="false" />
+            <element signature="e#26702#26724#0" expanded="false" />
+            <element signature="e#26775#26906#0" expanded="false" />
+            <element signature="e#26957#27092#0" expanded="false" />
+            <element signature="e#27148#27452#0" expanded="false" />
+            <element signature="e#27470#28752#0" expanded="false" />
+            <element signature="e#28783#28839#0" expanded="false" />
+            <element signature="e#28873#28939#0" expanded="false" />
+            <element signature="e#28979#29023#0" expanded="false" />
+            <element signature="e#29074#29094#0" expanded="false" />
+            <element signature="e#29140#29166#0" expanded="false" />
+            <element signature="e#29208#29228#0" expanded="false" />
+            <element signature="e#29262#29323#0" expanded="false" />
+            <element signature="e#29364#29389#0" expanded="false" />
+            <element signature="e#29436#29461#0" expanded="false" />
+            <element signature="e#29493#29776#0" expanded="false" />
+            <element signature="e#29815#29860#0" expanded="false" />
+            <element signature="e#30009#30030#0" expanded="false" />
+            <element signature="e#30082#30133#0" expanded="false" />
+            <element signature="e#30227#30297#0" expanded="false" />
+            <element signature="e#30331#30478#0" expanded="false" />
+            <element signature="e#30518#30714#0" expanded="false" />
+            <element signature="e#30761#30812#0" expanded="false" />
+            <element signature="e#30858#30886#0" expanded="false" />
+            <element signature="e#31012#31102#0" expanded="false" />
+            <element signature="e#31128#31156#0" expanded="false" />
+            <element signature="e#31194#31920#0" expanded="false" />
+            <element signature="e#31982#32020#0" expanded="false" />
+            <element signature="e#32056#32200#0" expanded="false" />
+            <element signature="e#32228#32304#0" expanded="false" />
+            <element signature="e#32339#32372#0" expanded="false" />
+            <element signature="e#32414#32465#0" expanded="false" />
+            <element signature="e#32509#32561#0" expanded="false" />
+            <element signature="e#32647#32792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Add/add_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14263074" vertical-offset="0" max-vertical-offset="631">
+          <caret line="148" column="21" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+            <element signature="tag#div#8;tag#div#0;tag#div#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8167939" vertical-offset="1280" max-vertical-offset="2040">
+          <caret line="520" column="18" selection-start-line="520" selection-start-column="18" selection-end-line="520" selection-end-column="18" />
+          <folding>
+            <element signature="e#72#94#0" expanded="false" />
+            <element signature="e#116#155#0" expanded="false" />
+            <element signature="e#204#297#0" expanded="false" />
+            <element signature="e#337#430#0" expanded="false" />
+            <element signature="e#457#501#0" expanded="false" />
+            <element signature="e#559#602#0" expanded="false" />
+            <element signature="e#646#671#0" expanded="false" />
+            <element signature="e#703#728#0" expanded="false" />
+            <element signature="e#753#904#0" expanded="false" />
+            <element signature="e#940#1808#0" expanded="false" />
+            <element signature="e#1842#1862#0" expanded="false" />
+            <element signature="e#1904#1927#0" expanded="false" />
+            <element signature="e#1968#2102#0" expanded="false" />
+            <element signature="e#2119#2240#0" expanded="false" />
+            <element signature="e#2259#3100#0" expanded="false" />
+            <element signature="e#3168#3894#0" expanded="false" />
+            <element signature="e#4000#4102#0" expanded="false" />
+            <element signature="e#4222#4282#0" expanded="false" />
+            <element signature="e#4361#4381#0" expanded="false" />
+            <element signature="e#4451#4477#0" expanded="false" />
+            <element signature="e#4571#4645#0" expanded="false" />
+            <element signature="e#4708#4777#0" expanded="false" />
+            <element signature="e#4831#4878#0" expanded="false" />
+            <element signature="e#4938#5741#0" expanded="false" />
+            <element signature="e#5775#6025#0" expanded="false" />
+            <element signature="e#6065#6085#0" expanded="false" />
+            <element signature="e#6103#6157#0" expanded="false" />
+            <element signature="e#6179#6222#0" expanded="false" />
+            <element signature="e#6240#6292#0" expanded="false" />
+            <element signature="e#6314#6367#0" expanded="false" />
+            <element signature="e#6396#6422#0" expanded="false" />
+            <element signature="e#6442#6446#0" expanded="false" />
+            <element signature="e#6478#6519#0" expanded="false" />
+            <element signature="e#6573#6650#0" expanded="false" />
+            <element signature="e#6723#6773#0" expanded="false" />
+            <element signature="e#6851#6938#0" expanded="false" />
+            <element signature="e#7027#7054#0" expanded="false" />
+            <element signature="e#7138#7166#0" expanded="false" />
+            <element signature="e#7254#7284#0" expanded="false" />
+            <element signature="e#7372#7464#0" expanded="false" />
+            <element signature="e#7547#7611#0" expanded="false" />
+            <element signature="e#7699#7746#0" expanded="false" />
+            <element signature="e#7839#7865#0" expanded="false" />
+            <element signature="e#7937#7987#0" expanded="false" />
+            <element signature="e#7998#8280#0" expanded="false" />
+            <element signature="e#8338#8414#0" expanded="false" />
+            <element signature="e#8427#8451#0" expanded="false" />
+            <element signature="e#8463#8487#0" expanded="false" />
+            <element signature="e#8501#8525#0" expanded="false" />
+            <element signature="e#8536#8560#0" expanded="false" />
+            <element signature="e#8608#8636#0" expanded="false" />
+            <element signature="e#8685#8922#0" expanded="false" />
+            <element signature="e#8968#9601#0" expanded="false" />
+            <element signature="e#9690#9912#0" expanded="false" />
+            <element signature="e#9989#10061#0" expanded="false" />
+            <element signature="e#10132#10224#0" expanded="false" />
+            <element signature="e#10246#11309#0" expanded="false" />
+            <element signature="e#11362#11409#0" expanded="false" />
+            <element signature="e#11456#11659#0" expanded="false" />
+            <element signature="e#11687#12677#0" expanded="false" />
+            <element signature="e#12766#12988#0" expanded="false" />
+            <element signature="e#13029#13121#0" expanded="false" />
+            <element signature="e#13135#13159#0" expanded="false" />
+            <element signature="e#13178#13203#0" expanded="false" />
+            <element signature="e#13226#13272#0" expanded="false" />
+            <element signature="e#13307#13373#0" expanded="false" />
+            <element signature="e#13410#13433#0" expanded="false" />
+            <element signature="e#13470#13495#0" expanded="false" />
+            <element signature="e#13551#13607#0" expanded="false" />
+            <element signature="e#13669#13738#0" expanded="false" />
+            <element signature="e#13759#13782#0" expanded="false" />
+            <element signature="e#13822#13884#0" expanded="false" />
+            <element signature="e#13912#13940#0" expanded="false" />
+            <element signature="e#13968#13994#0" expanded="false" />
+            <element signature="e#14014#14051#0" expanded="false" />
+            <element signature="e#14075#14137#0" expanded="false" />
+            <element signature="e#14158#14184#0" expanded="false" />
+            <element signature="e#14209#14255#0" expanded="false" />
+            <element signature="e#14284#14306#0" expanded="false" />
+            <element signature="e#14341#14371#0" expanded="false" />
+            <element signature="e#14389#14435#0" expanded="false" />
+            <element signature="e#14468#14502#0" expanded="false" />
+            <element signature="e#14528#14648#0" expanded="false" />
+            <element signature="e#14666#14696#0" expanded="false" />
+            <element signature="e#14716#14861#0" expanded="false" />
+            <element signature="e#14895#15099#0" expanded="false" />
+            <element signature="e#15146#15294#0" expanded="false" />
+            <element signature="e#15342#15398#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

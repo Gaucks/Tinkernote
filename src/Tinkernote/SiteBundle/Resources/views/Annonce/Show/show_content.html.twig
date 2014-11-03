@@ -43,7 +43,7 @@
         <div class="col-xs-5">
             <div class="show-annonce-img">
                 {% if annonce.picture is not empty %}
-                    <img src="{{ asset('bundles/site/images/temp/'~annonce.picture) }}" alt="img" class="img-responsive"/>
+                    <img src="{{ asset('uploads/annonce/'~annonce.picture.path) }}" alt="img" class="img-responsive"/>
                 {% else %}
                     <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img" class="img-responsive"/>
                 {% endif %}

@@ -31,5 +31,4 @@ class VilleRepository extends EntityRepository
         return $qb->getQuery()
             ->getArrayResult();
     }
-
 }

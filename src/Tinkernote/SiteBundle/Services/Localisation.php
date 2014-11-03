@@ -17,7 +17,7 @@ class Localisation
      */
     public function __construct($doctrine)
     {
-        $this->em = $doctrine->getEntityManager();
+        $this->em = $doctrine->getManager();
     }
 
     /**

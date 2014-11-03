@@ -61,7 +61,7 @@
                               <div class="col-xs-6">
                                   <p><span class="glyphicon glyphicon-envelope"></span> Gaucks@gmail.com</p>
                                   <p><span class="glyphicon glyphicon-user"></span> Age : 32 ans</p>
-                                  <p><span class="glyphicon glyphicon-home"></span> Localisation: Vinon sur verdon (83560)</p>
+                                  <p><span class="glyphicon glyphicon-home"></span> Localisation: {{ app.user.ville.departement.region.nom }} - {{ app.user.ville.nom }} ({{ app.user.ville.postal }})</p>
                               </div>
 
                               <div class="col-xs-6">

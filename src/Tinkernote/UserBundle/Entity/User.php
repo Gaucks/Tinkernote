@@ -25,16 +25,6 @@ class User extends BaseUser
     protected  $avatar;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Region")
-     */
-    protected  $region;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Departement")
-     */
-    protected  $departement;
-
-    /**
      * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Ville")
      */
     protected  $ville;

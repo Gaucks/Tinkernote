@@ -1,3 +1,6 @@
+h4.step{
+    color: #df691a;
+}
 /* Images */
 .usr-profile-bg{
     height: 180px;
@@ -88,13 +91,4 @@ blockquote small {
 /* Afficher le profile */
 .nav-show-profile > li {
     margin: 0 0 10px 0;
-}
-
-/* Changement d'avatar */
-.box-change-avatar{
-
-}
-
-.box-change-avatar img{
-
 }

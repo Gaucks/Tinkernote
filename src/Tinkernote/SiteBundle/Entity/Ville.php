@@ -14,7 +14,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 class Ville
 {
     /**
-     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Departement")
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Departement" ,cascade={"persist"})
      * @ORM\JoinColumn(nullable = false)
      */
     private $departement;

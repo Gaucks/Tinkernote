@@ -48,9 +48,8 @@ class Annonce
 
     // Lien vers l'image en relation
     /**
-     * @var string
      *
-     * @ORM\Column(name="picture", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Picture")
      */
     private $picture;
 
@@ -94,29 +93,6 @@ class Annonce
     public function __construct()
     {
         $this->date = new \DateTime();
-    }
-
-    /**
-     * Set picture
-     *
-     * @param string $picture
-     * @return Annonce
-     */
-    public function setPicture($picture)
-    {
-        $this->picture = $picture;
-
-        return $this;
-    }
-
-    /**
-     * Get picture
-     *
-     * @return string 
-     */
-    public function getPicture()
-    {
-        return $this->picture;
     }
 
     /**
@@ -314,6 +290,29 @@ class Annonce
     }
 
     /**
+     * Set parentCategory
+     *
+     * @param \Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory
+     * @return Annonce
+     */
+    public function setParentCategory(\Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory = null)
+    {
+        $this->parentCategory = $parentCategory;
+
+        return $this;
+    }
+
+    /**
+     * Get parentCategory
+     *
+     * @return \Tinkernote\SiteBundle\Entity\ParentCategory 
+     */
+    public function getParentCategory()
+    {
+        return $this->parentCategory;
+    }
+
+    /**
      * Set category
      *
      * @param \Tinkernote\SiteBundle\Entity\Category $category
@@ -337,25 +336,25 @@ class Annonce
     }
 
     /**
-     * Set parentCategory
+     * Set picture
      *
-     * @param \Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory
+     * @param \Tinkernote\SiteBundle\Entity\Picture $picture
      * @return Annonce
      */
-    public function setParentCategory(\Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory = null)
+    public function setPicture(\Tinkernote\SiteBundle\Entity\Picture $picture = null)
     {
-        $this->parentCategory = $parentCategory;
+        $this->picture = $picture;
 
         return $this;
     }
 
     /**
-     * Get parentCategory
+     * Get picture
      *
-     * @return \Tinkernote\SiteBundle\Entity\ParentCategory 
+     * @return \Tinkernote\SiteBundle\Entity\Picture 
      */
-    public function getParentCategory()
+    public function getPicture()
     {
-        return $this->parentCategory;
+        return $this->picture;
     }
 }

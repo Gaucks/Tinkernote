@@ -5,7 +5,7 @@ namespace Tinkernote\SiteBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * category
+ * Category
  *
  * @ORM\Table(name="category")
  * @ORM\Entity(repositoryClass="Tinkernote\SiteBundle\Entity\CategoryRepository")

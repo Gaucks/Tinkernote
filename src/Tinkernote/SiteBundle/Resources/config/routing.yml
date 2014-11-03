@@ -30,6 +30,10 @@ site_rempli_category:
     path:    /rempli-category
     defaults: { _controller: SiteBundle:Site:rempliCategory }
 
+site_rempli_postal:
+    path:     /rempli-postal/{cp}
+    defaults: { _controller: SiteBundle:Site:rempliPostal }
+
 recherche_annonce:
     path:     /rechercher
     defaults: { _controller: SiteBundle:Recherche:rechercheTraitement }
@@ -45,3 +49,7 @@ categorie_annonce:
 ville_annonce:
     path:    /ville/{ville}
     defaults: { _controller: SiteBundle:Annonce:ville }
+
+upload_file_route:
+    path: /upload-file
+    defaults: { _controller: SiteBundle:Picture:plupload}

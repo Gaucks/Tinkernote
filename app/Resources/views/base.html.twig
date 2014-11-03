@@ -33,11 +33,14 @@
     </div>
 
         {% block javascripts %}
-            {% javascripts  'bundles/site/js/jquery-2.1.1.min.js'
-                            'bundles/site/js/jquery.tablesorter.min.js'
-                            'bundles/site/js/bootstrap.min.js'
-                            'bundles/site/js/myfunction.js'
+            {% javascripts
+            'bundles/site/js/jquery-2.1.1.min.js'
+            'bundles/site/js/jquery.tablesorter.min.js'
+            'bundles/site/js/bootstrap.min.js'
+            'bundles/site/js/myfunction.js'
+            'bundles/site/js/annonce.js'
             %}
+
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
             <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
             <script type="text/javascript" src="{{ asset_url }}"></script>

@@ -9,6 +9,6 @@ services:
 
     tinkernote_user.profile.form.type:
         class: Tinkernote\UserBundle\Form\Type\ProfileFormType
-        arguments: [%fos_user.model.user.class%]
+        arguments: [%fos_user.model.user.class%, @doctrine.orm.entity_manager, @security.context]
         tags:
             - { name: form.type, alias: tinkernote_user_profile }

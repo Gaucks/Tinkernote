@@ -30,9 +30,10 @@ class AnnonceController extends Controller {
         }
 
         $annonce = new Annonce();
-        $form = $this->createForm(new AnnonceType(), $annonce);
+        $em = $this->getDoctrine()->getManager();
+        $form = $this->createForm(new AnnonceType($em, $this->get('security.context')), $annonce);
 
-        $form->get('region')->setData($user->getRegion());
+        $form->get('postal')->setData($user->getVille()->getPostal());
 
         if($request->isMethod('POST')){
 
@@ -50,9 +51,7 @@ class AnnonceController extends Controller {
 
                 return $response;
             }
-
             return $this->render('SiteBundle:Annonce/Add:add.html.twig', array('form' => $form->createView()));
-
         }
 
         return $this->render('SiteBundle:Annonce/Add:add.html.twig', array('form' => $form->createView()));

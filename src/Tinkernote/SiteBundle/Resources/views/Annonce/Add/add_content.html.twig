@@ -1,150 +1,200 @@
 <form action="{{ path('annonce_add') }}" {{ form_enctype(form) }} method="POST">
-    <div class="container">
-        <div class="col-xs-12">
+<div class="container">
+    <div class="col-xs-12">
 
-        <div class="row" role="breadcrumb">
-                <div id="breadcrumbs">
-                    <div class="breadcrumb-button blue">
-                        <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="{{ path('bloc_homepage') }}" class="breadcrumb-link">Home</a></span>
-                        <span class="breadcrumb-arrow"><span></span></span>
-                    </div>
-
-                    <div class="breadcrumb-button">
-                  <span class="breadcrumb-label">
-                    <span class="glyphicon glyphicon-edit "></span> Publier une annonce
-                  </span>
-                        <span class="breadcrumb-arrow"><span></span></span>
-                    </div>
-                </div>
-        </div> <!-- row breadcrumb -->
-
-        <div class="row" role="formulaire">
-            <div class="box">
-                <div class="box-header">
-                    <div class="title">Etape 1 > Description de votre annonce</div>
-                </div>
-                <!-- Contenu du formulaire -->
-                <div class="box-section">
-                    <!-- Début du bloc de droite -->
-                    <div class="col-xs-6">
-                        {{ form_errors(form) }}
-
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
-                                {{ form_errors(form.title) }}
-                                {{ form_widget(form.title, {'attr' : {'class' : 'form-control input-sm', 'placeholder' : 'Un titre pour votre annonce'}}) }}
-                            </div>
-                        </div>
-                        <!-- Catégorie de l'annonce -->
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm">@</div>
-                                {{ form_errors(form.parentCategory) }}
-                                {{ form_widget(form.parentCategory, {'attr' : {'class' : 'form-control input-sm parentcategoryclass'}}) }}
-                            </div>
-                        </div>
-                        <!-- Sous Catégorie de l'annonce -->
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm">@</div>
-                                {{ form_errors(form.category) }}
-                                {{ form_widget(form.category, {'attr' : {'class' : 'form-control input-sm categoryclass'}}) }}
-                            </div>
-                        </div>
-                        <!-- Tarif de l'annonce -->
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-euro"></span></div>
-                                {{ form_errors(form.price) }}
-                                {{ form_widget(form.price, {'attr' : {'class' : 'form-control input-sm', 'placeholder' : 'Le tarif de ce produit'}}) }}
-                            </div>
-                        </div>
-
-                        <div class="note pull-right">Please use a secure password</div>
-
-                        <div class="form-group">
-                            <label for="exampleInputFile">Photo du produit</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Example block-level help text here.</p>
-                        </div>
-
-                    </div> <!-- Bloc de droite -->
-
-                    <!-- Début du bloc de droite -->
-                    <div class="col-xs-6">
-                        <!-- Textarea -->
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
-                                {{ form_errors(form.content) }}
-                                {{ form_widget(form.content) }}
-                            </div>
-                        </div>
-
-                        {% if ( app.user.region.id is defined ) %}
-                            {% set region = app.user.region.id %}
-                            {% set departement = app.user.departement.id %}
-                            {% set ville = app.user.ville.id %}
-                        {% else %}
-                            {% set region = '' %}
-                            {% set departement = '' %}
-                            {% set ville = '' %}
-                        {%  endif %}
-                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
-                                {{ form_widget(form.region,{'attr': {'class': 'form-control input-sm regionclass', 'rel': region }}) }}
-                            </div>
-                         </div>
-
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
-                                {{ form_widget(form.departement,{'attr': {'class': 'form-control input-sm departementclass', 'rel': departement }}) }}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
-                                {{ form_widget(form.ville,{'attr': {'class': 'form-control input-sm villeclass', 'rel': ville }}) }}
-                            </div>
-                        </div>
-                    </div>
-
-                        <!-- Checkbox -->
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <ul class="list-inline">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" value="">
-                                            Option one is this and that
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" value="">
-                                            Option one is this and that
-                                        </label>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                    <div class="clearfix"></div>
-                </div>
-                <!-- Fin du contenu du formulaire -->
+    <div class="row" role="breadcrumb">
+        <div id="breadcrumbs">
+            <div class="breadcrumb-button blue">
+                <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a
+                            href="{{ path('bloc_homepage') }}" class="breadcrumb-link">Home</a></span>
+                <span class="breadcrumb-arrow"><span></span></span>
             </div>
 
-        </div> <!-- role = formulaire-->
+            <div class="breadcrumb-button">
+                      <span class="breadcrumb-label">
+                        <span class="glyphicon glyphicon-edit "></span> Publier une annonce
+                      </span>
+                <span class="breadcrumb-arrow"><span></span></span>
+            </div>
+        </div>
+    </div> <!-- row breadcrumb -->
 
+    <div class="row" role="formulaire">
+        <div class="box">
+            <div class="box-header">
+                <div class="title">Etape 1 > Description de votre annonce</div>
+            </div>
+            <!-- Contenu du formulaire -->
+            <div class="box-section">
+                <!-- Début du bloc de droite -->
+                <div class="col-xs-6">
+                    {{ form_errors(form) }}
+
+                    {% if form_errors(form.title)|length > 0 %}{% set errors_title = 'has-error' %}{% else %} {% set errors_title = NULL %}{% endif %}
+                    <div class="has-error">{{ form_errors(form.title) }}</div>
+                    <div class="form-group {{ errors_title }}">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
+                            {{ form_widget(form.title, {'attr' : {'class' : 'form-control input-sm '~errors_title, 'placeholder' : 'Un titre pour votre annonce' }}) }}
+                            {% if(errors_title) %}
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Catégorie de l'annonce -->
+                    {% if form_errors(form.parentCategory)|length > 0 %}{% set errors_parentCategory = 'has-error' %}{% else %} {% set errors_parentCategory = NULL %}{% endif %}
+                    <div class="has-error">{{ form_errors(form.parentCategory) }}</div>
+                    <div class="form-group {{ errors_parentCategory }}">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm">@</div>
+                            {{ form_widget(form.parentCategory, {'attr' : {'class' : 'form-control input-sm parentcategoryclass ' ~errors_parentCategory }}) }}
+                            {% if(errors_parentCategory) %}
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Sous Catégorie de l'annonce -->
+                    {% if form_errors(form.category)|length > 0 %}{% set errors_category = 'has-error' %}{% else %} {% set errors_category = NULL %}{% endif %}
+                    <div class="has-error">{{ form_errors(form.category) }}</div>
+                    <div class="form-group {{ errors_category }} categoryclass-form-group hidden">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm">@</div>
+                            {{ form_widget(form.category, {'attr' : {'class'   : 'form-control categoryclass' ~errors_category ,
+                                                                     'id'      : 'disabledInput',
+                                                                     'disabled': 'disabled',
+                            }}) }}
+                            {% if(errors_category) %}
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if form_errors(form.price)|length > 0 %}{% set errors_price = 'has-error' %}{% else %} {% set errors_price = NULL %}{% endif %}
+                    <div class="has-error">{{ form_errors(form.price) }}</div>
+                    <p class="note pull-right note-localisation"><i class="fa fa-info-circle"></i> Une annonce avec un tarif est plus consultée que sans. </p>
+                    <div class="form-group form-inline {{ errors_price }}">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm iga-fosUser-register"><i class="fa fa-home"></i></div>
+                            {{ form_widget(form.price,{'attr': {'class': 'form-control input-sm '~errors_price, 'placeholder' : 'Tarif de votre produit'}}) }}
+                            {% if(errors_price) %}
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="row space-box-top">
+                            <div class="col-xs-3 text-center">
+                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 1</p></div>
+                                <br/>
+                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 2</p></div>
+                                <br/>
+                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 3</p></div>
+                                <br/>
+                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 4</p></div>
+                                <br/>
+                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                            </div>
+                    </div>
+
+                </div>
+                <!-- Bloc de droite -->
+
+                <!-- Début du bloc de droite -->
+                <div class="col-xs-6">
+                    <!-- Textarea -->
+                    {% if form_errors(form.content)|length > 0 %}{% set errors_content = 'has-error' %}{% else %} {% set errors_content = NULL %}{% endif %}
+                    <div class="has-error">{{ form_errors(form.content) }}</div>
+                    <div class="form-group {{ errors_content }}">
+                        <div class="input-group">
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span>
+                            </div>
+                            {{ form_widget(form.content,{'attr': {'class': 'form-control form-annonce  input-sm ' ~errors_content }}) }}
+                            {% if(errors_content) %}
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="box-add-annonce-options">
+                        <ul class="nav">
+                            <li>
+                                <strong>Localisation :</strong>
+                                {{  app.user.ville.departement.region.nom|truncate(15) }} / {{ app.user.ville.departement.nom }} / {{ app.user.ville.nom }}
+                                <strong class="pull-right"><i class="fa fa-edit"></i><a href="#" id="show_localisation"> Modifier</a></strong>
+                            </li>
+                            <li>
+                                <strong> Date de publication : </strong>Des maintenant
+                                <strong class="pull-right"><i class="fa fa-edit"></i><a href="#"> Modifier</a></strong>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div><!-- Fin du contenu du formulaire -->
+
+        </div> <!-- Box -->
+    </div> <!-- role formulaire-->
+
+    <div class="row" id="formulaire_localisation">
+        <div class="box">
+            <div class="box-header">
+                <div class="title">Localisation</div>
+            </div>
+            <div class="box-section">
+                    <div class="col-xs-3">
+                        <p class="note note-localisation">Veuillez renseigner le code postal et la ville :</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="col-xs-6">
+                            {% if form_errors(form.postal)|length > 0 %}{% set errors_postal = 'has-error' %}{% else %} {% set errors_postal = NULL %}{% endif %}
+                            <div class="has-error">{{ form_errors(form.postal) }}</div>
+                            <div class="form-group {{ errors_postal }}">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm iga-fosUser-register"><i class="fa fa-envelope"></i></div>
+                                    {{ form_widget(form.postal,{'attr': {'class': 'form-control input-sm postal ', 'value': app.user.ville.postal }}) }}
+                                    {% if(errors_postal) %}
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            {% if form_errors(form.ville)|length > 0 %}{% set errors_ville = 'has-error' %}{% else %} {% set errors_ville = NULL %}{% endif %}
+                            <div class="has-error">{{ form_errors(form.ville) }}</div>
+                            <div class="form-group {{ errors_ville }}">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm iga-fosUser-register"><i class="fa fa-home"></i></div>
+                                    {{ form_widget(form.ville,{'attr': {'class': 'form-control input-sm ville' ~errors_ville, 'rel': app.user.ville.id }}) }}
+                                    {% if(errors_ville) %}
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="formulaire_extended">
         <div class="row" role="formulaire extended">
             <div class="box">
                 <div class="box-header">
-                    <div class="title">Etape 2 > Formulaire étendu ( Varie en fonction du produit proposé )  </div>
+                    <div class="title">Etape 2 > Formulaire étendu ( Varie en fonction du produit proposé )</div>
                 </div>
 
                 <div class="box-section">
@@ -154,112 +204,135 @@
                         <div class="col-xs-6 div-no-padding">
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-th-list"></span></div>
+                                    <div class="input-group-addon input-sm"><span
+                                                class="glyphicon glyphicon-th-list"></span></div>
                                     <select name="#" id="#" class="form-control input-sm">
                                         <option value="#">Selectionnez une option dans le contenu</option>
                                     </select>
                                 </div>
-                            </div> <!-- form-group -->
+                            </div>
+                            <!-- form-group -->
 
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-share"></span></div>
+                                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-share"></span>
+                                    </div>
                                     <select name="#" id="#" class="form-control input-sm">
                                         <option value="#">Selectionnez une option</option>
                                     </select>
                                 </div>
-                            </div> <!-- form-group -->
+                            </div>
+                            <!-- form-group -->
 
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-volume-down"></span></div>
+                                    <div class="input-group-addon input-sm"><span
+                                                class="glyphicon glyphicon-volume-down"></span></div>
                                     <select name="#" id="#" class="form-control input-sm">
                                         <option value="#">Selectionnez une option</option>
                                     </select>
                                 </div>
-                            </div> <!-- form-group -->
-                        </div> <!-- col-xs-6 -->
-
-                     <div class="col-xs-6">
-                         <div class="form-group">
-                             <div class="input-group">
-                                 <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-justify"></span></div>
-                                 <select name="#" id="#" class="form-control input-sm">
-                                     <option value="#">Selectionnez une option dans le contenu</option>
-                                 </select>
-                             </div>
-                         </div> <!-- form-group -->
-
-                         <div class="form-group">
-                             <div class="input-group">
-                                 <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-ok-sign"></span></div>
-                                 <select name="#" id="#" class="form-control input-sm">
-                                     <option value="#">Selectionnez une option</option>
-                                 </select>
-                             </div>
-                         </div> <!-- form-group -->
-
-                         <div class="form-group">
-                             <div class="input-group">
-                                 <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-briefcase"></span></div>
-                                 <select name="#" id="#" class="form-control input-sm">
-                                     <option value="#">Selectionnez une option</option>
-                                 </select>
-                             </div>
-                         </div> <!-- form-group -->
-                    </div> <!-- col-xs-6 -->
-
-                    <div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                Option one is this and that&mdash;be sure to include why it's great
-                            </label>
+                            </div>
+                            <!-- form-group -->
                         </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                            </label>
+                        <!-- col-xs-6 -->
+
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm"><span
+                                                class="glyphicon glyphicon-align-justify"></span></div>
+                                    <select name="#" id="#" class="form-control input-sm">
+                                        <option value="#">Selectionnez une option dans le contenu</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- form-group -->
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm"><span
+                                                class="glyphicon glyphicon-ok-sign"></span></div>
+                                    <select name="#" id="#" class="form-control input-sm">
+                                        <option value="#">Selectionnez une option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- form-group -->
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-sm"><span
+                                                class="glyphicon glyphicon-briefcase"></span></div>
+                                    <select name="#" id="#" class="form-control input-sm">
+                                        <option value="#">Selectionnez une option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- form-group -->
                         </div>
-                        <div class="radio disabled">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                                Option three is disabled
-                            </label>
+                        <!-- col-xs-6 -->
+
+                        <div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                    Option one is this and that&mdash;be sure to include why it's great
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Option two can be something else and selecting it will deselect option one
+                                </label>
+                            </div>
+                            <div class="radio disabled">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                    Option three is disabled
+                                </label>
+                            </div>
                         </div>
-                    </div> <!-- Les boutons radio -->
-                    </div> <!-- col-xs-7 -->
+                        <!-- Les boutons radio -->
+                    </div>
+                    <!-- col-xs-7 -->
 
                     <div class="col-xs-5">
                         <blockquote>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis culpa tenetur.
-                            Dolorum ducimus eum expedita fugiat illo minus nam, necessitatibus nostrum odio provident quaerat ratione, repudiandae rerum suscipit ullam.
+                            Dolorum ducimus eum expedita fugiat illo minus nam, necessitatibus nostrum odio provident
+                            quaerat ratione, repudiandae rerum suscipit ullam.
                         </blockquote>
-
                     </div>
 
                     <div class="clearfix"></div>
-
-                </div> <!-- Box section -->
-            </div>  <!-- box -->
-        </div> <!-- row formulaire extended-->
-
-        <div class="row" role="formulaire validation">
-         <div class="box">
-                <div class="box-header">
-                    <div class="title">Etape 3 > Validation du formulaire  </div>
-                </div> <!-- box header -->
-
-                <div class="box-section">
-                    <div class="form-actions text-center">
-                        <button type="submit" class="btn btn-blue btn-little-large">Save changes</button>
-                        <button type="button" class="btn btn-default btn-little-large">Cancel</button>
-                    </div>
-                </div> <!-- box-section -->
-            </div> <!-- box -->
-        </div><!-- row formulaire validation -->
-    </div> <!-- container -->
-{{ form_rest(form) }}
+                </div>
+                <!-- Box section -->
+            </div>
+        </div> <!-- box -->
+        <!-- row formulaire extended-->
     </div>
+
+    <div class="row" role="formulaire validation">
+        <div class="box">
+            <div class="box-header">
+                <div class="title">Etape 3 > Validation du formulaire</div>
+            </div>
+            <!-- box header -->
+
+            <div class="box-section">
+                <div class="form-actions text-center">
+                    <button type="submit" class="btn btn-blue btn-little-large">Save changes</button>
+                    <button type="button" class="btn btn-default btn-little-large">Cancel</button>
+                </div>
+            </div>
+            <!-- box-section -->
+        </div>
+        <!-- box -->
+    </div>
+    <!-- row formulaire validation -->
+    </div>
+    <!-- container -->
+    </div>
+{{ form_rest(form) }}
 </form>

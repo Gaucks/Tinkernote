@@ -47,7 +47,6 @@ class SiteController extends Controller
                 return new JsonResponse($data);
             }
 
-            return new Response('je crois pas"'.$id.'"');
         }
 
         return new Response("Nonnn y'a une erreur dans le code");
@@ -68,11 +67,34 @@ class SiteController extends Controller
 
                 return new JsonResponse($data);
             }
-
-            return new Response('je crois pas"'.$id.'"');
+            return new Response('Erreur');
         }
 
-        return new Response("Nonnn y'a une erreur dans le code");
+        return new Response('Erreur');
+    }
+
+    public function rempliPostalAction(Request $request , $cp){
+
+        if($request->isXmlHttpRequest()) // pour vérifier la présence d'une requete Ajax
+        {
+            $em = $this->getDoctrine()->getManager();
+            $villeCodePostal = $em->getRepository('SiteBundle:Ville')->findBy(array('postal' => $cp));
+
+            if ($villeCodePostal) {
+                $villes = array();
+                foreach ($villeCodePostal as $ville) {
+                    $villes[] = array('nom' => $ville->getNom(),'id' => $ville->getId());
+                }
+            }
+            else{
+                $villes[] = array('nom' => 'Aucune ville ne correspond à ce code...', 'id' => '') ;
+            }
+                $response = new JsonResponse();
+                return $response->setData(array('villepostal' => $villes));
+        }
+        else{
+            throw new \Exception('Erreur dans le code....');
+        }
     }
 
 }

@@ -23,7 +23,6 @@ class LoadRegionData extends AbstractFixture implements OrderedFixtureInterface
 			$bourgogne 				= $this->createRegion('Bourgogne');
 			$lorraine 				= $this->createRegion('Lorraine');
 			$alsace 				= $this->createRegion('Alsace');
-			$picardie 				= $this->createRegion('Picardie');
 			$franche_comte  		= $this->createRegion('Franche-Comté');
 			$limousin 				= $this->createRegion('limousin');
 			$pays_de_la_loire 		= $this->createRegion('Pays de la Loire');
@@ -48,6 +47,8 @@ class LoadRegionData extends AbstractFixture implements OrderedFixtureInterface
 			$paca 					= $this->createRegion('Provence-Alpes-Côte d\'Azur');
 			$la_reunion 			= $this->createRegion('La Réunion');
 			$rhone_alpes 			= $this->createRegion('Rhône-Alpes');
+        	$monaco 			    = $this->createRegion('Monaco');
+
 			
 			// Persist regions dans la databaee
 			$manager->persist($bourgogne);
@@ -77,9 +78,11 @@ class LoadRegionData extends AbstractFixture implements OrderedFixtureInterface
 			$manager->persist($paca);
 			$manager->persist($la_reunion);
 			$manager->persist($rhone_alpes);
+            $manager->persist($midi_pyrenees);
+            $manager->persist($picardie);
+            $manager->persist($monaco);
 
-			
-			$manager->flush();
+            $manager->flush();
 			
 			// Add all regions as a reference for use in other data fixtures
 			$this->addReference('region-bo', $bourgogne);
@@ -101,10 +104,15 @@ class LoadRegionData extends AbstractFixture implements OrderedFixtureInterface
 			$this->addReference('region-bn', $basse_normandie);
 			$this->addReference('region-hn', $haute_normandie);
 			$this->addReference('region-pi', $picardie);
-			$this->addReference('region-ps', $poitou_charentes);
+			$this->addReference('region-pc', $poitou_charentes);
 			$this->addReference('region-pa', $paca);
 			$this->addReference('region-lr', $la_reunion);
 			$this->addReference('region-ra', $rhone_alpes);
+            $this->addReference('region-mp', $midi_pyrenees);
+            $this->addReference('region-pl', $pays_de_la_loire);
+            $this->addReference('region-fc', $franche_comte);
+            $this->addReference('region-li', $limousin);
+            $this->addReference('region-mo', $monaco);
     }
     
 	

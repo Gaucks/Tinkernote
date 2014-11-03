@@ -82,8 +82,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
         // Creation des categorys Multimédia
         $annonce1  = $this->createAnnonce('Calandre VW NEUVE golf 6 GTi ET GTD',
             $lorem1,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-tul'),
             '3000',
             $this->getReference('category-1'),
@@ -92,8 +90,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce2  = $this->createAnnonce('Joli débardeur avec détail décolleté turquoise',
             $lorem2,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-nic'),
             '1120',
             $this->getReference('category-2'),
@@ -102,8 +98,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce3  = $this->createAnnonce('MacBook Pro 2012 13Pouces',
             $lorem6,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '1000',
             $this->getReference('category-3'),
@@ -112,8 +106,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce4  = $this->createAnnonce('Sony xperia E operateur sfr',
             $lorem4,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-mar'),
             '50',
             $this->getReference('category-4'),
@@ -122,8 +114,7 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce5  = $this->createAnnonce('Téléphone portable Iphone 4S niquel',
             $lorem,
-            $this->getReference('region-fr'),
-            $this->getReference('departement-fr'),
+
             $this->getReference('ville-psg'),
             '3200',
             $this->getReference('category-1'),
@@ -132,8 +123,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce6  = $this->createAnnonce('Un titre d\'annonce je sais pas',
             $lorem,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '1000',
             $this->getReference('category-1'),
@@ -142,8 +131,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce7  = $this->createAnnonce('Une porsche 911 cabriolet noir parfait état !',
             $lorem,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-tul'),
             NULL,
             $this->getReference('category-1'),
@@ -152,8 +139,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce8  = $this->createAnnonce('Broyeur de branches compact -PRO-',
             $lorem5,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '50',
             $this->getReference('category-1'),
@@ -162,8 +147,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce9  = $this->createAnnonce('Opel Corsa bleu',
             $lorem,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '100000',
             $this->getReference('category-1'),
@@ -172,8 +155,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce10 = $this->createAnnonce('10 CD d\'Elvis presley !',
             $lorem,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '1000',
             $this->getReference('category-1'),
@@ -182,8 +163,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce11 = $this->createAnnonce('Mobile Doux Rêves Papillons Fisher Price',
             $lorem3,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '1000',
             $this->getReference('category-1'),
@@ -192,8 +171,6 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
 
         $annonce12 = $this->createAnnonce('Canapé d\'angle 6 places taupe',
             $lorem,
-            $this->getReference('region-pa'),
-            $this->getReference('departement-var'),
             $this->getReference('ville-vin'),
             '1000',
             $this->getReference('category-1'),
@@ -201,7 +178,7 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
             $picture5);
 
         // Enregistrement des annonces
-        $manager->persist($annonce1);
+        /*$manager->persist($annonce1);
         $manager->persist($annonce2);
         $manager->persist($annonce3);
         $manager->persist($annonce4);
@@ -212,16 +189,16 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
         $manager->persist($annonce9);
         $manager->persist($annonce10);
         $manager->persist($annonce11);
-        $manager->persist($annonce12);
+        $manager->persist($annonce12);*/
 
 
-        $manager->flush();
+        //$manager->flush();
     }
 
     // Fonction de création globale
-    private function createAnnonce($title, $content, $region, $departement, $ville, $price, $category , $user, $picture) {
+    private function createAnnonce($title, $content,$ville, $price, $category , $user, $picture) {
 
-        $annonce = new  Annonce();
+        /*$annonce = new  Annonce();
         $annonce->setTitle($title)
                 ->setContent($content)
                 ->setRegion($region)
@@ -232,12 +209,12 @@ class LoadAnnoncesData extends AbstractFixture implements OrderedFixtureInterfac
                 ->setUser($user)
                 ->setPicture($picture);
 
-        return $annonce;
+        return $annonce;*/
     }
 
     public function getOrder()
     {
-        return 7;
+        return 20;
     }
 
 }

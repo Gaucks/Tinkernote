@@ -3,6 +3,7 @@
 namespace Tinkernote\SiteBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Annonce
@@ -17,18 +18,6 @@ class Annonce
      * @ORM\ManyToOne(targetEntity="Tinkernote\UserBundle\Entity\User")
      */
     private $user;
-
-    // DANS QUEL REGION IL SE SITUE
-    /**
-     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Region")
-     */
-    private  $region;
-
-    // Quel département
-    /**
-     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Departement")
-     */
-    private $departement;
 
     // Quel ville
     /**
@@ -48,9 +37,8 @@ class Annonce
 
     // Lien vers l'image en relation
     /**
-     * @var string
      *
-     * @ORM\Column(name="picture", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Picture", cascade={"persist"})
      */
     private $picture;
 
@@ -66,7 +54,11 @@ class Annonce
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=80)
+     * @Assert\Regex(
+     *     pattern="/^[a-zA-Z_0-9]+$/",
+     *     message="Votre titre ne peut contenir que des chiffres et lettres"
+     * )
      */
     private $title;
 
@@ -88,35 +80,16 @@ class Annonce
      * @var integer
      *
      * @ORM\Column(name="price", type="integer", nullable=true)
+     * @Assert\Regex(
+     *     pattern="/^[0-9]+$/",
+     *     message="Un tarif ne peut contenir que des chiffres"
+     * )
      */
     private $price;
 
     public function __construct()
     {
         $this->date = new \DateTime();
-    }
-
-    /**
-     * Get picture
-     *
-     * @return string
-     */
-    public function getPicture()
-    {
-        return $this->picture;
-    }
-
-    /**
-     * Set picture
-     *
-     * @param string $picture
-     * @return Annonce
-     */
-    public function setPicture($picture)
-    {
-        $this->picture = $picture;
-
-        return $this;
     }
 
     /**
@@ -127,16 +100,6 @@ class Annonce
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Get title
-     *
-     * @return string
-     */
-    public function getTitle()
-    {
-        return $this->title;
     }
 
     /**
@@ -153,13 +116,13 @@ class Annonce
     }
 
     /**
-     * Get content
+     * Get title
      *
-     * @return string
+     * @return string 
      */
-    public function getContent()
+    public function getTitle()
     {
-        return $this->content;
+        return $this->title;
     }
 
     /**
@@ -176,13 +139,13 @@ class Annonce
     }
 
     /**
-     * Get date
+     * Get content
      *
-     * @return \DateTime
+     * @return string 
      */
-    public function getDate()
+    public function getContent()
     {
-        return $this->date;
+        return $this->content;
     }
 
     /**
@@ -199,13 +162,13 @@ class Annonce
     }
 
     /**
-     * Get price
+     * Get date
      *
-     * @return integer
+     * @return \DateTime 
      */
-    public function getPrice()
+    public function getDate()
     {
-        return $this->price;
+        return $this->date;
     }
 
     /**
@@ -222,13 +185,13 @@ class Annonce
     }
 
     /**
-     * Get user
+     * Get price
      *
-     * @return \Tinkernote\UserBundle\Entity\User
+     * @return integer 
      */
-    public function getUser()
+    public function getPrice()
     {
-        return $this->user;
+        return $this->price;
     }
 
     /**
@@ -245,59 +208,13 @@ class Annonce
     }
 
     /**
-     * Get region
+     * Get user
      *
-     * @return \Tinkernote\SiteBundle\Entity\Region
+     * @return \Tinkernote\UserBundle\Entity\User 
      */
-    public function getRegion()
+    public function getUser()
     {
-        return $this->region;
-    }
-
-    /**
-     * Set region
-     *
-     * @param \Tinkernote\SiteBundle\Entity\Region $region
-     * @return Annonce
-     */
-    public function setRegion(\Tinkernote\SiteBundle\Entity\Region $region = null)
-    {
-        $this->region = $region;
-
-        return $this;
-    }
-
-    /**
-     * Get departement
-     *
-     * @return \Tinkernote\SiteBundle\Entity\Departement
-     */
-    public function getDepartement()
-    {
-        return $this->departement;
-    }
-
-    /**
-     * Set departement
-     *
-     * @param \Tinkernote\SiteBundle\Entity\Departement $departement
-     * @return Annonce
-     */
-    public function setDepartement(\Tinkernote\SiteBundle\Entity\Departement $departement = null)
-    {
-        $this->departement = $departement;
-
-        return $this;
-    }
-
-    /**
-     * Get ville
-     *
-     * @return \Tinkernote\SiteBundle\Entity\Ville
-     */
-    public function getVille()
-    {
-        return $this->ville;
+        return $this->user;
     }
 
     /**
@@ -314,13 +231,36 @@ class Annonce
     }
 
     /**
-     * Get category
+     * Get ville
      *
-     * @return \Tinkernote\SiteBundle\Entity\Category
+     * @return \Tinkernote\SiteBundle\Entity\Ville 
      */
-    public function getCategory()
+    public function getVille()
     {
-        return $this->category;
+        return $this->ville;
+    }
+
+    /**
+     * Set parentCategory
+     *
+     * @param \Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory
+     * @return Annonce
+     */
+    public function setParentCategory(\Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory = null)
+    {
+        $this->parentCategory = $parentCategory;
+
+        return $this;
+    }
+
+    /**
+     * Get parentCategory
+     *
+     * @return \Tinkernote\SiteBundle\Entity\ParentCategory 
+     */
+    public function getParentCategory()
+    {
+        return $this->parentCategory;
     }
 
     /**
@@ -337,25 +277,35 @@ class Annonce
     }
 
     /**
-     * Get parentCategory
+     * Get category
      *
-     * @return \Tinkernote\SiteBundle\Entity\ParentCategory
+     * @return \Tinkernote\SiteBundle\Entity\Category 
      */
-    public function getParentCategory()
+    public function getCategory()
     {
-        return $this->parentCategory;
+        return $this->category;
     }
 
     /**
-     * Set parentCategory
+     * Set picture
      *
-     * @param \Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory
+     * @param \Tinkernote\SiteBundle\Entity\Picture $picture
      * @return Annonce
      */
-    public function setParentCategory(\Tinkernote\SiteBundle\Entity\ParentCategory $parentCategory = null)
+    public function setPicture(\Tinkernote\SiteBundle\Entity\Picture $picture = null)
     {
-        $this->parentCategory = $parentCategory;
+        $this->picture = $picture;
 
         return $this;
+    }
+
+    /**
+     * Get picture
+     *
+     * @return \Tinkernote\SiteBundle\Entity\Picture 
+     */
+    public function getPicture()
+    {
+        return $this->picture;
     }
 }
