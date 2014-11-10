@@ -32,28 +32,32 @@ class AnnonceType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $userPostal = $this->user->getVille(); // Selection toutes les villes dans le départements de l'utilisateur - Il faut ensuite selectionner sa ville et la mettre en selected=selected
-        $builder
-            //->add('picture', new PictureType())
-            ->add('title','text',               array('attr' => array('maxlength' => 80)))
-            ->add('content','textarea',         array('required' => true, 'attr' => array('placeholder' => 'Le contenu de votre annonce')))
-            ->add('date')
+        $builder->add('date', 'date', array(
+                                            'input' => 'datetime',
+                                            'widget' => 'single_text',
+                                            'format' => 'yyyy-MM-dd',
+                                            'required' => false))
+            ->add('picture',        new PictureType(), array('required' => false))
+            ->add('picturetwo',     new PictureType(), array('required' => false))
+            ->add('picturethree',   new PictureType(), array('required' => false))
+            ->add('picturefour',    new PictureType(), array('required' => false))
+            ->add('title','text',                array('attr'   => array('maxlength' => 80)))
+            ->add('content','textarea',          array('required' => true, 'attr' => array('placeholder' => 'Le contenu de votre annonce')))
             ->add('price','text',                array('required' => false))
-            ->add('user')
-            ->add('parentCategory','entity',    array('required' => true, 'class' => 'SiteBundle:ParentCategory', 'property' => 'parent', 'empty_value' => 'La categorie'))
-            ->add('category','entity',          array('required' => true, 'class' => 'SiteBundle:Category', 'property' => 'category', 'empty_value' => 'La rubrique'))
-            ->add('postal','text',              array('required' => true, 'mapped' => false,'attr' => array('class' => 'form-control input-sm postal', 'placeholder' => 'Code postal', 'maxlength' => '5')))
+            ->add('parentCategory','entity',     array('required' => true, 'class' => 'SiteBundle:ParentCategory', 'property' => 'parent', 'empty_value' => 'La categorie'))
+            ->add('category','entity',           array('required' => true, 'class' => 'SiteBundle:Category', 'property' => 'category', 'empty_value' => 'La rubrique'))
+            ->add('postal','text',               array('required' => true, 'mapped' => false,'attr' => array('class' => 'form-control input-sm postal', 'placeholder' => 'Code postal', 'maxlength' => '5')))
             ->add('ville', 'entity', array('required'=> true,
-                'class' => 'SiteBundle:Ville',
-                'property' => 'nom',
-                'query_builder' => function(EntityRepository $er) use ($userPostal){
+                  'class' => 'SiteBundle:Ville',
+                  'property' => 'nom',
+                  'query_builder' => function(EntityRepository $er) use ($userPostal){
                     return $er->createQueryBuilder('p')->where('p.postal = :userpostal')
-                        ->setParameter('userpostal', $userPostal->getPostal());
+                              ->setParameter('userpostal', $userPostal->getPostal());
                 },
             ))
         ;
 
-        $builder->remove('date')
-                ->remove('user')
+        $builder->remove('user')
         ;
 
         $formModifier = function(FormInterface $form, $cp ){

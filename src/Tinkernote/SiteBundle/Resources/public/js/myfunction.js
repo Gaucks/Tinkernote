@@ -58,11 +58,8 @@ $(document).ready(function(){
 
 });
 
-
-
-
 /* Le secteurs pour les Pays / Regions / Departement / Ville */
-$(function () {
+/*$(function () {
     jQuery(document).ready(function() {
             console.log('Jquery is ready for City');
 
@@ -70,10 +67,10 @@ $(function () {
                 mafonctionchange('departement','region');
             }).trigger('change');
 
-           /* $(".departementclass").change(function() {
+           *//* $(".departementclass").change(function() {
                 mafonctionchange('ville','departement');
             });
-*/
+*//*
             function mafonctionchange(selecteur,selecteurparent)
             {
                 $.ajax({
@@ -97,9 +94,9 @@ $(function () {
 
                         });
 
-                       /* if (selecteur == 'departement') {
+                       *//* if (selecteur == 'departement') {
                             mafonctionchange('ville','departement');
-                        }*/
+                        }*//*
                     },
                     error: function (request) {
                         alert(request.responseText);
@@ -119,4 +116,25 @@ $(function () {
                 }
             }
     });
+});*/
+
+/* Afficher les images en prévisualisation */
+
+function readURL(input, inputrel) {
+    if (input.files && input.files[0]) {
+        var rel = '#blah'+inputrel;
+        var reader = new FileReader();
+        var hideDiv = '#pic'+inputrel;
+
+        reader.onload = function (e) {
+            $(hideDiv).hide();
+            $(rel).removeClass('hidden').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#tinkernote_sitebundle_annonce_picture_file, #tinkernote_sitebundle_annonce_picturetwo_file, #tinkernote_sitebundle_annonce_picturethree_file, #tinkernote_sitebundle_annonce_picturefour_file ").change(function(){
+    readURL(this, $(this).parent().parent().attr('rel'));
 });

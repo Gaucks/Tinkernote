@@ -30,7 +30,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/stof/doctrine-extensions-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/assetic-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/icu" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/monolog-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/symfony" />
@@ -46,7 +45,6 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/icu" />
           <root url="file://$MODULE_DIR$/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
@@ -82,7 +80,6 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/icu" />
           <root url="file://$MODULE_DIR$/vendor/willdurand/jsonp-callback-validator" />
           <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />

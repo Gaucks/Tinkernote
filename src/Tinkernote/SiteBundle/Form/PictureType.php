@@ -17,7 +17,7 @@ class PictureType extends AbstractType
         $builder
             ->remove('path')
             ->remove('date')
-            ->add('file',null,array('label' => 'Ajouter une image'))
+            ->add('file', 'file', array('required' => false, 'label' => false))
         ;
     }
     

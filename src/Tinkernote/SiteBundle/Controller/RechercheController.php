@@ -50,7 +50,7 @@ class RechercheController extends Controller {
              */
             if(($recherche == NULL) AND ($region != NULL))
             {
-                $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findBy(array('region' => $region));
+                $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findByRegion($region);
             }
 
             /**
@@ -74,7 +74,7 @@ class RechercheController extends Controller {
      * Plus d'options incluse
      * Categories / Regions
      */
-    public function recherchePrincipalAction(Request $request)
+    public function recherchePrincipalAction(Request $request, $form_search = null, $form_search_region = null)
     {
         $form = $this->createForm(new RecherchePrincipalType());
 
@@ -82,52 +82,28 @@ class RechercheController extends Controller {
 
         if($request->isMethod('POST'))
         {
-            $recherche =  $form['recherche']->getData();
-            $region    =  $form['region']->getData();
+            $recherche = $form['recherche']->getData();
+            $region    = $form['region']->getData();
+            $category  = $form['category']->getData();;
 
-            $moteur_recherche = $this->get('recherche.service');
-
-            /**
-             * Recherche est rempli
-             * Region est rempli
-             */
-            if(($recherche != NULL) AND ($region == NULL))
-            {
-                $annonces =  $moteur_recherche->findByWord($recherche);
-            }
-
-            /**
-             * Recherche est rempli
-             * Region est rempli
-             */
-            if(($recherche != NULL) AND ($region != NULL) )
-            {
-                $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findBy(array('annonces' => $annonces));
-            }
-
-            /**
-             * Recherche est NULL
-             * Region est rempli
-             */
-            if(($recherche == NULL) AND ($region != NULL))
-            {
-                $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findBy(array('region' => $region));
-            }
-
-            /**
-             * Recherche est NULL
-             * Region est NULL
-             */
             if(($recherche == NULL) AND ($region == NULL))
             {
                 return $this->redirect($this->generateUrl('annonce_homepage'));
             }
 
-            return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array('annonces' => $annonces));
+            $annonces =  $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')
+                              ->rechercher($recherche, $region, $category);
+
+            return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces'           => $annonces,
+                                                                                'form_search'        => $recherche,
+                                                                                'form_search_region' => $region
+            ));
         }
 
-
-        return $this->render('SiteBundle:Site/Template:search_annonce.html.twig', array('form' => $form->createView()));
+        return $this->render('SiteBundle:Site/Template:search_annonce.html.twig', array('form' => $form->createView(),
+                                                                        'form_search'        => $form_search,
+                                                                        'form_search_region' => $form_search_region
+                                                                        ));
     }
 
 }

@@ -69,6 +69,10 @@ textarea.form-annonce::-moz-placeholder{
     color: #70706B;
 }
 
+.box-add-annonce-options ul > li#change-publication-date{
+    display: none;
+}
+
 /* Accueil des annonces */
 .box-annonce{
     background: #fbfbfb;
@@ -179,9 +183,11 @@ textarea.form-annonce::-moz-placeholder{
     padding: 0;
 }
 .box-annonce-img img {
-    width: 100px;
+    margin: 0 auto;
+    max-width: 100px;
     max-height: 85px;
 }
+
 .box-annonce-body{
     margin-left: 120px;
     text-align: justify;
@@ -193,6 +199,13 @@ textarea.form-annonce::-moz-placeholder{
 }
 .box-annonce-body .news-time{
     margin-left: 10px;
+    text-align: right;
+}
+.box-annonce-body p{
+    text-transform: lowercase;
+}
+.box-annonce-body p:first-letter{
+    text-transform: uppercase   ;
 }
 .box-annonce-option{
 
@@ -297,6 +310,10 @@ textarea.form-annonce::-moz-placeholder{
     font-size: 12px;
     border-left: 0;
     margin-bottom: 0;
+}
+
+.form-search-annonce .input-group .motcle{
+    font-size: 16px;
 }
 
 /* Pagination */
@@ -425,6 +442,7 @@ textarea.form-annonce::-moz-placeholder{
 .box-commentaire{
     border-bottom: 1px solid #cccccc;
     padding: 10px 0;
+    min-height: 80px;
 }
 .box-commentaire:last-child{
     border-bottom: none;
@@ -519,11 +537,17 @@ textarea.form-annonce::-moz-placeholder{
     text-align: center;
     font-size: 20px;
     line-height: 20px;
-    color: #ccc
+    color: #ccc;
+    height: 70px;
 }
 
-.box-add-picture > p {
+.box-add-picture > .pic > p {
     font-size: 13px;
     margin-bottom: 0;
     font-weight: 600;
+}
+
+.box-add-picture > img{
+    height: 40px;
+    margin: 0 auto;
 }

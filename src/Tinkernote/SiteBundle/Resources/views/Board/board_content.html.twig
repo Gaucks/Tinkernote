@@ -21,15 +21,15 @@
             <div class="action-nav-normal">
                 <div class="row action-nav-row">
                     <div class="col-sm-6 action-nav-button">
-                        <a href="#" title="New Project">
-                            <span class="glyphicon glyphicon-user"></span>
-                            <span>New Project</span>
+                        <a href="{{ path('annonce_add') }}" title="Nouvelle annonce">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <span>Nouvelle annonce</span>
                         </a>
                     </div>
 
                     <div class="col-sm-6 action-nav-button">
                         <a href="#" title="Messages">
-                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <span class="glyphicon glyphicon-comment"></span>
                             <span>Messages</span>
                         </a>
                         <span class="triangle-button yellow"><span class="triangle-button-text">+3</span></span>
@@ -104,7 +104,7 @@
                         <div class="dashboard-stats small">
                             <ul class="list-inline">
                                 <li class="glyph"><span class="glyphicon glyphicon-thumbs-up"></span></li>
-                                <li class="count">10</li>
+                                <li class="count">{{ stats.encours }}</li>
                             </ul>
                             <div class="progress">
                                 <div class="progress-bar progress-blue tip" title="" data-percent="35" data-original-title="35%" style="width: 35%;"></div>
@@ -116,7 +116,7 @@
                         <div class="dashboard-stats small">
                             <ul class="list-inline">
                                 <li class="glyph"><span class="glyphicon glyphicon-heart-empty"></span></li>
-                                <li class="count">8800</li>
+                                <li class="count">{{ stats.vente_total }}</li>
                             </ul>
                             <div class="progress">
                                 <div class="progress-bar progress-green tip" title="" data-percent="15" data-original-title="15%" style="width: 15%;"></div>
@@ -153,96 +153,45 @@
                         </ul>
                     </div>
                     <div class="box-content" style="height: 400px; overflow-y: auto">
-                        <div class="box-section news witd-icons">
-                            <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
-                            <div class="news-time">
-                                <span>06</span> jan
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title">
-                                    <a href="#">Twitter Bootstrap v3.0 is coming!</a>
-                                    <span class="label label-warning">3000€</span>
+
+                        {% if last_annonces is not null %}
+                            {% for a in last_annonces %}
+                                <div class="box-section news witd-icons">
+                                    <div class="avatar">
+                                        <img src="{{ asset('uploads/annonce/'~a.picture.path) }}" alt="Avatar" class="img-responsive"/>
+                                    </div>
+                                    <div class="news-time">
+                                        <span>{{ a.date|date('d') }}</span> {{ a.date|date('M') }}
+                                    </div>
+                                    <div class="news-content">
+                                        <div class="news-title">
+                                            <a href="{{ path('annonce_show',{ 'id': a.id }) }}">{{ a.title }}</a>
+                                            <a href="{{ path('annonce_show',{ 'id': a.id }) }}" class="note">#{{ a.user.username }}</a>
+                                            <span class="label label-warning pull-right">{{ a.price }}€</span>
+                                        </div>
+                                        <div class="news-text">
+                                            {{ a.content|truncate(150) }}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="news-text">
-                                    Witd 2.2.2 out tde door, our attention has shifted almost entirely to tde next major update to tde project ...
+                            {% endfor %}
+                        {% else %}
+                            <div class="box-section news witd-icons">
+                                <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
+                                <div class="news-time">
+                                    <span>06</span> jan
                                 </div>
-                            </div>
-                        </div>
-                        <!-- News supplémantaire pour meubler -->
-                        <div class="box-section news with-icons">
-                            <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
-                            <div class="news-time">
-                                <span>22</span> Dec
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title"><a href="#">Twitter Bootstrap v3.0 is coming!</a>
-                                 <span class="label label-warning">3000€</span>
-                                </div>
-                                <div class="news-text">
-                                    Witd 2.2.2 out tde door, our attention has shifted almost entirely to tde next major update to tde project ...
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-section news witdhicons">
-                            <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
-                            <div class="news-time">
-                                <span>06</span> jan
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title">
-                                    <a href="#">Twitter Bootstrap v3.0 is coming!</a>
-                                    <span class="label label-warning">3000€</span>
-                                </div>
-                                <div class="news-text">
-                                    Witd 2.2.2 out tde door, our attention has shifted almost entirely to tde next major update to tde project ...
+                                <div class="news-content">
+                                    <div class="news-title">
+                                        <a href="#">Annonce par défault</a>
+                                        <span class="label label-warning">3000€</span>
+                                    </div>
+                                    <div class="news-text">
+                                        Faut mettre une annonce celle ci est par défaut...
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="box-section news with-icons">
-                            <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
-                            <div class="news-time">
-                                <span>11</span> Fev
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title">
-                                    <a href="#">Twitter Bootstrap v3.0 is coming!</a>
-                                    <span class="label label-warning">3000€</span>
-                                </div>
-                                <div class="news-text">
-                                    Witd 2.2.2 out tde door, our attention has shifted almost entirely to tde next major update to tde project ...
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-section news with-icons">
-                            <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
-                            <div class="news-time">
-                                <span>06</span> jan
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title">
-                                    <a href="#">Twitter Bootstrap v3.0 is coming!</a>
-                                    <span class="label label-warning">3000€</span>
-                                </div>
-                                <div class="news-text">
-                                    Witd 2.2.2 out tde door, our attention has shifted almost entirely to tde next major update to tde project ...
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-section news with-icons">
-                            <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
-                            <div class="news-time">
-                                <span>06</span> jan
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title">
-                                    <a href="#">Twitter Bootstrap v3.0 is coming!</a>
-                                    <span class="label label-warning">3000€</span>
-                                </div>
-                                <div class="news-text">
-                                    Witd 2.2.2 out tde door, our attention has shifted almost entirely to tde next major update to tde project ...
-                                </div>
-                            </div>
-                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -258,33 +207,23 @@
 
                 <div class="box-section box-annonce-activity">
                         <ul class="chat-box timeline">
+
+                            {% for a in last_activity %}
                             <li class="arrow-box-left gray">
-                                <div class="avatar"><img class="avatar-small img-responsive" src="{{ asset('bundles/site/images/maison.jpg') }}"></div>
+                                <div class="avatar"> {% if a.annonce.picture is not empty %}
+                                        <img src="{{ asset('uploads/annonce/'~a.annonce.picture.path) }}" alt="{{ a.annonce.title }}" class="avatar-small img-responsive"/>
+                                    {% else %}
+                                        <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="{{ a.annonce.title }}" class="avatar-small img-responsive"/>
+                                    {% endif %}</div>
                                 <div class="info">
-                      <span class="name">
-                        <span class="label label-blue">VUE</span><strong class="indent">Titre de l'annonce</strong>à été lu - <strong class="striketdrough">Logement</strong>
-                      </span>
-                                    <span class="time"><i class="icon-time"></i> Il y a 1 heure</span>
+                                  <span class="name">
+                                    <span class="label label-blue">{{ a.activityType.nom }}</span><strong class="indent">
+                                          <a href="{{ path('annonce_show', {'id': a.annonce.id }) }}">{{ a.annonce.title|truncate(27) }}</a></strong>{{ a.content }} - <strong class="striketdrough">{{ a.annonce.category.category }}</strong>
+                                  </span>
+                                    <span class="time"><i class="icon-time"></i> {{ a.date|date('d M y') }}</span>
                                 </div>
                             </li>
-                            <li class="arrow-box-left gray">
-                                <div class="avatar"><img class="avatar-small img-responsive" src="{{ asset('bundles/site/images/rampe.jpg') }}"></div>
-                                <div class="info">
-                      <span class="name">
-                        <span class="label label-blue">VUE</span><strong class="indent">Titre de l'annonce</strong>à été lu - <strong class="striketdrough">Informatique</strong>
-                      </span>
-                                    <span class="time"><i class="icon-time"></i> 6 minutes ago</span>
-                                </div>
-                            </li>
-                            <li class="arrow-box-left gray">
-                                <div class="avatar"><img class="avatar-small img-responsive" src="{{ asset('bundles/site/images/apple_macbook_pro_retina_mc976na.jpg') }}"></div>
-                                <div class="info">
-                      <span class="name">
-                              <span class="label label-blue">VUE</span><strong class="indent">Titre de l'annonce</strong>à été lu - <strong class="striketdrough">Habillement enfant</strong>
-                      </span>
-                                    <span class="time"><i class="icon-time"></i> 6 minutes ago</span>
-                                </div>
-                            </li>
+                            {% endfor %}
                             <li class="arrow-box-left gray">
                                 <div class="avatar"><img class="avatar-small img-responsive" src="{{ asset('bundles/site/images/Avatars/world-burn.jpg') }}"></div>
                                 <div class="info">
@@ -357,96 +296,24 @@
                         <th>Catégorie</th>
                      </thead>
                     <tbody>
+                    {% for a in last_annonces %}
                     <tr>
-                        <td>[#12389]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
+                        <td>[#{{ a.id }}]</td>
+
+                        <td>
+                            {% if a.picture is not empty %}
+                            <img src="{{ asset('uplaods/annonce/'~a.picture.path ) }}" alt="img" class="img-responsive"/>
+                            {% else %}
+                                <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img" class="img-responsive"/>
+                            {% endif %}
+                        </td>
+                        <td><a href="#">{{ a.title }}</a></td>
+                        <td>{{ a.date|date('d/m/Y') }}</td>
+                        <td><span class="label label-warning">{{ a.price }}€</span></td>
                         <td>17 fois</td>
-                        <td>Automobile</td>
+                        <td>{{ a.category.category }}</td>
                     </tr>
-                    <tr>
-                        <td>[#2787]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Habillement</td>
-                    </tr>
-                    <tr>
-                        <td>[#12389]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Habillement</td>
-                    </tr>
-                    <tr>
-                        <td>[#1]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Locations</td>
-                    </tr>
-                    <tr>
-                        <td>[#12389]</td>
-                        <td><img src="{{ asset('bundles/site/images/apple_macbook_pro_retina_mc976na.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Jeux Video/Console</td>
-                    </tr>
-                    <tr>
-                        <td>[#2787]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement a voir absolument</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Materiel agriculture</td>
-                    </tr>
-                    <tr>
-                        <td>[#12389]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Habillement</td>
-                    </tr>
-                    <tr>
-                        <td>[#1]</td>
-                        <td><img src="{{ asset('bundles/site/images/maison.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Habillement</td>
-                    </tr>
-                    <tr>
-                        <td>[#12389]</td>
-                        <td><img src="{{ asset('bundles/site/images/rampe.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Habillement</td>
-                    </tr>
-                    <tr>
-                        <td>[#1]</td>
-                        <td><img src="{{ asset('bundles/site/images/maison.jpg') }}" alt="img" class="img-responsive"/></td>
-                        <td><a href="#">Appartement pas cher dans le 14eme arrondissement</a></td>
-                        <td>29/06/14</td>
-                        <td><span class="label label-warning">190 000€</span></td>
-                        <td>17 fois</td>
-                        <td>Habillement</td>
-                    </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
                 <div class="text-center">

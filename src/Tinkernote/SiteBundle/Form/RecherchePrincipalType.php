@@ -23,6 +23,12 @@ class RecherchePrincipalType extends AbstractType
                                                 'property'      => 'nom',
                                                 'empty_value'   => 'Toute la france',
                                                 'attr' => array('class' => 'form-control input-sm')))
+                ->add('category','entity', array('required'      => false,
+                                                 'class'         => 'SiteBundle:Category',
+                                                 'property'      => 'category',
+                                                 'empty_value'   => 'Toutes catégories',
+                                                 'group_by' 	=> 'parentcategory.parent',
+                                                 'attr'          => array('class' => 'form-control input-sm')))
         ;
     }
 

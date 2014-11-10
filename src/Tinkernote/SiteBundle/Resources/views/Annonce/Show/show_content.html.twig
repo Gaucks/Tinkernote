@@ -30,16 +30,14 @@
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <i class="fa fa-bullhorn"></i> {{ annonce.title }} </span>
+                    <span class="breadcrumb-label"> <i class="fa fa-bullhorn"></i> <strong>{{ annonce.title }}</strong>  </span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
             </div>
         </div>
 
     </div> <!-- row breadcrumb -->
-
     <div class="row show-annonce-box" role="Annonce">
-
         <div class="col-xs-5">
             <div class="show-annonce-img">
                 {% if annonce.picture is not empty %}
@@ -49,10 +47,9 @@
                 {% endif %}
             </div>
         </div>
-
         <div class="col-xs-7">
             <div class="show-annonce">
-                <div class="news-time"><span>16</span>Juin</div>
+                <div class="news-time"><span>{{ annonce.date|date('d') }}</span>{{ annonce.date|date('M') }}</div>
                 <div class="show-annonce-title">
                     <h3> {{ annonce.title }}</h3>
                     <div class="show-annonce-option">
@@ -82,14 +79,23 @@
                     </ul>
                 </div>
 
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control input-sm" placeholder="Une question ou un commentaire ?"/>
-                        <span class="input-group-btn">
-                            <button class="btn btn-blue input-sm" type="submit">Envoyer!</button>
-                        </span>
-                     </div>
-                </div> <!-- Module du commentaire -->
+                <form action="{{ path('annonce_show', {'id': annonce.id }) }}" method="post">
+                    <div class="form-group">
+                        <div class="input-group">
+
+                            {{ form_errors(form_comment) }}
+
+                            {{ form_widget(form_comment.content) }}
+
+                            <span class="input-group-btn">
+                                {{ form_widget(form_comment.save) }}
+                            </span>
+
+                            {{ form_rest(form_comment) }}
+
+                         </div>
+                    </div> <!-- Module du commentaire -->
+                </form>
 
             </div> <!-- show annonce -->
         </div>
@@ -97,62 +103,54 @@
     <div class="row" role="commentaires">
         <h3>Commentaires & Suggestions</h3>
         <div class="col-xs-5"></div>
-
         <div class="col-xs-7">
             <div class="box">
                 <div class="box-header">
-                    <div class="title"><span class="glyphicon glyphicon-send"></span> Commentaires</div>
-                    <span class="label label-primary pull-right">2</span>
+                    <div class="title"><span class="glyphicon glyphicon-comment"></span> Commentaire</div>
+                    <span class="label label-primary pull-right">{{ comments|length }}</span>
                 </div>
                 <div class="box-section">
+
+                    {% if comments %}
+                    {% for c in comments %}
                     <!-- Commentaire numéro 1 -->
                     <div class="box-commentaire">
                         <div class="news-time">
-                            <span>16</span>Juin
+                            <span>{{ c.date|date('d') }}</span>{{ c.date|date('M') }}
                         </div>
                         <div class="box-comment-avatar">
-                            <img src="{{ asset('bundles/site/images/Avatars/user-3.jpg') }}" alt="Avatar" class="img-responsive"/>
+                            {% if c.user.avatar is not empty %}
+                                <img src="{{ asset('uploads/avatar/'~c.user.avatar.path) }}" alt="img" class="img-responsive"/>
+                            {% else %}
+                                <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img" class="img-responsive"/>
+                            {% endif %}
                         </div>
                         <div class="box-comment-content">
-                            <h5><a href="#">John Doe</a></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam culpa delectus fuga hic illo in,
-                                ipsam nisi officiis perferendis quidem repellendus soluta, velit vero voluptate voluptates? Porro, possimus.</p>
+                            <h5><a href="#">{{ c.user.username }}</a></h5>
+                            <p>{{ c.content }}</p>
                         </div>
                     </div>
-                    <!-- Fin du commentaire numéro 1 -->
-
-                    <!-- Commentaire numéro 2 -->
-
-                    <div class="box-commentaire">
-                        <div class="news-time">
-                            <span>16</span>Juin
-                        </div>
-                        <div class="box-comment-avatar">
-                            <img src="{{ asset('bundles/site/images/Avatars/user-6.jpg') }}" alt="Avatar" class="img-responsive"/>
-                        </div>
-                        <div class="box-comment-content">
-                            <h5><a href="#">John Doe</a></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam culpa delectus fuga hic illo in,
-                                ipsam nisi officiis perferendis quidem repellendus soluta, velit vero voluptate voluptates? Porro, possimus.</p>
-                        </div>
-                    </div>
-
-                    <!-- Fin du Commentaire numéro 2 -->
+                    {% endfor %}
+                    {% else %}
+                        <p>Il n'y a aucun commentaire pour le moment.</p>
+                    {% endif %}
 
                 </div>
                 <!-- Module d'ajout de commentaires -->
-                <div class="form-group commentaire-form">
-                    <div class="input-group">
-                        <input class="form-control form-comment input-sm" type="text" placeholder="Votre commentaire sur cette annonce"/>
-                        <span class="input-group-btn">
-                                <button class="btn btn-blue input-sm" type="button">Go!</button>
-                              </span>
-                    </div>
-
-                </div>
+                <form action="{{ path('annonce_show', {'id': annonce.id }) }}" method="post">
+                    <div class="form-group commentaire-form">
+                        <div class="input-group">
+                            {{ form_errors(form_comment_second) }}
+                            {{ form_widget(form_comment_second.content,{'attr': {'class': 'form-control input-sm form-comment'}}) }}
+                            <span class="input-group-btn">
+                                {{ form_widget(form_comment_second.save) }}
+                            </span>
+                            {{ form_rest(form_comment_second) }}
+                        </div>
+                    </div> <!-- Module du commentaire -->
+                </form>
             </div> <!-- Fin du Box-section -->
         </div> <!-- Fin du Box -->
         <button class="btn btn-danger btn-sm pull-right">Signaler cette annonce</button>
     </div>
 </div><!-- Container -->
-

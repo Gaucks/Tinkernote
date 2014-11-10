@@ -150,7 +150,7 @@
     <div class="row">
             <ul class="list-inline france-nav">
                 {% for r in regions %}
-                <li><a href="#">{{ r.nom }}</a></li>
+                <li><a href="{{ path('region_annonce', {'region': r.slug }) }}">{{ r.nom }}</a></li>
                 {% endfor %}
             </ul>
         </div>

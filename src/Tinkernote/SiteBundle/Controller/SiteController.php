@@ -2,6 +2,7 @@
 
 namespace Tinkernote\SiteBundle\Controller;
 
+use FOS\UserBundle\Model\UserInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -13,6 +14,12 @@ class SiteController extends Controller
 {
     public function indexAction()
     {
+
+        $user = $this->getUser();
+        if (is_object($user) || $user instanceof UserInterface) {
+            $response = $this->redirect($this->generateUrl('bloc_homepage'));
+            return $response;
+        }
         /**
          * Renvoi la liste des régions via le service regionSelecteur
          * Utiliser pour le selecteurs et pour le footer

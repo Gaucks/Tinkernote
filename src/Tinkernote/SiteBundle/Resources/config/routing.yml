@@ -6,6 +6,10 @@ bloc_homepage:
     path:     /board
     defaults: { _controller: SiteBundle:Board:index }
 
+comment_add:
+    path:      /AddComment
+    defaults:  { _controller: SiteBundle:Comment:addComment }
+
 annonce_homepage:
     path:     /annonce
     defaults: { _controller: SiteBundle:Annonce:index }
@@ -50,6 +54,10 @@ ville_annonce:
     path:    /ville/{ville}
     defaults: { _controller: SiteBundle:Annonce:ville }
 
+region_annonce:
+    path:    /region/{region}
+    defaults: { _controller: SiteBundle:Annonce:region }
+
 upload_file_route:
     path: /upload-file
-    defaults: { _controller: SiteBundle:Picture:plupload}
+    defaults: { _controller: SiteBundle:Picture:plupload }

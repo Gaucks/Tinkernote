@@ -39,8 +39,38 @@ class Annonce
     /**
      *
      * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Picture", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     * @Assert\Valid()
      */
     private $picture;
+
+    // Lien vers l'image en relation
+    /**
+     *
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Picture", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     * @Assert\Valid()
+     *
+     */
+    private $picturetwo;
+
+    // Lien vers l'image en relation
+    /**
+     *
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Picture", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     * @Assert\Valid()
+     */
+    private $picturethree;
+
+    // Lien vers l'image en relation
+    /**
+     *
+     * @ORM\ManyToOne(targetEntity="Tinkernote\SiteBundle\Entity\Picture", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     * @Assert\Valid()
+     */
+    private $picturefour;
 
     /**
      * @var integer
@@ -56,7 +86,7 @@ class Annonce
      *
      * @ORM\Column(name="title", type="string", length=80)
      * @Assert\Regex(
-     *     pattern="/^[a-zA-Z_0-9]+$/",
+     *     pattern="/^[a-zA-Z_0-9]/",
      *     message="Votre titre ne peut contenir que des chiffres et lettres"
      * )
      */
@@ -307,5 +337,74 @@ class Annonce
     public function getPicture()
     {
         return $this->picture;
+    }
+
+    /**
+     * Set picturetwo
+     *
+     * @param \Tinkernote\SiteBundle\Entity\Picture $picturetwo
+     * @return Annonce
+     */
+    public function setPicturetwo(\Tinkernote\SiteBundle\Entity\Picture $picturetwo = null)
+    {
+        $this->picturetwo = $picturetwo;
+
+        return $this;
+    }
+
+    /**
+     * Get picturetwo
+     *
+     * @return \Tinkernote\SiteBundle\Entity\Picture 
+     */
+    public function getPicturetwo()
+    {
+        return $this->picturetwo;
+    }
+
+    /**
+     * Set picturethree
+     *
+     * @param \Tinkernote\SiteBundle\Entity\Picture $picturethree
+     * @return Annonce
+     */
+    public function setPicturethree(\Tinkernote\SiteBundle\Entity\Picture $picturethree = null)
+    {
+        $this->picturethree = $picturethree;
+
+        return $this;
+    }
+
+    /**
+     * Get picturethree
+     *
+     * @return \Tinkernote\SiteBundle\Entity\Picture 
+     */
+    public function getPicturethree()
+    {
+        return $this->picturethree;
+    }
+
+    /**
+     * Set picturefour
+     *
+     * @param \Tinkernote\SiteBundle\Entity\Picture $picturefour
+     * @return Annonce
+     */
+    public function setPicturefour(\Tinkernote\SiteBundle\Entity\Picture $picturefour = null)
+    {
+        $this->picturefour = $picturefour;
+
+        return $this;
+    }
+
+    /**
+     * Get picturefour
+     *
+     * @return \Tinkernote\SiteBundle\Entity\Picture 
+     */
+    public function getPicturefour()
+    {
+        return $this->picturefour;
     }
 }

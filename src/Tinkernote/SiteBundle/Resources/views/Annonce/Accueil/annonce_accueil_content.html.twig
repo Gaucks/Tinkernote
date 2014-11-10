@@ -22,16 +22,27 @@
                 </div>
 
                 <div class="breadcrumb-button">
-                      <span class="breadcrumb-label"> <i class="fa fa-folder-open"></i> Annonces </span>
+                      <span class="breadcrumb-label"> <i class="fa fa-folder-open"></i> <a href="{{ path('annonce_homepage') }}" class="breadcrumb-link-inherit">Annonces</a> </span>
                       <span class="breadcrumb-arrow"><span></span></span>
                 </div>
 
-                {% if recherche is defined %}
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <i class="fa fa-cloud"></i> {{ recherche }} </span>
+                    {% if form_search_region is not null %}
+                    <span class="breadcrumb-label"> <i class="fa fa-cloud "></i> <a href="{{ path('region_annonce', {'region': form_search_region.slug }) }}" class="breadcrumb-link-inherit">{{ form_search_region.nom }}</a></span>
+                    {% else %}
+                    <span class="breadcrumb-label"> <i class="fa fa-search"></i> <a href="{{ path('region_annonce', {'region': 1 }) }}" class="breadcrumb-link-inherit">Toute la france</a></span>
+                    {% endif %}
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+
+                {% if form_search is not null %}
+                <div class="breadcrumb-button">
+                    <span class="breadcrumb-label"> <i class="fa fa-search"></i> <a href="{{ path('recherche_annonce') }}" class="breadcrumb-link-inherit">{{ form_search }} </a></span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
                 {% endif %}
+
+
             </div>
         </div>
     </div> <!-- row breadcrumb -->
@@ -67,13 +78,14 @@
 
                     <div class="box-annonce-section">
                         <div class="box-annonce-img">
-                            <img src="{{ asset('bundles/site/images/temp/'~ a.picture) }}" alt="Image" class="img-responsive"/>
+                            {% if a.picture != NULL %}
+                                <img src="{{ asset('uploads/annonce/'~a.picture.path) }}" alt="{{ a.title }}" class="img-responsive"/>
+                            {% else %}
+                                <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="{{ a.title }}" class="img-responsive"/>
+                            {% endif %}
                         </div>
                         <div class="box-annonce-body">
-                            <div class="news-time">
-                                <span>06</span> jan
-                            </div>
-
+                            <div class="news-time"><span>{{ a.date|date('d') }}</span>{{ a.date|date('M') }}</div>
                             <a href="#">
                                     <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
                                     {{ a.user.username }}
@@ -85,7 +97,7 @@
                                 <span class="glyphicon glyphicon-star-empty"></span>
                                 <span class="glyphicon glyphicon-star-empty"></span>
                             </div>
-                            <p>{{ a.content|truncate(130) }}</p>
+                            <p>{{ a.content|truncate(120) }}</p>
                         </div>
                     </div>
                     <div class="box-annonce-footer">

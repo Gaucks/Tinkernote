@@ -6,9 +6,9 @@ services:
         class: Tinkernote\SiteBundle\Services\Localisation
         arguments: [@doctrine]
 
-    recherche.service:
-            class: Tinkernote\SiteBundle\Services\Recherche
-            arguments: [@doctrine]
+    activity.service:
+            class: Tinkernote\SiteBundle\Services\Activity
+            arguments: [@doctrine, @security.context]
 
     tinkernote.form.type.tel:
         class: Tinkernote\SiteBundle\Form\Type\TelType

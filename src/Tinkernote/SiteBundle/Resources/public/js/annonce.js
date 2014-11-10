@@ -17,6 +17,10 @@ $(document).ready(function(){
         }
     });
 
+    $('#change-publication-date-button').on('click', function(){
+        $('#change-publication-date').fadeIn();
+    });
+
     /* l'ajout d'annonce */
 
     $('#show_localisation').on('click', function(){
@@ -33,6 +37,11 @@ $(function (){
         $(".parentcategoryclass").change(function() {
             changecategory('category','parentcategory');
         }).trigger('change');
+
+        // Une fois que le choix est fait on réinitialise l'attribut size
+        $('.categoryclass').on('change', function(){
+            $(this).attr({'size': '1'}).addClass('form-control input-sm');
+        });
 
         function changecategory(selecteur,selecteurparent)
         {
@@ -60,9 +69,7 @@ $(function (){
                     //$('.' + selecteur + 'class').append('<option value="" selected="selected">Votre choix</option>');
                     $.each(reponse, function(index, element) {
                         $('.' + selecteur + 'class').append('<option value="'+element.id+'"">'+ element.category +'</option>');
-
                     });
-
                 }//,
                 //error: function (request) {
                 //  alert(request.responseText);
@@ -71,4 +78,23 @@ $(function (){
         }
 
     });
+});
+
+/* Method ajax pour ajouter un commentaire à un annonce */
+$(document).ready(function(){
+    $('#addComment').on('click', function () {
+        $.ajax({
+            url:   Routing.generate('comment_add'),
+            type: 'POST',
+            data:
+            {
+              id  : $("#addComment").attr('rel').val(),
+              form: $("#tinkernote_sitebundle_comment_content").val()
+            },
+            dataType: 'json',
+            success: function(reponse) {
+
+            }
+        });
+    })
 });

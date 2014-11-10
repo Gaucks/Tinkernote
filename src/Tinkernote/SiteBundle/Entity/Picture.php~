@@ -35,14 +35,19 @@ class Picture {
      */
     private $path;
 
-    /**
-     * @Assert\File(maxSize="6000000")
-     */
-    public $file;
+    public $files; // the array which will contain the array of Uploadedfiles
+
+    public function getFiles() {
+        return $this->files;
+    }
+    public function setFiles(array $files) {
+        $this->files = $files;
+    }
 
     public function __construct()
     {
         $this->date = new \DateTime();
+        $files = array();
     }
 
     /**
@@ -51,9 +56,9 @@ class Picture {
      */
     public function preUpload()
     {
-        if (null !== $this->file) {
+        if (null !== $this->files) {
             // faites ce que vous voulez pour générer un nom unique
-            $this->path = sha1(uniqid(mt_rand(), true)).'.'.$this->file->guessExtension();
+            $this->path = sha1(uniqid(mt_rand(), true)).'.'.$this->files->guessExtension();
         }
     }
 
@@ -63,7 +68,7 @@ class Picture {
      */
     public function upload()
     {
-        if (null === $this->file) {
+        if (null === $this->files) {
             return;
         }
 
@@ -71,9 +76,9 @@ class Picture {
         // va automatiquement être lancée par la méthode move(). Cela va empêcher
         // proprement l'entité d'être persistée dans la base de données si
         // erreur il y a
-        $this->file->move($this->getUploadRootDir(), $this->path);
+        $this->files->move($this->getUploadRootDir(), $this->path);
 
-        unset($this->file);
+        unset($this->files);
     }
 
     /**
@@ -81,8 +86,8 @@ class Picture {
      */
     public function removeUpload()
     {
-        if ($file = $this->getAbsolutePath()) {
-            unlink($file);
+        if ($files = $this->getAbsolutePath()) {
+            unlink($files);
         }
     }
 

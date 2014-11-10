@@ -6,13 +6,7 @@
             <div class="col-xs-2">
                 <div class="form-group form-search-annonce pull-left">
                     <div class="input-group">
-                        <select name="#" id="" class="form-control input-sm">
-                            <option value="">Toutes catégories</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
+                        {{ form_widget(form.category)}}
                     </div>
                 </div> <!-- form group -->
             </div>
@@ -21,7 +15,7 @@
                 <div class="form-group form-search-annonce">
                     <div class="input-group">
 
-                        {{ form_widget(form.recherche)}}
+                        {{ form_widget(form.recherche,{'attr' : {'class': 'form-control input-sm motcle','value': form_search} })}}
 
                         <span class="input-group-btn">
                             <button class="btn btn-blue input-sm" type="submit">Go!</button>

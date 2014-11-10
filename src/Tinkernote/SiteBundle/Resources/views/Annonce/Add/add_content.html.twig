@@ -57,8 +57,8 @@
 
                     <!-- Sous Catégorie de l'annonce -->
                     {% if form_errors(form.category)|length > 0 %}{% set errors_category = 'has-error' %}{% else %} {% set errors_category = NULL %}{% endif %}
-                    <div class="has-error">{{ form_errors(form.category) }}</div>
                     <div class="form-group {{ errors_category }} categoryclass-form-group hidden">
+                        <div class="has-error">{{ form_errors(form.category) }}</div>
                         <div class="input-group">
                             <div class="input-group-addon input-sm">@</div>
                             {{ form_widget(form.category, {'attr' : {'class'   : 'form-control categoryclass' ~errors_category ,
@@ -72,8 +72,11 @@
                     </div>
 
                     {% if form_errors(form.price)|length > 0 %}{% set errors_price = 'has-error' %}{% else %} {% set errors_price = NULL %}{% endif %}
-                    <div class="has-error">{{ form_errors(form.price) }}</div>
-                    <p class="note pull-right note-localisation"><i class="fa fa-info-circle"></i> Une annonce avec un tarif est plus consultée que sans. </p>
+                    <div class="pull-right">
+                        <div class="row has-error">{{ form_errors(form.price) }}</div>
+
+                        <p class="note note-localisation"><i class="fa fa-info-circle"></i> Une annonce avec un tarif est plus consultée que sans. </p>
+                    </div>
                     <div class="form-group form-inline {{ errors_price }}">
                         <div class="input-group">
                             <div class="input-group-addon input-sm iga-fosUser-register"><i class="fa fa-home"></i></div>
@@ -84,28 +87,42 @@
                         </div>
                     </div>
 
+                    <!-- Partie sur les images -->
+
                     <div class="row space-box-top">
                             <div class="col-xs-3 text-center">
-                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 1</p></div>
+                                <div class="box-add-picture"><img src="#" id="blah1" alt="" class="img-responsive hidden"/><div class="pic" id="pic1"><i class="fa fa-camera-retro"></i><p>Photo 1</p></div></div>
                                 <br/>
-                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                                <span class="file-input btn btn-block btn-file btn-success">
+                                Ajouter&hellip; {{ form_widget(form.picture,{'attr':{'rel':'1'} }) }}
+                            </span>
                             </div>
                             <div class="col-xs-3">
-                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 2</p></div>
+                                <div class="box-add-picture"><img src="#" id="blah2" alt="" class="img-responsive hidden"/><div class="pic" id="pic2"><i class="fa fa-camera-retro"></i><p>Photo 2</p></div></div>
                                 <br/>
-                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                                 <span class="file-input btn btn-block btn-file btn-success">
+                                Ajouter&hellip; {{ form_widget(form.picturetwo,{'attr':{'rel':'2'} }) }}
+                            </span>
+
                             </div>
                             <div class="col-xs-3">
-                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 3</p></div>
+                                <div class="box-add-picture"><img src="#" id="blah3" alt="" class="img-responsive hidden"/><div class="pic" id="pic3"><i class="fa fa-camera-retro"></i><p>Photo 3</p></div></div>
                                 <br/>
-                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                                <span class="file-input btn btn-block btn-file btn-success">
+                                Ajouter&hellip; {{ form_widget(form.picturethree,{'attr':{'rel':'3'} }) }}
+                            </span>
                             </div>
                             <div class="col-xs-3">
-                                <div class="box-add-picture"><i class="fa fa-camera-retro"></i><p>Photo 4</p></div>
+                                <div class="box-add-picture"><img src="#" id="blah4" alt="" class="img-responsive hidden"/><div class="pic" id="pic4"><i class="fa fa-camera-retro"></i><p>Photo 4</p></div></div>
                                 <br/>
-                                <button type="button" class="btn btn-success btn-block">Ajouter</button>
+                                <span class="file-input btn btn-block btn-file btn-success">
+                                Ajouter&hellip; {{ form_widget(form.picturefour,{'attr':{'rel':'4'} }) }}
+                            </span>
                             </div>
                     </div>
+
+                    <!-- Partie sur les images -->
+
 
                 </div>
                 <!-- Bloc de droite -->
@@ -117,8 +134,7 @@
                     <div class="has-error">{{ form_errors(form.content) }}</div>
                     <div class="form-group {{ errors_content }}">
                         <div class="input-group">
-                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span>
-                            </div>
+                            <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-align-center"></span></div>
                             {{ form_widget(form.content,{'attr': {'class': 'form-control form-annonce  input-sm ' ~errors_content }}) }}
                             {% if(errors_content) %}
                                 <span class="glyphicon glyphicon-remove form-control-feedback"></span>
@@ -135,9 +151,24 @@
                             </li>
                             <li>
                                 <strong> Date de publication : </strong>Des maintenant
-                                <strong class="pull-right"><i class="fa fa-edit"></i><a href="#"> Modifier</a></strong>
+                                <strong class="pull-right"><i class="fa fa-edit"></i><a href="#" id="change-publication-date-button"> Modifier</a></strong>
                             </li>
-                            <li></li>
+                            <li id="change-publication-date">
+                                <br/>
+                                {% if form_errors(form.date)|length > 0 %}{% set errors_date = 'has-error' %}{% else %} {% set errors_date = NULL %}{% endif %}
+                                <div class="has-error">{{ form_errors(form.date) }}</div>
+                                <p class="note pull-right note-localisation"><i class="fa fa-info-circle"></i> Le format de la date est : 01/12/2014 </p>
+                                <div class="form-inline form-group {{ errors_date }}">
+                                    <div class="input-group">
+                                        <div class="input-group-addon input-sm"><span class="glyphicon glyphicon-time"></span></div>
+                                        {{ form_widget(form.date,{'attr': {'class': 'form-control input-sm ' ~errors_date }}) }}
+                                        {% if(errors_date) %}
+                                            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <p class="note"><i class="fa fa-legal"></i> Votre annonce sera donc exposée en ligne à  partir de cette date. </p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -189,6 +220,7 @@
             </div>
         </div>
     </div>
+
 
     <div id="formulaire_extended">
         <div class="row" role="formulaire extended">

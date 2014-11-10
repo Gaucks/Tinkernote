@@ -1,6 +1,6 @@
 {% extends ('SiteBundle:Annonce:layout.html.twig') %}
 
 {% block body %}
-    {% render(controller('SiteBundle:Recherche:recherchePrincipal')) %}
+    {% render(controller('SiteBundle:Recherche:recherchePrincipal', {'form_search' : form_search, 'form_search_region' : form_search_region  })) %}
     {% include('SiteBundle:Annonce/Accueil:annonce_accueil_content.html.twig') %}
 {% endblock %}

@@ -22,7 +22,7 @@ class AnnonceRepository extends EntityRepository
     public function recherche($recherche = null, $region = null){
 
         $qb = $this->createQueryBuilder('a')
-                    ->select('a')
+                    ->select('a, u')
                     ->where('a.title like :recherche')
                     ->Orwhere('a.region = :region')
                     ->setParameter('region', $region)
@@ -31,13 +31,102 @@ class AnnonceRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
-    public function findByWords($words)
+    public function rechercher($recherche, $region, $category)
     {
-        $qb = $this->createQueryBuilder('a')
-            ->select('a')
-            ->where('a.title like :words')
-            ->Orwhere('a.content like :words')
-            ->setParameter('words', '%'.$words.'%');
+        if($recherche != NULL )
+        {
+            if(($region != null) AND ($category != null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a','v','d','r','u','c')
+                    ->leftJoin('a.ville', 'v')
+                    ->leftJoin('v.departement', 'd')
+                    ->leftJoin('d.region', 'r')
+                    ->leftJoin('a.user', 'u')
+                    ->leftJoin('a.category','c')
+                    ->having('r.id = :region') // Pour avoir la région selectionner en parametre principal
+                    ->andHaving('c.id = :category') // Pour avoir la categorie selectionner en parametre principal
+                    ->Where('a.title like :recherche')
+                    ->orWhere('u.username like :recherche')
+                    ->orWhere('a.title = :recherche')
+                    ->setParameters(array('recherche' => '%'.$recherche.'%', 'region' => $region,'category' => $category));
+            }
+
+            if(($region != null) AND ($category == null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a','v','d','r','u')
+                    ->leftJoin('a.ville', 'v')
+                    ->leftJoin('v.departement', 'd')
+                    ->leftJoin('d.region', 'r')
+                    ->leftJoin('a.user', 'u')
+                    ->having('r.id = :region') // Pour avoir la région selectionner en parametre principal
+                    ->Where('a.title like :recherche')
+                    ->orWhere('u.username like :recherche')
+                    ->orWhere('a.title = :recherche')
+                    ->setParameters(array('recherche' => '%'.$recherche.'%', 'region' => $region));
+            }
+
+            if(($region == null) AND ($category == null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a, u')
+                    ->leftJoin('a.user', 'u')
+                    ->Where('a.title like :recherche')
+                    ->orWhere('u.username like :recherche')
+                    ->orWhere('a.content like :recherche')
+                    ->setParameters(array('recherche' => '%'.$recherche.'%'));
+            }
+
+            if(($region == null) AND ($category != null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a','c')
+                    ->leftJoin('a.category','c')
+                    ->having('c.id = :category')
+                    ->andWhere('a.title like :recherche')
+                    ->orWhere('a.content like :recherche')
+                    ->setParameters(array('recherche' => '%'.$recherche.'%', 'category' => $category));
+            }
+
+        }
+        else
+        {
+            if(($region != null) AND ($category != null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a','v','d','r','c')
+                    ->leftJoin('a.ville', 'v')
+                    ->leftJoin('v.departement', 'd')
+                    ->leftJoin('d.region', 'r')
+                    ->leftJoin('a.category','c')
+                    ->having('r.id = :region') // Pour avoir la région selectionner en parametre principal
+                    ->andHaving('c.id = :category') // Pour avoir la categorie selectionner en parametre principal
+                    ->setParameters(array('region' => $region,'category' => $category));
+            }
+
+            if(($region != null) AND ($category == null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a','v','d','r')
+                    ->leftJoin('a.ville', 'v')
+                    ->leftJoin('v.departement', 'd')
+                    ->leftJoin('d.region', 'r')
+                    ->having('r.id = :region') // Pour avoir la région selectionner en parametre principal
+                    ->setParameters(array('region' => $region));
+            }
+
+            if(($region == null) AND ($category != null))
+            {
+                $qb = $this->createQueryBuilder('a')
+                    ->select( 'a','c')
+                    ->leftJoin('a.category','c')
+                    ->having('c.id = :region')
+                    ->setParameter('category', $category);
+            }
+        }
+
+        $qb->addOrderBy('a.id', 'desc');
 
         return $qb->getQuery()->getResult();
     }
