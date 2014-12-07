@@ -1,0 +1,28 @@
+<div class="modal fade" id="modalRemove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Vous etes sur le point de supprimer une annonce</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h5><strong>{{ annonce.title }}</strong></h5>
+                    <p>{{ annonce.content|truncate(100) }}</p>
+                </div>
+                <hr/>
+                <div class="text-center">
+                    <a href="{{ path('board_remove_annonce', {'id': annonce.id }) }}">
+                        <button type="button" class="btn btn-danger">Supprimer cette annonce maintenant</button>
+                    </a>
+                    <br/>
+                    <br/>
+                    <p class="note">Attention: cette action est irréversible</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

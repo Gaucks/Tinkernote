@@ -1,0 +1,41 @@
+<div class="col-xs-6">
+    <div class="box">
+        <div class="box-header">
+            <div class="title"><span class="glyphicon glyphicon-stats"></span> Fil des activités</div>
+            <ul class="box-toolbar">
+                <li><span class="label label-blue">178</span></li>
+            </ul>
+        </div>
+        <div class="box-section box-annonce-activity">
+
+            {{ render(controller('SiteBundle:Board:ajaxWhatsUp')) }}
+
+            <ul class="chat-box timeline" id="lol">
+                {% if last_activity %}
+                    {% for a in last_activity %}
+
+                        {% if a.activityType is defined %}
+                            {% if a.activityType.id == 1 %}
+                                {{ include('SiteBundle:Board/Template:board_new_see.html.twig') }}
+                            {% else %}
+                                    {{ include('SiteBundle:Board/Template:board_new_comment.html.twig') }}
+                            {% endif %}
+                        {% else %}
+
+                            {% if a.followed is defined %}
+                                {{ include('SiteBundle:Board/Template:board_new_abonnement.html.twig') }}
+                            {% else %}
+                                {{ include('SiteBundle:Board/Template:board_new_status.html.twig') }}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+
+                {% else %}
+                    {{ include('SiteBundle:Board/Template:board_default_activity.html.twig') }}
+                {% endif %}
+            </ul>
+
+        </div>
+    </div>
+    <!-- Box -->
+</div>

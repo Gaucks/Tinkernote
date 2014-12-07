@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use FOS\UserBundle\Model\UserInterface;
+use Tinkernote\UserBundle\Form\Type\RegistrationFormType;
 
 /**
  * Controller managing the registration
@@ -23,6 +24,8 @@ class RegistrationController extends Controller
 {
     public function registerAction(Request $request)
     {
+        /** @ On récupere Doctrine pour gérer les codes postaux dans le registrationFormType */
+        $em = $this->container->get('doctrine');
         /** @var $formFactory \FOS\UserBundle\Form\Factory\FactoryInterface */
         $formFactory = $this->get('fos_user.registration.form.factory');
         /** @var $userManager \FOS\UserBundle\Model\UserManagerInterface */
@@ -39,7 +42,7 @@ class RegistrationController extends Controller
             return $event->getResponse();
         }
 
-        $form = $formFactory->createForm();
+        $form = $formFactory->createForm(new RegistrationFormType('Tinkernote\Userbundle\Entity\User', $em->getManager()));
         $form->setData($user);
 
         $form->handleRequest($request);

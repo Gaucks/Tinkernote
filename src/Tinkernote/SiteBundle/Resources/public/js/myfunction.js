@@ -8,7 +8,10 @@ $(document).ready(function(){
         $('#checkbox-hidden').delay(5000).fadeOut('slow');
     });
 
-    $('#fos_user_profile_form_postal, #tinkernote_sitebundle_annonce_postal').on("keyup", function(){
+    var relVilleId = $('#tinkernote_sitebundle_annonce_ville').attr('rel');
+    $('#tinkernote_sitebundle_annonce_ville option[value='+relVilleId+']').attr("selected", "selected");
+
+    $('#fos_user_profile_form_postal, #tinkernote_sitebundle_annonce_postal, #fos_user_registration_form_postal').on("keyup", function(){
 
         var currlength = $(this).val().length;
 
@@ -16,7 +19,7 @@ $(document).ready(function(){
             $('img.ajax-loader').show();
         }
 
-        if(currlength === 5)
+        if(currlength >= 2)
         {
             $.ajax({
                 url: Routing.generate('site_rempli_postal',{cp: $(this).val()}),
@@ -38,7 +41,12 @@ $(document).ready(function(){
                                 'border':'1px solid #ccc',
                                 'color': '#858585'});
                         }
-                        $('.ville').append($('<option>', { value: value.id , text: value.nom }));
+
+                        $('.ville').append($("<option></option>")
+                                    .attr('value', value.id)
+                                    .text(value.postal+' - '+value.nom)
+                        );
+
                     });
                 },
                 error: function(request){
@@ -53,88 +61,67 @@ $(document).ready(function(){
 
     });
 
-    var relVilleId = $('#tinkernote_sitebundle_annonce_ville').attr('rel');
-    $('#tinkernote_sitebundle_annonce_ville option[value='+relVilleId+']').attr("selected", "selected");
+    $('#btn-add-pic-two, #btn-add-pic-three, #btn-add-pic-four').addClass('disabled btn-warning');
 
-});
+    /* Afficher les images en prévisualisation */
 
-/* Le secteurs pour les Pays / Regions / Departement / Ville */
-/*$(function () {
-    jQuery(document).ready(function() {
-            console.log('Jquery is ready for City');
+    function readURL(input, inputrel, parent) {
+        if (input.files && input.files[0]) {
+            var rel = '#blah'+inputrel;
+            var reader = new FileReader();
+            var hideDiv = '#pic'+inputrel;
 
-            $(".regionclass").change(function() {
-                mafonctionchange('departement','region');
-            }).trigger('change');
+            var btn1 = 'btn-add-pic-one';
+            var btn2 = 'btn-add-pic-two';
+            var btn3 = 'btn-add-pic-three';
 
-           *//* $(".departementclass").change(function() {
-                mafonctionchange('ville','departement');
-            });
-*//*
-            function mafonctionchange(selecteur,selecteurparent)
-            {
-                $.ajax({
-                    url: Routing.generate('site_rempli'),
-                    type: 'POST',
-                    data:
-                    {
-                        id : $("select."+selecteurparent+"class option:selected").val(),
-                        select : selecteur
-                    },
-                    dataType: 'json',
-                    success: function(reponse) {
-                        $('.'+selecteur+'class').empty();
-                        $('#fos_user_profile_form_postal').val('');
-                         //if(selecteur == "ville"){ var rel = $('.villeclass').attr('rel'); }
-                         if(selecteur == "region"){ var rel = $('.regionclass').attr('rel'); }
-                         //if(selecteur == "departement"){ var rel = $('.departementclass').attr('rel'); }
+            reader.onload = function (e) {
+                $(hideDiv).hide();
+                $(rel).removeClass('hidden').attr('src', e.target.result);
 
-                        $.each(reponse, function(index, element) {
-                            $('.' + selecteur + 'class').append('<option value="'+element.id+'" '+mafonctionselected(rel, element.id) +'  >'+ element.nom +'</option>');
+                if(parent == btn1 ){
+                    $('#btn-add-pic-two').removeClass('disabled btn-warning');
+                }
 
-                        });
+                if(parent == btn2 ){
+                    $('#btn-add-pic-three').removeClass('disabled btn-warning');
+                }
 
-                       *//* if (selecteur == 'departement') {
-                            mafonctionchange('ville','departement');
-                        }*//*
-                    },
-                    error: function (request) {
-                        alert(request.responseText);
-                    }
-                });
+                if(parent == btn3 ){
+                    $('#btn-add-pic-four').removeClass('disabled btn-warning');
+                }
+
             }
 
-            function mafonctionselected(rel, elementid)
-            {
-                if(rel == elementid)
-                {
-                    return "selected='selected'";
-                }
-                else
-                {
-                    return '';
-                }
-            }
-    });
-});*/
-
-/* Afficher les images en prévisualisation */
-
-function readURL(input, inputrel) {
-    if (input.files && input.files[0]) {
-        var rel = '#blah'+inputrel;
-        var reader = new FileReader();
-        var hideDiv = '#pic'+inputrel;
-
-        reader.onload = function (e) {
-            $(hideDiv).hide();
-            $(rel).removeClass('hidden').attr('src', e.target.result);
+            reader.readAsDataURL(input.files[0]);
         }
-
-        reader.readAsDataURL(input.files[0]);
     }
-}
 
-$("#tinkernote_sitebundle_annonce_picture_file, #tinkernote_sitebundle_annonce_picturetwo_file, #tinkernote_sitebundle_annonce_picturethree_file, #tinkernote_sitebundle_annonce_picturefour_file ").change(function(){
-    readURL(this, $(this).parent().parent().attr('rel'));
+    $("#tinkernote_sitebundle_annonce_picture_file, #tinkernote_sitebundle_annonce_picturetwo_file, #tinkernote_sitebundle_annonce_picturethree_file, #tinkernote_sitebundle_annonce_picturefour_file ").change(function(){
+        readURL(this, $(this).parent().parent().attr('rel'), $(this).parent().parent().parent().attr('id'));
+    });
+
+    /* La partie modal box*/
+    $('#modal-btn-write-message').on('click', function(){
+        $('#contactByMessageForm').show();
+    });
+
+    /* La partie pour les message flashbag */
+    $('.flash-notice').each(function(){
+        $(this).css('top', 65 * $(this).index() + 'px');
+        $(this).animate({'left': '0px' });
+        $(this).delay(6000).animate({'left': '-350px' });
+    });
+
+    $('.flash-notice').click(function(){
+       $(this).hide();
+    });
+    /////////////////////////////////////////
+
+    /* La partie what'up */
+    $('.box-whatsUp textarea').on("keyup", function () {
+        $(this).css({height: '100px', 'border-radius': '4px'});
+        $('.box-whatsUp-sub').show();
+    });
+
 });

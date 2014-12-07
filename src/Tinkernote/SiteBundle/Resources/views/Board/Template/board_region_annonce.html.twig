@@ -1,0 +1,57 @@
+<div class="row" role="Blog">
+    <div class="col-xs-6">
+        <div class="box">
+            <div class="box-header">
+                <div class="title"><span class="glyphicon glyphicon-tags"></span> L'activité dans votre ville</div>
+                <ul class="box-toolbar">
+                    <li><span class="label label-blue">{{ stats.dayliAnnonce }}</span></li>
+                </ul>
+            </div>
+            <div class="box-content" style="height: 400px; overflow-y: auto">
+
+                {% if last_region_activity is not empty %}
+                    {% for a in last_region_activity %}
+                        <div class="box-section news witd-icons">
+                            <div class="avatar">
+                                {% if a.picture is not empty %}
+                                    <img src="{{ asset('uploads/annonce/'~a.picture.path) }}" alt="Avatar" class="img-responsive"/>
+                                {% else %}
+                                    <img src="{{ asset('uploads/avatar/noAvatar.png') }}" alt="Avatar" class="img-responsive"/>
+
+                                {% endif %}
+                            </div>
+                            <div class="news-time">
+                                <span>{{ a.date|date('d') }}</span> {{ a.date|date('M') }}
+                            </div>
+                            <div class="news-content">
+                                <div class="news-title">
+                                    <a href="{{ path('annonce_show',{ 'id': a.id }) }}">{{ a.title }}</a>
+                                    <a href="{{ path('annonce_show',{ 'id': a.id }) }}" class="note">#{{ a.user.username }}</a>
+                                    <span class="label label-warning pull-right">{{ a.price }}€</span>
+                                </div>
+                                <div class="news-text">
+                                    {{ a.content|truncate(150) }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="box-section news witd-icons">
+                        <div class="avatar"><img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-responsive"/></div>
+                        <div class="news-time">
+                            <span>06</span> jan
+                        </div>
+                        <div class="news-content">
+                            <div class="news-title">
+                                <a href="#">Annonce par défault</a>
+                                <span class="label label-warning">3000€</span>
+                            </div>
+                            <div class="news-text">
+                                Faut mettre une annonce celle ci est par défaut...
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>

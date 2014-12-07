@@ -2,8 +2,11 @@
 
 namespace Tinkernote\SiteBundle\Controller;
 
+use FOS\UserBundle\Model\UserInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Tinkernote\SiteBundle\Form\RechercheHeaderType;
 use Tinkernote\SiteBundle\Form\RecherchePrincipalType;
 use Tinkernote\SiteBundle\Form\RechercheType;
 
@@ -23,46 +26,20 @@ class RechercheController extends Controller {
         {
             $recherche =  $form['recherche']->getData();
             $region    =  $form['region']->getData();
+            $category  =  null;
 
-            $moteur_recherche = $this->get('recherche.service');
-
-            /**
-             * Recherche est rempli
-             * Region est rempli
-             */
-            if(($recherche != NULL) AND ($region == NULL))
-            {
-                $annonces =  $moteur_recherche->findByWord($recherche);
-            }
-
-            /**
-             * Recherche est rempli
-             * Region est rempli
-             */
-            if(($recherche != NULL) AND ($region != NULL) )
-            {
-                $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findBy(array('annonces' => $annonces));
-            }
-
-            /**
-             * Recherche est NULL
-             * Region est rempli
-             */
-            if(($recherche == NULL) AND ($region != NULL))
-            {
-                $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findByRegion($region);
-            }
-
-            /**
-             * Recherche est NULL
-             * Region est NULL
-             */
             if(($recherche == NULL) AND ($region == NULL))
             {
                 return $this->redirect($this->generateUrl('annonce_homepage'));
             }
 
-            return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array('annonces' => $annonces));
+            $annonces =  $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')
+                ->rechercher($recherche, $region, $category);
+
+            return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces'           => $annonces,
+                                                                                'form_search'        => $recherche,
+                                                                                'form_search_region' => $region
+            ));
         }
 
         return $this->redirect($this->generateUrl('annonce_homepage'));
@@ -84,7 +61,7 @@ class RechercheController extends Controller {
         {
             $recherche = $form['recherche']->getData();
             $region    = $form['region']->getData();
-            $category  = $form['category']->getData();;
+            $category  = $form['category']->getData();
 
             if(($recherche == NULL) AND ($region == NULL))
             {
@@ -94,7 +71,8 @@ class RechercheController extends Controller {
             $annonces =  $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')
                               ->rechercher($recherche, $region, $category);
 
-            return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces'           => $annonces,
+            return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array(
+                                                                                'annonces'           => $annonces,
                                                                                 'form_search'        => $recherche,
                                                                                 'form_search_region' => $region
             ));

@@ -14,3 +14,7 @@ services:
         class: Tinkernote\SiteBundle\Form\Type\TelType
         tags:
             - { name: form.type, alias: tel }
+
+    stats.service:
+        class: Tinkernote\SiteBundle\Services\Stats
+        arguments: [@doctrine, @security.context]

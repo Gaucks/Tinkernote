@@ -85,12 +85,12 @@ class SiteController extends Controller
         if($request->isXmlHttpRequest()) // pour vérifier la présence d'une requete Ajax
         {
             $em = $this->getDoctrine()->getManager();
-            $villeCodePostal = $em->getRepository('SiteBundle:Ville')->findBy(array('postal' => $cp));
+            $villeCodePostal = $em->getRepository('SiteBundle:Ville')->findByCodePostal($cp);
 
             if ($villeCodePostal) {
                 $villes = array();
                 foreach ($villeCodePostal as $ville) {
-                    $villes[] = array('nom' => $ville->getNom(),'id' => $ville->getId());
+                    $villes[] = array('nom' => $ville->getNom(),'id' => $ville->getId(), 'postal' => $ville->getPostal());
                 }
             }
             else{

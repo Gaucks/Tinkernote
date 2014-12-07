@@ -1,0 +1,35 @@
+<li class="arrow-box-left gray">
+    <div class="avatar">
+        {% if a.annonce.picture is not empty %}
+            <img src="{{ asset('uploads/annonce/'~a.annonce.picture.path) }}" alt="{{ a.annonce.title }}" class="avatar-small img-responsive"/>
+        {% else %}
+            <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="{{ a.annonce.title }}" class="avatar-small img-responsive"/>
+        {% endif %}
+    </div>
+
+    <div class="info">
+          <span class="name">
+            <span class="label label-warning">{{ a.activityType.nom }}</span><strong>
+                  <a href="{{ path('annonce_show', {'id': a.annonce.id }) }}">{{ a.user.username(27) }}</a></strong>{{ a.content }} - <strong class="striketdrough">{{ a.annonce.category.category }}</strong>
+          </span>
+        <span class="time"><i class="icon-time"></i> {{ a.date|date('d M y') }}</span>
+    </div>
+
+    <div class="content">
+        <h7><a href="#">{{ a.annonce.title|truncate(50) }}</a></h7>
+        <blockquote>
+            {{ a.comment.content|nl2br|truncate(300) }}
+        </blockquote>
+        <div>
+            <ul class="list-inline pull-right">
+                <li>
+                    <a href="{{ path('annonce_show', {'id': a.annonce.id }) }}"><i class="icon-paper-clip"></i> <b>Voir l'annonce</b></a>
+                </li>
+                <li>
+                    <a href="{{ path('fos_user_profile_show') }}"><i class="icon-paper-clip"></i> <b>Profile de {{ a.user.username }}</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</li>

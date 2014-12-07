@@ -15,6 +15,7 @@ class LoadVilleSevenData extends AbstractFixture implements OrderedFixtureInterf
     public function load(ObjectManager $manager)
     {
         $tableau_postal = array(
+            99000,
             1400,
             1640,
             1090,
@@ -38965,7 +38966,7 @@ class LoadVilleSevenData extends AbstractFixture implements OrderedFixtureInterf
             98840,
             98818,
             99000);
-        $insee = array(
+        $insee = array('Monaco',
             'L abergement clemenciat',
             'L abergement de varey',
             'Amareins',

@@ -20,12 +20,17 @@
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <i class="fa fa-folder-open"></i> Annonce </span>
+                    <span class="breadcrumb-label"> <i class="fa fa-folder-open"></i> <a href="{{ path('annonce_homepage') }}" class="breadcrumb-link-inherit">Annonce</a></span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <i class="fa fa-folder-open-o"></i> {{ annonce.category.category }} </span>
+                    <span class="breadcrumb-label"> <i class="fa fa-cloud"></i> <a href="{{ path('region_annonce', {'region': annonce.ville.departement.region.slug}) }}" class="breadcrumb-link-inherit">{{ annonce.ville.departement.region.nom }}</a> </span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+
+                <div class="breadcrumb-button">
+                    <span class="breadcrumb-label"> <i class="fa fa-folder-open-o"></i> <a href="{{ path('categorie_annonce', {'categorie': annonce.category.category }) }}" class="breadcrumb-link-inherit">{{ annonce.category.category }}</a> </span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
 
@@ -35,69 +40,88 @@
                 </div>
             </div>
         </div>
-
     </div> <!-- row breadcrumb -->
-    <div class="row show-annonce-box" role="Annonce">
-        <div class="col-xs-5">
-            <div class="show-annonce-img">
-                {% if annonce.picture is not empty %}
-                    <img src="{{ asset('uploads/annonce/'~annonce.picture.path) }}" alt="img" class="img-responsive"/>
-                {% else %}
-                    <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img" class="img-responsive"/>
-                {% endif %}
-            </div>
-        </div>
-        <div class="col-xs-7">
-            <div class="show-annonce">
-                <div class="news-time"><span>{{ annonce.date|date('d') }}</span>{{ annonce.date|date('M') }}</div>
-                <div class="show-annonce-title">
-                    <h3> {{ annonce.title }}</h3>
-                    <div class="show-annonce-option">
-                        <span> <a href="#">
-                                <img src="{{ asset('bundles/site/images/Avatars/user-3.jpg') }}" alt="" class="img-responsive circle"/>{{ annonce.user.username }}
-                            </a>
-                        </span>
-                        <div class="star star-blue">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </div>
-                        <span class="tarif">{{ annonce.price }}€</span>
+    <div class="row" role="Annonce">
+        <div class="col-xs-12">
+            <div class="show-annonce-box">
+                <div class="col-xs-1  img-supplement">
+                    {% if annonce.picturetwo is not empty %}
+                        <img src="{{ asset('uploads/annonce/'~annonce.picturetwo.path) }}" alt="img" class="img-responsive"/>
+                    {% endif %}
+
+                    {% if annonce.picturethree is not empty %}
+                        <img src="{{ asset('uploads/annonce/'~annonce.picturethree.path) }}" alt="img" class="img-responsive"/>
+                    {% endif %}
+
+                    {% if annonce.picturefour is not empty %}
+                        <img src="{{ asset('uploads/annonce/'~annonce.picturefour.path) }}" alt="img" class="img-responsive"/>
+                    {% endif %}
+                </div>
+                <div class="col-xs-7">
+                    <div class="show-annonce-img">
+                        {% if annonce.picture is not empty %}
+                            <img src="{{ asset('uploads/annonce/'~annonce.picture.path) }}" alt="img" class="img-responsive"/>
+                            {% else %}
+                            <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img" class="img-responsive"/>
+                        {% endif %}
                     </div>
                 </div>
+                <div class="col-xs-4">
+                    <div class="show-annonce">
+                        <div class="news-time"><span>{{ annonce.date|date('d') }}</span>{{ annonce.date|date('M') }}</div>
+                        <div class="show-annonce-title">
+                            <h3> {{ annonce.title }}</h3>
+                            <div class="show-annonce-option">
+                                <span> <a href="#">
+                                        <img src="{{ asset('uploads/avatar/'~annonce.user.avatar.path) }}" alt="" class="img-responsive circle"/>{{ annonce.user.username }}
+                                    </a>
+                                </span>
+                                <div class="star star-blue">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <span class="tarif">{{ annonce.price }}€</span>
+                            </div>
+                        </div>
 
-                <p>{{ annonce.content|nl2br }}
-                </p>
+                        <p>{{ annonce.content|nl2br }}</p>
 
-                <div class="show-annonce-action">
-                    <ul class="list-inline">
-                        <li><button class="btn btn-blue btn-sm">Ajouter comme ami</button></li>
-                        <li><button class="btn btn-default btn-sm">Voir toutes ses annonces</button></li>
-                        <li><button class="btn btn-success btn-sm">Ca m'interesse</button></li>
-                    </ul>
+                        <div class="show-annonce-action">
+                            {% if isFriend %}
+                                    <a href="#" class="btn btn-warning btn-annonce-remove-abonnement" rel="{{ annonce.user.id }}"><i class="fa fa-eraser"></i> Se désabonner</a>
+                            {% else %}
+                                    <a href="#" class="btn btn-blue btn-sm btn-annonce-add-abonnement" rel="{{ annonce.user.id }}"><i class="fa fa-bookmark"></i> S'abonner</a>
+                            {% endif %}
+                            <a href="#" class="btn btn-success btn-sm" id="btn-interested" data-toggle="modal" data-target="#modalInterest"> <i class="fa fa-book"></i>  Ca m'interesse</a>
+                        </div>
+
+                        <div class="formulaire-comment">
+                            <form action="{{ path('annonce_show', {'id': annonce.id }) }}" method="post">
+                                <div class="form-group">
+                                    <div class="input-group">
+
+                                        {{ form_errors(form_comment) }}
+
+                                        {{ form_widget(form_comment.content) }}
+
+                                        <span class="input-group-btn">
+                                            {{ form_widget(form_comment.save) }}
+                                        </span>
+
+                                        {{ form_rest(form_comment) }}
+
+                                     </div>
+                                </div> <!-- Module du commentaire -->
+                            </form>
+                        </div>
+
+                    </div> <!-- show annonce -->
                 </div>
-
-                <form action="{{ path('annonce_show', {'id': annonce.id }) }}" method="post">
-                    <div class="form-group">
-                        <div class="input-group">
-
-                            {{ form_errors(form_comment) }}
-
-                            {{ form_widget(form_comment.content) }}
-
-                            <span class="input-group-btn">
-                                {{ form_widget(form_comment.save) }}
-                            </span>
-
-                            {{ form_rest(form_comment) }}
-
-                         </div>
-                    </div> <!-- Module du commentaire -->
-                </form>
-
-            </div> <!-- show annonce -->
+                <div class="clearfix"></div>
+            </div>
         </div>
     </div>
     <div class="row" role="commentaires">
@@ -134,7 +158,6 @@
                     {% else %}
                         <p>Il n'y a aucun commentaire pour le moment.</p>
                     {% endif %}
-
                 </div>
                 <!-- Module d'ajout de commentaires -->
                 <form action="{{ path('annonce_show', {'id': annonce.id }) }}" method="post">
@@ -154,3 +177,7 @@
         <button class="btn btn-danger btn-sm pull-right">Signaler cette annonce</button>
     </div>
 </div><!-- Container -->
+
+<!-- Modal -->
+{% include "SiteBundle:ModalBox:AnnonceModal/Interest.html.twig" %}
+<!-- /.modal -->

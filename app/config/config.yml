@@ -88,7 +88,7 @@ stof_doctrine_extensions:
             sluggable: true
 
 fos_js_routing:
-    routes_to_expose: [ site_rempli, site_rempli_category ]
+    routes_to_expose: [ site_rempli, site_rempli_category, board_add_whatsup, board_add_followed, board_remove_followed ]
 
 services:
     twig.extension.text:

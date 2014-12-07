@@ -1,0 +1,29 @@
+<li class="arrow-box-left gray">
+    <div class="avatar">
+        <img src="{{ asset('uploads/avatar/'~a.user.avatar.path) }}" alt="{{ a.user.username }}" class="avatar-small img-responsive"/>
+    </div>
+
+    <div class="info">
+          <span class="name">
+            <span class="label label-blue">Status</span><strong>
+                  <a href="{{ path('annonce_show', {'id': a.id }) }}">{{ a.user.username(27) }}</a></strong>
+          </span>
+        <span class="time"><i class="icon-time"></i> {{ a.date|date('d M y') }}</span>
+    </div>
+
+    <div class="content">
+        <blockquote>
+            {{ a.content|truncate(300)|nl2br }}
+        </blockquote>
+        <div>
+            <ul class="list-inline pull-right">
+                <li>
+                    <a href="#"><i class="icon-paper-clip"></i> <b>Commenter</b></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-paper-clip"></i> <b>Options</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</li>

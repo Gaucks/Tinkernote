@@ -1,0 +1,9 @@
+<form action="{{ path('recherche_annonce_principal') }}" method="post">
+        <div class="input-group input-group-sm">
+            {{ form_widget(form_headrecherche.recherche) }}
+            <span class="input-group-btn">
+                <button class="btn btn-fade" type="submit"><i class="fa fa-search"></i></button>
+            </span>
+            {{ form_rest(form_headrecherche) }}
+        </div>
+</form>

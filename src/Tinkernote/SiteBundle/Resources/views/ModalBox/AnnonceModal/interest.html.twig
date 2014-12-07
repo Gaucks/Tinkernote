@@ -1,0 +1,75 @@
+<div class="modal fade" id="modalInterest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Plusieurs moyens de contacter {{ annonce.user.username }} s'offre à vous</h4>
+            </div>
+            <div class="modal-body">
+                {% if annonce.user.phone is not empty %}
+                    {% set phone = annonce.user.phone %}
+                {% else %}
+                    {%  set phone = '' %}
+                {% endif %}
+                <h5>
+                    <strong>{{ annonce.user.username }}</strong> vous propose de le contacter par : message {{ phone }}</h5>
+                <br/>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        {% if annonce.user.phone is not empty %}
+                        <button class="btn btn-success"><i class="fa fa-mobile-phone"></i> {{ annonce.user.phone }}</button>
+                        {% endif %}
+                        <button class="btn btn-warning" id="modal-btn-write-message"><i class="fa fa-comment"></i>  Ecrire à {{ annonce.user.username }}</button>
+                        <button class="btn btn-blue"><i class="fa fa-mail-reply"></i>  Mail {{ annonce.user.email }}</button>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p class="note">Annonce #{{ annonce.id }} du {{ annonce.date|date('d M Y') }} : {{ annonce.title }}
+                            <strong>{{ annonce.price }}€</strong>
+                            {% if annonce.user.avatar is not empty %}
+                            <img src="{{ asset('uploads/avatar/'~annonce.user.avatar.path ) }}" alt="{{ annonce.user.username }}" class="img-responsive"/>
+                            {% else %}
+                                <img src="{{ asset('uploads/avatar/noAvatar.png') }}" alt="img" class="img-responsive"/>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <br/>
+                <div class="row" id="contactByMessageForm">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="title">Contacter {{ annonce.user.username }} par message : </div>
+                            </div>
+                            <div class="box-section">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon input-sm">@</div>
+                                        <input class="form-control input-sm"  type="text" {% if app.user.username is defined %} disabled="disabled" value="{{ app.user.username }}" {% endif %} placeholder="Votre pseudo ou mail"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon input-sm">@</div>
+                                        <textarea class="form-control  input-sm" placeholder="Votre message ici..." cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="btn btn-blue">Envoyer le message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

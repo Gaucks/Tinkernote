@@ -1,0 +1,17 @@
+<li class="arrow-box-left gray">
+    <div class="avatar">
+        {% if a.annonce.picture is not empty %}
+            <img src="{{ asset('uploads/annonce/'~a.annonce.picture.path) }}" alt="{{ a.annonce.title }}" class="avatar-small img-responsive"/>
+        {% else %}
+            <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="{{ a.annonce.title }}" class="avatar-small img-responsive"/>
+        {% endif %}
+    </div>
+
+    <div class="info">
+          <span class="name">
+            <span class="label label-success">{{ a.activityType.nom }}</span><strong>
+                  <a href="{{ path('annonce_show', {'id': a.annonce.id }) }}">{{ a.annonce.title|truncate(20) }}</a></strong>{{ a.content~' '~a.lecture }} fois - <strong class="striketdrough">{{ a.annonce.category.category }}</strong>
+          </span>
+        <span class="time"><i class="icon-time"></i> {{ a.date|date('d M y') }}</span>
+    </div>
+</li>

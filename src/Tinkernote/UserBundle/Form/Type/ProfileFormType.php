@@ -51,8 +51,8 @@ class ProfileFormType extends BaseType
                                                 'years'    => range(1920, 2000),
                                                 'attr'     => array('class' => 'form-group'),
                                                 'empty_value' => array('year' => 'Année', 'month' => 'Mois', 'day' => 'Jour')))
-            ->add('postal','text', array('mapped' => false, 'required' => false, 'attr' => array('placeholder' => 'Code postal', 'maxlength' => 5)))
-            ->add('ville', 'entity', array('required'=> true,
+            ->add('postal','text',       array('mapped' => false, 'required' => false, 'attr' => array('placeholder' => 'Code postal', 'maxlength' => 5)))
+            ->add('ville', 'entity',     array('required'=> true,
                                                               'class' => 'SiteBundle:Ville',
                                                               'property' => 'nom',
                                                               'empty_value'=>'Determiner votre ville...',
@@ -61,6 +61,7 @@ class ProfileFormType extends BaseType
                                                                                                  ->setParameter('usercity', $userCity);
                                                               },
             ))
+            ->add('finalword',null,     array('attr' => array('class' => 'form-control input-sm', 'placeholder' => 'Laisser un mot à ceux qui visite votre profile...')))
         ;
 
         $formModifier = function(FormInterface $form, $cp ){

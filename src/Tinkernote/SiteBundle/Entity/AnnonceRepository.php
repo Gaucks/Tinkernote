@@ -130,4 +130,84 @@ class AnnonceRepository extends EntityRepository
 
         return $qb->getQuery()->getResult();
     }
+
+    public function CountTotalAnnonces($user)
+    {
+        return $this->createQueryBuilder('a')
+            ->select('COUNT(a)')
+            ->where('a.user = :user')
+            ->setParameter('user', $user->getId())
+            ->getQuery()
+            ->getSingleScalarResult();
+    }
+
+    public function CountTotalActiveAnnonce($user)
+    {
+        return $this->createQueryBuilder('a')
+            ->select('COUNT(a)')
+            ->where('a.user = :user')
+            ->setParameter('user', $user)
+            ->getQuery()
+            ->getSingleScalarResult();
+    }
+
+    public function CountDayliAnnonce()
+    {
+        $today = new \Datetime();
+        $today->setTime ( 0, 0, 0 );
+
+        $qb = $this->createQueryBuilder('a')
+            ->select('count(a)')
+            ->where('a.date = :today')
+            ->setParameter('today', $today )
+            ->getQuery();
+
+        $response = $qb->getSingleScalarResult();
+
+        return $response;
+    }
+
+    public function CountDayliAnnonceInMyRegion($user)
+    {
+        $region = $user->getVille()->getDepartement()->getRegion();
+        $today = new \Datetime();
+        $today->setTime ( 0, 0, 0 );
+
+        $qb = $this->createQueryBuilder('a')
+            ->select('count(a)')
+            ->addSelect( 'a','v','d','r')
+            ->leftJoin('a.ville', 'v')
+            ->leftJoin('v.departement', 'd')
+            ->leftJoin('d.region', 'r')
+            ->where('a.date = :today')
+            ->where('r.id = :region') // Pour avoir la région selectionner en parametre principal
+            ->setParameters( array('today' => $today, 'region' => $region ))
+            ->getQuery();
+
+        $response = $qb->getSingleScalarResult();
+
+        return $response;
+    }
+
+    public function findExceptedMe($user){
+
+        $region = $user->getVille()->getDepartement()->getRegion();
+
+        $user = $user->getId();
+
+        $qb = $this->createQueryBuilder('a')
+            ->select( 'a','v','d','r','u')
+            ->leftJoin('a.ville', 'v')
+            ->leftJoin('v.departement', 'd')
+            ->leftJoin('d.region', 'r')
+            ->leftJoin('a.user', 'u')
+            ->where('r.id = :region') // Pour avoir la région selectionner en parametre principal
+            ->andWhere('u.id != :user') // Pour selectionner toutes les annonces qui ne correspondent pas à mon ID
+            ->orderBy('a.date','desc')
+            ->setParameters(array('user' => $user, 'region' => $region))
+            ->getQuery();
+
+        return $qb->getResult();
+    }
+
 }

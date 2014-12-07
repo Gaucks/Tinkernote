@@ -1,0 +1,18 @@
+<div class="box-whatsUp">
+    <form action="{{ path('board_add_whatsup') }}" {{ form_enctype(form_status) }} method="POST" id="form_whatsup">
+        {{ form_errors(form_status) }}
+        <div class="avatar">
+            <img src="{{ asset('uploads/avatar/'~app.user.avatar.path) }}" alt="{{ app.user.username }}" class="img-responsive"/>
+        </div>
+        <div class="form-group">
+            {{ form_widget(form_status.content) }}
+        </div>
+
+        <div class="pull-right box-whatsUp-sub">
+            <button type="submit" class="btn btn-blue" id="box-whatsUp-sub-btn">Envoyer le message</button>
+        </div>
+
+        <div class="clearfix"></div>
+        {{ form_rest(form_status) }}
+    </form>
+</div>

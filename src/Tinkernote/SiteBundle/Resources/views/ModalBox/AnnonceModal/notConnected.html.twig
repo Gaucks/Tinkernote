@@ -1,0 +1,26 @@
+<div class="modal fade" id="notconnected">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Vous n'êtes pas connecté :(</h4>
+            </div>
+            <div class="modal-body">
+                <p>Pour pouvoir accedez aux fonctionnalités de Tinkernote vous devez avoir un compte.</p>
+                <h4 class="text-center"><a href="{{ path('fos_user_registration_register') }}">Allez y c'est gratuit !</a></h4>
+                <br/>
+                <div class="text-center">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <a href="{{ path('fos_user_security_login') }}"><button type="button" class="btn btn-blue">Identification</button></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="{{ path('fos_user_registration_register') }}"><button type="button" class="btn btn-primary">Inscription</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -28,12 +28,6 @@ class AnnonceActivity
     private $activity_type;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Tinkernote\UserBundle\Entity\User")
-     * @ORM\JoinColumn(nullable=true)
-     */
-    private $user;
-
-    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -55,6 +49,12 @@ class AnnonceActivity
      * @ORM\Column(name="content", type="string", length=255)
      */
     private $content;
+
+    /**
+     * @var int
+     * @ORM\Column(name="lecture", type="integer")
+     */
+    private $lecture;
 
     public function __construct()
     {
@@ -187,25 +187,25 @@ class AnnonceActivity
     }
 
     /**
-     * Set user
+     * Set lecture
      *
-     * @param \Tinkernote\UserBundle\Entity\User $user
+     * @param integer $lecture
      * @return AnnonceActivity
      */
-    public function setUser(\Tinkernote\UserBundle\Entity\User $user = null)
+    public function setLecture($lecture)
     {
-        $this->user = $user;
+        $this->lecture = $lecture;
 
         return $this;
     }
 
     /**
-     * Get user
+     * Get lecture
      *
-     * @return \Tinkernote\UserBundle\Entity\User 
+     * @return integer 
      */
-    public function getUser()
+    public function getLecture()
     {
-        return $this->user;
+        return $this->lecture;
     }
 }

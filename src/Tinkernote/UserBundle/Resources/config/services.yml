@@ -4,6 +4,7 @@ parameters:
 services:
     tinkernote_user.registration.form.type:
         class: Tinkernote\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%, @doctrine.orm.entity_manager]
         tags:
             - { name: form.type, alias: tinkernote_user_registration }
 
@@ -12,3 +13,11 @@ services:
         arguments: [%fos_user.model.user.class%, @doctrine.orm.entity_manager, @security.context]
         tags:
             - { name: form.type, alias: tinkernote_user_profile }
+
+    tinkernote_user.listener.activity:
+        class: Tinkernote\UserBundle\Listener\ActivityListener
+        calls:
+            - [ setContext, [ @security.context ] ]
+            - [ setContainer, [ @service_container ] ]
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onCoreController }

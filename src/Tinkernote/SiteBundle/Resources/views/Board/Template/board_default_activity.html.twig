@@ -1,0 +1,26 @@
+<li class="arrow-box-left gray">
+    <div class="avatar"><img class="avatar-small img-responsive" src="{{ asset('bundles/site/images/Avatars/world-burn.jpg') }}"></div>
+    <div class="info">
+                      <span class="name">
+                        <span class="label label-green">Message</span> <strong class="indent">Tinkernote</strong>vous souhaite la bienvenue - <strong>Hello {{ app.user.username }}!</strong>
+                      </span>
+        <span class="time"><i class="icon-time"></i> Il y 21 jours</span>
+    </div>
+    <div class="content">
+        <h6><a href="#">Bienvenue sur Tinkernote {{ app.user.username }}</a></h6>
+        <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea!
+        </blockquote>
+        <div>
+            <ul class="list-inline">
+                <li>
+                    <a href="{{ path('annonce_add') }}"><i class="icon-paper-clip"></i> <b>Publier une annonce</b></a>
+                </li>
+                <li>
+                    <a href="{{ path('fos_user_profile_edit') }}"><i class="icon-paper-clip"></i> <b>Mon profil</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</li>

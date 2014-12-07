@@ -17,6 +17,14 @@ annonce_homepage:
 annonce_show:
     path:     /show-annonce/{id}
     defaults: { _controller: SiteBundle:Annonce:show }
+    requirements:
+        id: \d+
+
+annonce_usershow:
+    path:     /show-annonces/user/{id}
+    defaults: { _controller: SiteBundle:Annonce:UserAnnonce }
+    requirements:
+        id: \d+
 
 annonce_add:
     path:     /add-annonce
@@ -37,6 +45,8 @@ site_rempli_category:
 site_rempli_postal:
     path:     /rempli-postal/{cp}
     defaults: { _controller: SiteBundle:Site:rempliPostal }
+    requirements:
+        cp: \d+
 
 recherche_annonce:
     path:     /rechercher
@@ -45,6 +55,10 @@ recherche_annonce:
 recherche_annonce_principal:
     path:     /rechercher-annonce
     defaults: { _controller: SiteBundle:Recherche:recherchePrincipal }
+
+recherche_annonce_header:
+    path:     /rechercher-header
+    defaults: { _controller: SiteBundle:Recherche:headbarsearch }
 
 categorie_annonce:
     path:    /categorie/{categorie}
@@ -61,3 +75,35 @@ region_annonce:
 upload_file_route:
     path: /upload-file
     defaults: { _controller: SiteBundle:Picture:plupload }
+
+board_edit_annonce:
+    path: /board/edit/{id}
+    defaults: { _controller: SiteBundle:Board:editAnnonce }
+    requirements:
+        id: \d+
+
+board_remove_annonce:
+    path: /board/remove/{id}
+    defaults: { _controller: SiteBundle:Board:deleteAnnonce }
+    requirements:
+        id: \d+
+
+board_add_whatsup:
+    path: /board/whatsup
+    defaults: { _controller: SiteBundle:Board:ajaxWhatsUp }
+
+board_add_followed:
+    path: /board/add-followed/{followed}
+    defaults: { _controller: SiteBundle:Abonnement:index }
+    requirements:
+        followed: \d+
+
+board_remove_followed:
+    path: /board/remove-followed/{followed}
+    defaults: { _controller: SiteBundle:Abonnement:desabonnement }
+    requirements:
+        followed: \d+
+
+board_my_abonnement:
+    path: /board/abonnement
+    defaults: { _controller: SiteBundle:Abonnement:myAbonnement }

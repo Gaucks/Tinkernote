@@ -19,7 +19,9 @@ use FOS\UserBundle\Model\UserInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Tinkernote\UserBundle\Entity\User;
 use Tinkernote\UserBundle\Form\Type\ProfileFormType;
 
 /**
@@ -32,15 +34,17 @@ class ProfileController extends Controller
     /**
      * Show the user
      */
-    public function showAction()
+    public function showAction(Request $request)
     {
-        $user = $this->getUser();
-        if (!is_object($user) || !$user instanceof UserInterface) {
-            throw new AccessDeniedException('This user does not have access to this section.');
-        }
+        $user = $this->checkShow($request->get('id')); // On appelle la fonction checkShow interne pour faire la partie vérification
+        $userAllStats = $this->get('stats.service')->allstats($user);
+
+        $isFriend = $this->get('stats.service')->isFriends($user);
 
         return $this->render('FOSUserBundle:Profile:show.html.twig', array(
-            'user' => $user
+            'stats'     => $userAllStats,
+            'user'      => $user,
+            'isFriends' => $isFriend
         ));
     }
 
@@ -95,5 +99,26 @@ class ProfileController extends Controller
         return $this->render('FOSUserBundle:Profile:edit.html.twig', array(
             'form' => $form->createView()
         ));
+    }
+
+    private function CheckShow($id)
+    {
+        if($id != 'null') {
+            $em = $this->getDoctrine()->getManager();
+            $user = $em->getRepository('UserBundle:User')->find($id);
+
+            if (!is_object($user) || !$user instanceof UserInterface) {
+                throw new NotFoundHttpException('Cette utilisateur n\'existe pas.');
+            }
+        }
+        else{
+
+            $user = $this->getUser();
+            if (!is_object($user) || !$user instanceof UserInterface) {
+                throw new AccessDeniedException('This user does not have access to this section.');
+            }
+        }
+
+        return $user;
     }
 }

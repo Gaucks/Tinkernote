@@ -8,6 +8,7 @@
                 'bundles/site/css/bootstrap.css'
                 'bundles/site/css/font-awesome.min.css'
                 'bundles/site/css/style.css'
+                'bundles/site/css/annonce.css'
             %}
             <link rel="stylesheet" href="{{ asset_url }}"/>
             {% endstylesheets %}
@@ -22,6 +23,7 @@
         {% block body %}{% endblock %}
     </div>
 
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
@@ -32,6 +34,12 @@
         </div>
     </div>
 
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+        <div class="flash-notice">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
         {% block javascripts %}
             {% javascripts
             'bundles/site/js/jquery-2.1.1.min.js'
@@ -40,6 +48,7 @@
             'bundles/site/js/bootstrap-filestyle.min.js'
             'bundles/site/js/myfunction.js'
             'bundles/site/js/annonce.js'
+            'bundles/site/js/abonnement.js'
             %}
 
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>

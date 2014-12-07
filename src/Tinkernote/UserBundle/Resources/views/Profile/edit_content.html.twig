@@ -115,7 +115,6 @@
                         </div>
                         <img src="{{ asset('bundles/site/images/loader.gif') }}" alt="Ajax-loader" class="img-responsive ajax-loader pull-right no-padding"/>
                     </div>
-
                 </div>
 
                 <div class="col-xs-7">
@@ -145,7 +144,8 @@
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon input-sm iga-fosUser-register"><i class="fa fa-coffee"></i></div>
-                    <textarea name="#" id="" class="form-control input-sm" placeholder="Laisser un mot à ceux qui visite votre profile..."></textarea>
+                    {{ form_errors(form.finalword) }}
+                    {{ form_widget(form.finalword) }}
                 </div>
             </div>
         </div>

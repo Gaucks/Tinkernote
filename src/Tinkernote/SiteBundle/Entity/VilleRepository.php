@@ -31,4 +31,14 @@ class VilleRepository extends EntityRepository
         return $qb->getQuery()
             ->getArrayResult();
     }
+
+    public function findByCodePostal($postal)
+    {
+        $qb = $this->createQueryBuilder('v')
+            ->where('v.postal like :postal')
+            ->orderBy('v.postal','ASC')
+            ->setParameter('postal', $postal.'%');
+
+        return $qb->getQuery()->getResult();
+    }
 }

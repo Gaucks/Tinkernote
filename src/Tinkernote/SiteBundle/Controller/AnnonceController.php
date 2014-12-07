@@ -5,6 +5,8 @@ namespace Tinkernote\SiteBundle\Controller;
 use FOS\UserBundle\Model\UserInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Security\Acl\Exception\AclNotFoundException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Tinkernote\SiteBundle\Entity\Annonce;
 use Tinkernote\SiteBundle\Entity\Comment;
@@ -25,11 +27,26 @@ class AnnonceController extends Controller {
 
         $em = $this->getDoctrine()->getManager();
         $annonce = $em->getRepository('SiteBundle:Annonce')->findOneBy(array('id' => $id));
+        $isFriend = null;
+
+        if(!$annonce){
+            throw new NotFoundHttpException('On à pas trouver');
+        }
+
+        $user = $this->getUser();
+        if (!is_object($user) || !$user instanceof UserInterface) {
+            $user = null;
+        }
 
         $activity_manager = $this->get('activity.service');
-        $activity_manager->updateAnnonceActivity($id, $annonce->getUser(), 1);
+        $activity_manager->updateAnnonceActivity($id, $annonce->getUser(), 1, null);
 
         $annonceComments = $em->getRepository('SiteBundle:Comment')->findBy(array('annonce' => $id));
+
+        if($user != null)
+        {
+            $isFriend = $em->getRepository('SiteBundle:Abonnement')->findOneBy( array('follower' => $user->getId(), 'followed' => $annonce->getUser()->getId()));
+        }
 
         // Formulaire des commentaires
         $comment = new Comment();
@@ -55,6 +72,7 @@ class AnnonceController extends Controller {
                 $em->persist($comment);
                 $em->flush();
 
+                $activity_manager->updateAnnonceActivity($id, $annonce->getUser(), 2, $comment);
                 $response = $this->redirect($this->generateUrl('annonce_show', array('id' => $id->getId())));
 
                 return $response;
@@ -65,10 +83,11 @@ class AnnonceController extends Controller {
             return $response;
         }
 
-        return $this->render('SiteBundle:Annonce/Show:show.html.twig', array('annonce'              => $annonce,
-                                                                             'form_comment'         => $form->createView(),
-                                                                             'form_comment_second'  => $form_second->createView(),
-                                                                             'comments'             => $annonceComments));
+        return $this->render('SiteBundle:Annonce/Show:show.html.twig', array('annonce'             => $annonce,
+                                                            'form_comment'         => $form->createView(),
+                                                            'form_comment_second'  => $form_second->createView(),
+                                                            'comments'             => $annonceComments,
+                                                            'isFriend'            => $isFriend));
     }
 
     public function addAction(Request $request){
@@ -139,5 +158,17 @@ class AnnonceController extends Controller {
             'form_search_region' => $region_obj));
     }
 
+    public function UserAnnonceAction($id) {
+
+        $em = $this->getDoctrine()->getManager();
+        $annonces = $em->getRepository('SiteBundle:Annonce')->findBy(array('user' => $id), array('date' => 'desc'));
+
+        $username = $em->getRepository('UserBundle:User')->find($id);
+
+        return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces' => $annonces,
+            'recherche' => "Toute la france",
+            'form_search' => $username->getUsername(),
+            'form_search_region' => null));
+    }
 
 }

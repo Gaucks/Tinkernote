@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Tinkernote\UserBundle\Entity\UserRepository")
  * @ORM\Table(name="fos_user")
  */
 class User extends BaseUser
@@ -67,6 +67,16 @@ class User extends BaseUser
      * @ORM\Column(type="datetime",nullable=true)
      */
     protected $age;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    protected $finalword;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    protected $last_activity;
 
     public function __construct()
     {
@@ -289,5 +299,59 @@ class User extends BaseUser
     public function getAvatar()
     {
         return $this->avatar;
+    }
+
+    /**
+     * Set finalword
+     *
+     * @param string $finalword
+     * @return User
+     */
+    public function setFinalword($finalword)
+    {
+        $this->finalword = $finalword;
+
+        return $this;
+    }
+
+    /**
+     * Get finalword
+     *
+     * @return string 
+     */
+    public function getFinalword()
+    {
+        return $this->finalword;
+    }
+
+    /**
+     * Set last_activity
+     *
+     * @param \DateTime $lastActivity
+     * @return User
+     */
+    public function setLastActivity($lastActivity)
+    {
+        $this->last_activity = $lastActivity;
+
+        return $this;
+    }
+
+    /**
+     * Get last_activity
+     *
+     * @return \DateTime 
+     */
+    public function getLastActivity()
+    {
+        return $this->last_activity;
+    }
+
+    /* Liste des method utilise pour l'affiche  des utilisateurs connectés */
+    public function isOnline()
+    {
+        $now = new \DateTime();
+        $now->modify('-5 minutes');
+        return $this->getLastActivity() > $now;
     }
 }

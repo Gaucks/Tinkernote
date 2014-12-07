@@ -67,26 +67,36 @@
                                 </div>
                             </div>
 
-                            {#<div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
-                                    {{ form_widget(form.region,{'attr': {'class': 'form-control input-sm'}}) }}
+                            <div class="row">
+                                <div class="col-xs-5">
+                                       {% if form_errors(form.postal)|length > 0 %}{% set errors_postal = 'has-error' %}{% else %} {% set errors_postal = NULL %}{% endif %}
+                                       <div class="form-group {{ errors_postal }}">
+                                            <div class="input-group">
+                                                <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                                                {{ form_widget(form.postal,{'attr': {'class': 'form-control input-sm postal'}}) }}
+                                                {% if(errors_postal) %}
+                                                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
                                 </div>
-                            </div>
+                                <div class="col-xs-1 no-padding">
+                                    <img src="{{ asset('bundles/site/images/loader.gif') }}" alt="Ajax-loader" class="img-responsive ajax-loader no-padding"/>
+                                </div>
+                                <div class="col-xs-6">
+                                    {% if form_errors(form.ville)|length > 0 %}{% set errors_ville = 'has-error' %}{% else %} {% set errors_ville = NULL %}{% endif %}
+                                    <div class="form-group {{ errors_ville }}">
+                                        <div class="input-group">
+                                            <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
+                                            {{ form_widget(form.ville) }}
+                                            {% if(errors_ville) %}
+                                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
-                                    {{ form_widget(form.departement,{'attr': {'class': 'form-control input-sm'}}) }}
-                                </div>
                             </div>
-
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-addon input-sm iga-fosUser-register"><span class="glyphicon glyphicon-star"></span></div>
-                                    {{ form_widget(form.ville,{'attr': {'class': 'form-control input-sm'}}) }}
-                                </div>
-                            </div>#}
 
                             {{ form_rest(form) }}
 

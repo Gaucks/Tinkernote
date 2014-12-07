@@ -1,0 +1,47 @@
+<div class="col-xs-12">
+    <div class="box box-all-annonce">
+        <table class="table table-striped table-hover tablesorter" id="latable">
+            <thead>
+            <th>#ID</th>
+            <th>Img</th>
+            <th>Titre de l'annonce</th>
+            <th>Date</th>
+            <th>Prix</th>
+            <th>Vu</th>
+            <th>Catégorie</th>
+            </thead>
+            <tbody>
+            {% for a in last_annonces %}
+                <tr>
+                    <td><a href="{{ path('board_edit_annonce', {'id' : a.id }) }}">[#{{ a.id }}]</a></td>
+                    <td>
+                        {% if a.picture is not empty %}
+                            <img src="{{ asset('uploads/annonce/'~a.picture.path ) }}" alt="img"
+                                 class="img-responsive"/>
+                        {% else %}
+                            <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="img"
+                                 class="img-responsive"/>
+                        {% endif %}
+                    </td>
+                    <td><a href="{{ path('board_edit_annonce', {'id' : a.id }) }}">{{ a.title }}</a></td>
+                    <td>{{ a.date|date('d/m/Y') }}</td>
+                    <td><span class="label label-warning">{{ a.price }}€</span></td>
+                    <td>17 fois</td>
+                    <td>{{ a.category.category }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <div class="text-center">
+            <ul class="pagination pagination-sm ">
+                <li><a href="#">Précedente</a></li>
+                <li {#class="active"#}><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Suivante</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

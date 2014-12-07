@@ -3,17 +3,19 @@
         <div class="col-xs-12">
             <div id="breadcrumbs">
                 <div class="breadcrumb-button blue">
-                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="#" class="breadcrumb-link">Agora</a></span>
+                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="{{ path('site_homepage') }}" class="breadcrumb-link">Agora</a></span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-tasks"></span> Profile </span>
+                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-tasks"></span>
+                        <a href="{{ path('fos_user_profile_show', {'id': user.id}) }}" class="breadcrumb-link-inherit">Profile</a>
+                    </span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
 
                 <div class="breadcrumb-button">
-                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-user"></span> Nom D'utilisateur </span>
+                    <span class="breadcrumb-label"> <span class="glyphicon glyphicon-user"></span> {{ user.username }}</span>
                     <span class="breadcrumb-arrow"><span></span></span>
                 </div>
             </div>
@@ -25,14 +27,45 @@
         <div class="row">
                 <div class="usr-profile-bg">
                     <div class="col-xs-10 no-padding">
-                        <img src="{{ asset('bundles/site/images/fightclub.jpg') }}" alt="User background" class="img-responsive"/>
+                        <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="User background" class="img-responsive"/>
                     </div>
                     <div class="col-xs-2">
                         <ul class="nav nav-pills nav-stacked nav-show-profile">
-                            <li><button type="button" class="btn btn-info btn-block"><i class="fa fa-group"></i> Demander en ami</button></li>
+                            {% if user.isonline %}
                             <li><button type="button" class="btn btn-success btn-block"><i class="fa fa-plug"></i> Connecté</button></li>
-                            <li><button type="button" class="btn btn-danger btn-block"><i class="fa fa-unlink"></i> Hors ligne</button></li>
-                            <li><button type="button" class="btn btn-warning btn-block"><i class="fa fa-comments"></i> Envoyer un message</button></li>
+                            {% else %}
+                                <li><button type="button" class="btn btn-danger btn-block"><i class="fa fa-unlink"></i> Hors ligne</button></li>
+                            {% endif %}
+
+                            {% if app.user.id is defined %} {# Si l'utilisateur est connecté #}
+                                {% if user.id != app.user.id  %} {# Si l'utilisateur regarde sa propre page #}
+                                    {% if isFriends%}
+                                        <li><a href="{{ path('board_remove_followed', {'followed' : user.id}) }}" class="inherit">
+                                                <button type="button" class="btn btn-success btn-block"><i class="fa fa-group"></i> Se désabonner</button>
+                                            </a></li>
+                                    {% else %}
+                                        <li>
+                                            <a href="{{ path('board_add_followed', {'followed' : user.id}) }}" class="inherit">
+                                                <button type="button" class="btn btn-info btn-block"><i class="fa fa-group"></i> S'abonner</button>
+                                            </a>
+                                        </li>
+                                    {% endif %}
+                                    <li><button type="button" class="btn btn-warning btn-block"><i class="fa fa-comments"></i> Envoyer un message</button></li>
+                                {% else %}
+                                    <li>
+                                        <a href="{{ path('fos_user_profile_edit') }}" class="inherit">
+                                            <button type="button" class="btn btn-info btn-block"><i class="fa fa-group"></i> Editer mon profil</button>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            {% else %}
+                                <li>
+                                    <a href="#" class="inherit">
+                                        <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#notconnected"><i class="fa fa-group"></i> S'abonner</button>
+                                    </a>
+                                </li>
+                                <li><button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#newMessageModal"><i class="fa fa-comments"></i> Envoyer un message</button></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
@@ -40,8 +73,13 @@
 
         <div class="row">
             <div class="usr-profile-avatar">
-                <img src="{{ asset('bundles/site/images/jack.jpg') }}" alt="User background" class="img-responsive img-thumbnail img-circle user-avatar"/>
-                <h2 class="text-center">Nom d'utilisateur</h2>
+                {% if (user.firstname) and (user.name) is defined %}
+                {% set surnom = '( '~user.firstname~' '~user.name~' )' %}
+                {% else %}
+                {% set surnom = null %}
+                {% endif %}
+                <img src="{{ asset('uploads/avatar/'~user.avatar.path) }}" alt="User background" class="img-responsive img-thumbnail img-circle user-avatar"/>
+                <h2 class="text-center">{{ user.username }}  <span class="note">{{ surnom }} </span></h2>
             </div>
         </div> <!--uesr-profile-avatar -->
 
@@ -52,22 +90,36 @@
                       <div class="col-xs-8">
                           <h4>Taux de complétion du profil</h4>
                           <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-warning" style="width: 60%">60%</div>
+                              {% if stats.pflcompletion >= 60 %}
+                              {% set progressBar = 'progress-bar-warning' %}
+                              {% endif %}
+                              {% if stats.pflcompletion <= 50 %}
+                              {% set progressBar = 'progress-bar-danger ' %}
+                              {% endif %}
+                              {% if stats.pflcompletion >= 70 %}
+                              {% set progressBar = 'progress-bar-success ' %}
+                              {% endif %}
+                              <div class="progress-bar {{ progressBar }}" style="width: {{ stats.pflcompletion }}%">{{ stats.pflcompletion }}%</div>
                           </div>
 
                           <h4>A propos : </h4>
 
                           <div class="row">
                               <div class="col-xs-6">
-                                  <p><span class="glyphicon glyphicon-envelope"></span> Gaucks@gmail.com</p>
-                                  <p><span class="glyphicon glyphicon-user"></span> Age : 32 ans</p>
-                                  <p><span class="glyphicon glyphicon-home"></span> Localisation: {{ app.user.ville.departement.region.nom }} - {{ app.user.ville.nom }} ({{ app.user.ville.postal }})</p>
+                                  <p><span class="glyphicon glyphicon-envelope"></span> Adresse email: {{ user.email }}</p>
+                                  <p><span class="glyphicon glyphicon-user"></span> Date de naissance : {{ user.age|date('d M Y') }}</p>
+                                  <p><span class="glyphicon glyphicon-home"></span> Localisation: {{ user.ville.departement.region.nom }} - {{ user.ville.nom }} ({{ user.ville.postal }})</p>
+                                  <p><span class="glyphicon glyphicon-phone"></span> Téléphone: {{ user.phone }}</p>
                               </div>
 
                               <div class="col-xs-6">
-                                  <p><span class="glyphicon glyphicon-tags"></span> Membre niveau : Débutant</p>
-                                  <p><span class="glyphicon glyphicon-headphones"></span> Dernière annonce posté le : 01/09/2014 à 12h05min</p>
-                                  <p><span class="glyphicon glyphicon-off"></span> Dernière connexion le : 12/09/2014 à 22h15min</p>
+                                  <p><span class="glyphicon glyphicon-tags"></span> Membre niveau : {{ stats.userLevel }}</p>
+                                  <p><span class="glyphicon glyphicon-headphones"></span>
+                                      Dernière annonce posté le :
+                                      {% if stats.lastAnnonce is not empty %} {{ stats.lastAnnonce.date|date("d M Y à h:m" ) }}
+                                      {% else %} Aucune annonce publiée {% endif %}
+                                  </p>
+                                  <p><span class="glyphicon glyphicon-off"></span> Dernière connexion le : {{ user.lastLogin|date("d M Y à h:m" ) }}</p>
                               </div>
                           </div>
 
@@ -75,8 +127,8 @@
                               <br/>
                               <div class="col-xs-12">
                                   <blockquote>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                      <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                      <p>{{ user.finalword|nl2br }}</p>
+                                      <small><cite title="Source Title"> Par  {{ user.username }}, membre depuis le {{ user.lastLogin|date('d M Y') }} </cite></small>
                                   </blockquote>
                               </div>
                           </div>
@@ -90,15 +142,15 @@
                               <div class="box-section">
                                   <ul class="list-group">
                                       <li class="list-group-item">
-                                          <span class="badge ">14</span>
+                                          <span class="badge ">{{ stats.totalAnnonces }}</span>
                                           Annonces
                                       </li>
                                       <li class="list-group-item">
-                                          <span class="badge">2</span>
+                                          <span class="badge">0</span>
                                           Ventes réussies
                                       </li>
                                       <li class="list-group-item">
-                                          <span class="badge">1</span>
+                                          <span class="badge">{{ stats.total_activeAnnonces }}</span>
                                           Annonces en cours
                                       </li>
                                   </ul>
@@ -130,3 +182,6 @@
 
     </div> <!-- col-xs-12 -->
 </div> <!-- container -->
+
+{% include 'SiteBundle:ModalBox/AnnonceModal:notConnected.html.twig' %}
+{% include 'SiteBundle:ModalBox/MessageModal:newMessage.html.twig' %}

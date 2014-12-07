@@ -15,6 +15,7 @@ class LoadVilleNineData extends AbstractFixture implements OrderedFixtureInterfa
     public function load(ObjectManager $manager)
     {
         $tableau_postal = array(
+            99000,
             1400,
             1640,
             1090,
@@ -38965,7 +38966,7 @@ class LoadVilleNineData extends AbstractFixture implements OrderedFixtureInterfa
             98840,
             98818,
             99000);
-        $insee = array(
+        $insee = array('Monaco',
             'L abergement clemenciat',
             'L abergement de varey',
             'Amareins',
@@ -77941,6 +77942,11 @@ class LoadVilleNineData extends AbstractFixture implements OrderedFixtureInterfa
             $ville[$i] = $this->createVille($insee[$i], $this->getReference('departement-aveyron'), $tableau_postal[$i]);
             $manager->persist($ville[$i]);
         }
+
+        // Ville rajoutées manuellement
+
+        $ville[4656] = $this->createVille('Aix en provence', $this->getReference('departement-bdr'), 13100);
+        $manager->persist($ville[4656]);
 
         $manager->flush();
 

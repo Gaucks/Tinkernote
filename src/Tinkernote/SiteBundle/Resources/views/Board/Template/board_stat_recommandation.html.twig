@@ -1,0 +1,162 @@
+<div class="row" role="feedback + screen ">
+    <div class="col-xs-3">
+        <div class="action-nav-normal">
+            <div class="row action-nav-row">
+                <div class="col-sm-6 action-nav-button">
+                    <a href="{{ path('annonce_add') }}" title="Nouvelle annonce">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        <span>Nouvelle annonce</span>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 action-nav-button">
+                    <a href="#" title="Messages">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        <span>Messages</span>
+                    </a>
+                    <span class="triangle-button yellow"><span class="triangle-button-text">+0</span></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="action-nav-normal">
+            <div class="row action-nav-row">
+                <div class="col-sm-6 action-nav-button">
+                    <a href="#" title="New Project">
+                        <span class="glyphicon glyphicon-random"></span>
+                        <span>Abonnés</span>
+                    </a>
+                    <span class="triangle-button red"><span class="triangle-button-text">+0</span></span>
+                </div>
+
+                <div class="col-sm-6 action-nav-button">
+                    <a href="#" title="Messages" data-toggle="modal" data-target="#myabo">
+                        <span class="glyphicon glyphicon-ban-circle "></span>
+                        <span>Abonnements</span>
+                    </a>
+                    <span class="triangle-button red"><span class="triangle-button-text">{{ nb_abonnement }}</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="action-nav-normal">
+            <div class="row action-nav-row">
+                <div class="col-sm-6 action-nav-button">
+                    <a href="#" title="New Project">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span>Annonces</span>
+                    </a>
+                    <span class="triangle-button green"><span class="triangle-button-text">+0</span> </span>
+                </div>
+
+                <div class="col-sm-6 action-nav-button">
+                    <a href="{{ path('region_annonce', {'region': app.user.ville.departement.region.slug }) }}"
+                       title="{{ app.user.ville.departement.region.nom }}">
+                        <span class="glyphicon glyphicon-headphones "></span>
+                        <span>Ma région</span>
+                    </a>
+                        <span class="triangle-button blue"><span
+                                    class="triangle-button-text">+{{ stats.newInRegion }}</span> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-9">
+        <div class="box statistiques-board">
+            <div class="box-header board-label">
+                <div class="col-xs-8 title">Les Statistiques
+                    <ul class="box-toolbar">
+                        <li><span class="label label-blue">178</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 title"><span>Recommander pour vous</span></div>
+            </div>
+            <!-- Contenu du box -->
+            <div class="box-content">
+                <div class="board-screen" >
+                    <div class="col-xs-8 board-screen-screen" style="background-image: url('{{ asset('bundles/site/images/no_avatar.jpg') }}')"></div>
+                    <div class="col-xs-4 div-no-padding board-suggestion">
+                        <div class="list-group">
+                            {% if userPropose %}
+                            {% for u in userPropose %}
+                                <p class="list-group-item">
+                                    <img src="{{ asset('uploads/avatar/'~u.avatar.path) }}" alt="{{ u.username }}" class="img-responsive avatar pull-left"/>
+                                    <a href="{{ path('fos_user_profile_show', {'id': u.id}) }}">{{ u.username }}</a>
+                                    <button type="button" class="btn btn-success pull-right btn-board-add-abonnement" rel="{{ u.id }}"><i class="fa fa-plus"></i> Ajouter</button>
+                                </p>
+                            {% endfor %}
+                            {% else %}
+                                 <p class="list-group-item">
+                                        <img src="{{ asset('uploads/avatar/noAvatar.png') }}" alt="Personne" class="img-responsive avatar pull-left"/>
+                                        Aucune recommandation
+                                </p>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="dashboard-stats small">
+                        <ul class="list-inline">
+                            <li class="glyph"><span class="glyphicon glyphicon-euro"></span></li>
+                            <li class="count">{{ stats.totalAnnonces }}</li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-red tip" title="" data-percent="65"
+                                 data-original-title="65%" style="width: 65%;"></div>
+                        </div>
+                        <div class="stats-label">Total Annonces</div>
+                    </div>
+                </div>
+                <!-- Box statistiques -->
+                <div class="col-xs-3">
+                    <div class="dashboard-stats small">
+                        <ul class="list-inline">
+                            <li class="glyph"><span class="glyphicon glyphicon-thumbs-up"></span></li>
+                            <li class="count">{{ stats.total_activeAnnonces }}</li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-blue tip" title="" data-percent="35"
+                                 data-original-title="35%" style="width: 35%;"></div>
+                        </div>
+                        <div class="stats-label">Annonce en cours</div>
+                    </div>
+                </div>
+                <!-- Box statistiques -->
+                <div class="col-xs-3">
+                    <div class="dashboard-stats small">
+                        <ul class="list-inline">
+                            <li class="glyph"><span class="glyphicon glyphicon-heart-empty"></span></li>
+                            <li class="count">{{ countOnlineUsers }}</li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-green tip" title="" data-percent="15"
+                                 data-original-title="15%" style="width: 15%;"></div>
+                        </div>
+                        <div class="stats-label">Abonné en ligne</div>
+                    </div>
+                </div>
+                <!-- Box statistiques -->
+                <div class="col-xs-3">
+                    <div class="dashboard-stats small">
+                        <ul class="list-inline">
+                            <li class="glyph"><span class="glyphicon glyphicon-user"></span></li>
+                            <li class="count" data-toggle="modal" data-target="#myabo"><a href="#">{{ nb_abonnement }}</a></li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-orange tip" title="" data-percent="50"
+                                 data-original-title="50%" style="width: 50%;"></div>
+                        </div>
+                        <div class="stats-label">Abonnement</div>
+                    </div>
+                </div>
+                <!-- Box statistiques -->
+
+            </div>
+            <!-- Fin du contenu du box -->
+        </div>
+    </div>
+    <!-- col-xs-5 -->
+</div>
+
+{% include 'SiteBundle:ModalBox/BoardModal:AbonnementModal.html.twig' with {'myAbonnement': myAbonnement} %}

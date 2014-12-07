@@ -1,4 +1,5 @@
 {% extends 'SiteBundle:Board:layout.html.twig' %}
 {% block body %}
+    {% render(controller('SiteBundle:Recherche:recherchePrincipal', {'form_search' : null, 'form_search_region' : null  })) %}
     {% include 'SiteBundle:Board:board_content.html.twig' %}
 {% endblock %}
