@@ -1,0 +1,48 @@
+<h5>Ils ont quelque chose à vendre :</h5>
+<div class="box-annonce-list-corp">
+    <div class="list-group">
+        {% for p in proposition %}
+
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {% if p.user is defined %}
+                    <a href="#" class="list-group-item btn-annonce-propose-add-abonnement" rel="{{ p.user.id }}">
+                        <img src="{{ asset('uploads/avatar/'~p.user.avatar.path) }}" alt="#" class="img-responsive circle"/>
+                        <p>{{ p.user.username }}
+                            <span class="pull-right">
+                                                        <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-plus"> Suivre</i></button>
+                                                    </span>
+                        </p>
+                        <p class="ville">{{ p.user.ville.nom|truncate(20) }} ({{ p.user.ville.postal|truncate(2, false, '') }})</p>
+                        <p class="note">Annonce : 0 </p>
+                    </a>
+                {% else %}
+                    <a href="#" class="list-group-item btn-annonce-propose-add-abonnement" rel="{{ p.id }}">
+                        <img src="{{ asset('uploads/avatar/'~p.avatar.path) }}" alt="#" class="img-responsive circle"/>
+                        <p>{{ p.username }}
+                            <span class="pull-right">
+                                                        <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-plus"> Suivre</i></button>
+                                                    </span>
+                        </p>
+                        <p class="ville">{{ p.ville.nom|truncate(20) }} ({{ p.ville.postal|truncate(2, false, '') }})</p>
+                        <p class="note">Annonce : 0 </p>
+                    </a>
+                {% endif %}
+
+            {% else %}
+
+                <a href="#" class="list-group-item" data-toggle="modal" data-target="#annonce-tuto-abonner">
+                    <img src="{{ asset('uploads/avatar/'~p.avatar.path) }}" alt="#" class="img-responsive circle"/>
+                    <p>{{ p.username }}
+                        <span class="pull-right">
+                                                        <button type="button" class="btn btn-warning btn-xs"><i class="fa fa-plus"> Suivre</i></button>
+                                                    </span>
+                    </p>
+                    <p class="ville">{{ p.ville.nom|truncate(20) }} ({{ p.ville.postal|truncate(2, false, '') }})</p>
+                    <p class="note">Annonce : 0 </p>
+                </a>
+
+            {% endif %}
+
+        {% endfor %}
+    </div>
+</div>

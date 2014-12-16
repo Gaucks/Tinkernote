@@ -10,7 +10,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Tinkernote\SiteBundle\Entity\Abonnement;
+use Tinkernote\SiteBundle\Entity\AbonnementRegion;
 use Tinkernote\SiteBundle\Entity\Activity\AbonnementActivity;
+use Tinkernote\SiteBundle\Entity\Region;
 use Tinkernote\UserBundle\Entity\User;
 
 class AbonnementController extends Controller
@@ -135,5 +137,72 @@ class AbonnementController extends Controller
         $route = $parameters['_route'];
 
         return $route;
+    }
+
+
+    // Version pour les abonnements au région
+    public function abonnementRegionAction(Region $followed)
+    {
+        $user = $this->getUser();
+        if (!is_object($user) || !$user instanceof UserInterface) {
+            throw new AccessDeniedException('This user does not have access to this section.');
+        }
+
+        $em = $this->getDoctrine()->getManager();
+
+        $check = $em->getRepository('SiteBundle:AbonnementRegion')->findBy(array('region' => $followed,'user' => $user));
+
+        if(!$check){
+            $abonnement = new AbonnementRegion();
+            $abonnement->setUser($user)->setRegion($followed);
+
+            $em->persist($abonnement);
+            $em->flush();
+
+            $this->get('session')->getFlashBag()->add('notice', ' '.$followed->getNom().' a bien été ajouté à votre liste d\'abonnement');
+
+            //$this->updateActivity($em, $followed, $user);
+
+            // Créons nous-mêmes la réponse en JSON, grâce à la fonction json_encode()
+            $response = new JsonResponse();
+
+            // Ici, nous définissons le Content-type pour dire que l'on renvoie du JSON et non du HTML
+            $response->headers->set('Content-Type', 'application/json');
+
+            return $response;
+        }
+
+        throw new AccessDeniedException('Vous etes déja abonné à cette région');
+    }
+
+    public function desabonnementRegionAction(Region $followed)
+    {
+        $user = $this->getUser();
+        if (!is_object($user) || !$user instanceof UserInterface) {
+            throw new AccessDeniedException('This user does not have access to this section.');
+        }
+
+        $em = $this->getDoctrine()->getManager();
+        $checkAbo = $em->getRepository('SiteBundle:AbonnementRegion')->findOneBy(array('user' => $user->getId(), 'region' => $followed));
+
+        if($checkAbo){
+
+            $em->remove($checkAbo);
+            $em->flush();
+
+            $this->get('session')->getFlashBag()->add('notice', ' '.$followed->getNom().' a bien été retiré de votre liste d\'abonnement');
+
+            //$this->updateRemoveActivity($em, $followed ,$user);
+
+            // Créons nous-mêmes la réponse en JSON, grâce à la fonction json_encode()
+            $response = new JsonResponse();
+
+            // Ici, nous définissons le Content-type pour dire que l'on renvoie du JSON et non du HTML
+            $response->headers->set('Content-Type', 'application/json');
+
+            return $response;
+        }
+
+        throw new EntityNotFoundException('Cette relation n\'existe pas');
     }
 }

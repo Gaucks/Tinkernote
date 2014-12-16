@@ -1,0 +1,59 @@
+<div class="row action-nav-row">
+
+    <div class="col-sm-6 action-nav-button">
+        <a href="{{ path('annonce_add') }}" title="Nouvelle annonce">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <span>Nouvelle annonce</span>
+        </a>
+    </div>
+
+    <div class="col-sm-6 action-nav-button">
+        <a href="#" title="Resultat: {{ annonces|length }}">
+            <span class="glyphicon glyphicon-pushpin"></span>
+            <span>Résultat: {{ annonces|length }}</span>
+        </a>
+    </div>
+
+    <div class="col-sm-6 action-nav-button">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a href="{{ path('fos_user_profile_edit') }}">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>Mon compte</span>
+            </a>
+        {% else %}
+            <a href="{{ path('fos_user_registration_register') }}" title="Créer un compte">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>Créer un compte</span>
+            </a>
+        {% endif %}
+    </div>
+
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        {% if abonner is not null and region_id is defined %}
+            <div class="col-sm-6 action-nav-button">
+                <a href="#" title="Se désabonner" rel="{{ region_id }}" class="btn-region-remove-abonnement">
+                    <span class="glyphicon glyphicon-flag checked"></span>
+                    <span>Se désabonner</span>
+                </a>
+            </div>
+        {% else %}
+            <div class="col-sm-6 action-nav-button">
+                <a href="#" title="S'abonner" rel="{{ region_id }}" class="btn-region-add-abonnement">
+                    <span class="glyphicon glyphicon-flag"></span>
+                    <span>S'abonner</span>
+                </a>
+            </div>
+        {% endif %}
+
+    {% else %}
+        <div class="col-sm-6 action-nav-button">
+            <a href="#" title="S'abonner" data-toggle="modal" data-target="#annonce-tuto-abonner">
+                <span class="glyphicon glyphicon-flag"></span>
+                <span>S'abonner ?</span>
+            </a>
+        </div>
+
+    {% endif %}
+
+</div>

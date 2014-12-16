@@ -35,7 +35,6 @@ class BoardController extends Controller {
         $user_repository     = $em->getRepository('UserBundle:User');
         $stats               = $this->get('stats.service')->allstats($user);
         $countOnlineUsers    = $this->get('stats.service')->countOnlineUsers();
-        $countAbonnement     = $abonnement_repository->countAbonnement($user);
 
         $lastAnnonces        = $annonces_repository->findBy(array('user'  => $user->getId()),    array('date' => 'DESC'), null);
         $lastAnnonces_region = $annonces_repository->findExceptedMe($user);
@@ -46,6 +45,8 @@ class BoardController extends Controller {
         $lastActivityComment = $annonce_activity_repository->getAll($user);
 
         $myAbonnement       = $abonnement_repository->findBy(array('follower' => $user->getId()));
+        $myFollower         = $abonnement_repository->findBy(array('followed' => $user->getId()));
+
 
         $userPropose         = $this->userFollowPropose($user, $user_repository, $em);
 
@@ -54,13 +55,13 @@ class BoardController extends Controller {
         $merged_activity     = $this->mergeActivityAnnonces($lastActivity, $lastActivityComment, $lastStatus, $lastAbonnement);
 
         return $this->render('SiteBundle:Board:board.html.twig', array('last_region_activity' => $lastAnnonces_region,
-                                                                        'last_annonces'        => $lastAnnonces,
-                                                                        'last_activity'        => $merged_activity,
-                                                                        'stats'                => $stats,
-                                                                        'countOnlineUsers'     => $countOnlineUsers,
-                                                                        'userPropose'          => $userPropose,
-                                                                        'nb_abonnement'        => $countAbonnement,
-                                                                        'myAbonnement'         => $myAbonnement
+                                                        'last_annonces'        => $lastAnnonces,
+                                                        'last_activity'        => $merged_activity,
+                                                        'stats'                => $stats,
+                                                        'countOnlineUsers'     => $countOnlineUsers,
+                                                        'userPropose'          => $userPropose,
+                                                        'myAbonnement'         => $myAbonnement,
+                                                        'myfollower'           => $myFollower
 
         ));
     }

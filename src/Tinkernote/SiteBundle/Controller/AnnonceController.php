@@ -5,9 +5,11 @@ namespace Tinkernote\SiteBundle\Controller;
 use FOS\UserBundle\Model\UserInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Acl\Exception\AclNotFoundException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Validator\Constraints\Null;
 use Tinkernote\SiteBundle\Entity\Annonce;
 use Tinkernote\SiteBundle\Entity\Comment;
 use Tinkernote\SiteBundle\Form\AnnonceType;
@@ -16,11 +18,52 @@ use Tinkernote\SiteBundle\Form\CommentType;
 class AnnonceController extends Controller {
 
     public function indexAction() {
-        $annonces = $this->getDoctrine()->getManager()->getRepository('SiteBundle:Annonce')->findBy(array(), array('id' => 'desc'));
-        return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces' => $annonces,
-                                                                            'recherche' => "Toute la france",
-                                                                            'form_search' => null,
-                                                                            'form_search_region' => null));
+
+        // Récupération de l'utilisateur connecté ou non
+        $user = $this->getUser();
+        if (!is_object($user) || !$user instanceof UserInterface) {
+            $user       = null;
+        }
+
+        // Les variables nécessaires au controller
+        $em                  = $this->getDoctrine()->getManager(); // Doctrine
+        $abonnement_services = $this->get('abonnement.service'); // Le services de gestion des abonnements
+        $region              = $em->getRepository('SiteBundle:Region')->findOneById(29); // Récupération de l'objet complet Region()
+        $region_followed     = $abonnement_services->isRegionFollower($user, $region->getId()); // Controlle si l'utilisateur est abonné a cette région true ou false
+        $proposition         = $abonnement_services->getProposition($user, $region); // Les propositions de nouveaux abonnement Limiter à 5
+        $annonces            = $em->getRepository('SiteBundle:Annonce')->findBy(array(), array('id' => 'desc')); // On recupere toutes les annonces concernées
+
+        if(!$proposition or count($proposition) <= 5)
+        {
+            $userFollowed   = $em->getRepository('SiteBundle:Abonnement')->followed($user);
+
+            // Créer un array() pour pouvoir trier dans les propositions
+            // les utilisateurs que l'ont à déja en abonnement
+            $userFollowed_liste = array();
+            foreach($userFollowed as $row ){
+                $userFollowed_liste[] = $row->getFollowed()->getId();
+            }
+
+            // Récupération des proposition
+            $proposition    = $em->getRepository('UserBundle:User')->findUserToPropose($user, $userFollowed_liste);
+
+            // Si l'utilisateur n'est pas connecté
+            // On ajoute 5 propositions pour meublé est
+            // Proposer l'abonnement
+            if(!$user)
+            {
+                $proposition = $em->getRepository('UserBundle:User')->findBy(array(), array(), 5);
+            }
+        }
+
+        // La réponse
+        return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces'           => $annonces,
+                                                                                            'recherche'          => $region->getNom(),
+                                                                                            'form_search'        => null,
+                                                                                            'abonner'            => $region_followed,
+                                                                                            'region_id'          => $region->getId(),
+                                                                                            'form_search_region' => null,
+                                                                                            'proposition'        => $proposition));
     }
 
     public function showAction(Request $request, Annonce $id){
@@ -137,13 +180,34 @@ class AnnonceController extends Controller {
     }
 
     public function villeAction($ville) {
+
         $em = $this->getDoctrine()->getManager();
         $ville_id = $em->getRepository('SiteBundle:Ville')->findOneBySlug($ville);
+
+        $user = $this->getUser();
+        if (!is_object($user) || !$user instanceof UserInterface) {
+            $user       = null;
+        }
+
+        if($user){
+            $abonner    = null;
+            $region_id = $ville_id->getDepartement()->getRegion();
+
+            $abo_region = $em->getRepository('SiteBundle:AbonnementRegion')->findOneBy(
+                            array('user'    => $user->getId(),
+                                  'region'  => $ville_id->getDepartement()->getRegion()));
+            if($abo_region)
+            {
+                $abonner = true;
+            }
+        }
 
         $annonces     = $em->getRepository('SiteBundle:Annonce')->findBy(array('ville' => $ville_id->getId()), array('id' => 'desc'));
         return $this->render('SiteBundle:Annonce/Accueil:annonce_accueil.html.twig', array( 'annonces' => $annonces,
             'recherche' => $ville,
             'form_search' => null,
+            'abonner'     => $abonner,
+            'region_id'     => $region_id,
             'form_search_region' => $ville_id));
     }
 

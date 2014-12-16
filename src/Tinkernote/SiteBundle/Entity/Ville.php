@@ -44,14 +44,14 @@ class Ville
     /**
      * @var string
      *
-     * @ORM\Column(name="postal", type="integer", length=5)
+     * @ORM\Column(name="postal", type="string", length=5)
      */
     private $postal;
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {
@@ -120,7 +120,7 @@ class Ville
     /**
      * Get postal
      *
-     * @return integer 
+     * @return string
      */
     public function getPostal()
     {

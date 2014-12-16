@@ -22,11 +22,11 @@
         <div class="action-nav-normal">
             <div class="row action-nav-row">
                 <div class="col-sm-6 action-nav-button">
-                    <a href="#" title="New Project">
+                    <a href="#" title="Mes abonnés" data-toggle="modal" data-target="#myFollower">
                         <span class="glyphicon glyphicon-random"></span>
                         <span>Abonnés</span>
                     </a>
-                    <span class="triangle-button red"><span class="triangle-button-text">+0</span></span>
+                    <span class="triangle-button red"><span class="triangle-button-text">{{ myfollower|length }}</span></span>
                 </div>
 
                 <div class="col-sm-6 action-nav-button">
@@ -34,7 +34,7 @@
                         <span class="glyphicon glyphicon-ban-circle "></span>
                         <span>Abonnements</span>
                     </a>
-                    <span class="triangle-button red"><span class="triangle-button-text">{{ nb_abonnement }}</span></span>
+                    <span class="triangle-button red"><span class="triangle-button-text">{{ myAbonnement|length }}</span></span>
                 </div>
             </div>
         </div>
@@ -141,7 +141,7 @@
                     <div class="dashboard-stats small">
                         <ul class="list-inline">
                             <li class="glyph"><span class="glyphicon glyphicon-user"></span></li>
-                            <li class="count" data-toggle="modal" data-target="#myabo"><a href="#">{{ nb_abonnement }}</a></li>
+                            <li class="count" data-toggle="modal" data-target="#myabo"><a href="#">{{ myAbonnement|length }}</a></li>
                         </ul>
                         <div class="progress">
                             <div class="progress-bar progress-orange tip" title="" data-percent="50"
@@ -160,3 +160,4 @@
 </div>
 
 {% include 'SiteBundle:ModalBox/BoardModal:AbonnementModal.html.twig' with {'myAbonnement': myAbonnement} %}
+{% include 'SiteBundle:ModalBox/BoardModal:MyFollowerModal.html.twig' with {'myFollower': myfollower} %}

@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row" role="breadcrumb">
+        <div class="col-xs-12">
+            <div id="breadcrumbs">
+                <div class="breadcrumb-button blue">
+                    <span class="breadcrumb-label"><span class="glyphicon glyphicon-home "></span> <a href="{{ path('annonce_homepage') }}" class="breadcrumb-link">Home</a></span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+                <div class="breadcrumb-sort pull-right">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Trier les annonces : <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> Par date</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Par auteur</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-euro"></span> Par prix</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                </div>
+
+                <div class="breadcrumb-button">
+                      <span class="breadcrumb-label"> <i class="fa fa-folder-open"></i> <a href="{{ path('annonce_homepage') }}" class="breadcrumb-link-inherit">Annonces</a> </span>
+                      <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+
+                <div class="breadcrumb-button">
+                    {% if form_search_region is not null %}
+                    <span class="breadcrumb-label"> <i class="fa fa-cloud "></i> <a href="{{ path('region_annonce', {'region': form_search_region.slug }) }}" class="breadcrumb-link-inherit">{{ form_search_region.nom }}</a></span>
+                    {% else %}
+                    <span class="breadcrumb-label"> <i class="fa fa-search"></i> <a href="{{ path('region_annonce', {'region': 1 }) }}" class="breadcrumb-link-inherit">Toute la france</a></span>
+                    {% endif %}
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+
+                {% if form_search is not null %}
+                <div class="breadcrumb-button">
+                    <span class="breadcrumb-label"> <i class="fa fa-search"></i> <a href="{{ path('recherche_annonce') }}" class="breadcrumb-link-inherit">{{ form_search }} </a></span>
+                    <span class="breadcrumb-arrow"><span></span></span>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div> <!-- row breadcrumb -->
+
+    <div class="row">
+        <div class="col-xs-12">{% include('SiteBundle:Annonce:Accueil/Template/annonce.html.twig') %}</div>
+    </div>
+
+</div>
+
+    <div class="row" role="pagination">
+        <div class="text-center">
+            <ul class="pagination pagination-sm">
+                <li><a href="#">Précedente</a></li>
+                <li {#class="active"#}><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Suivante</a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- container -->

@@ -4919,7 +4919,7 @@ class LoadVilleData extends AbstractFixture implements OrderedFixtureInterface
 
         $ville->setNom(ucfirst(strtolower($insee)));
         $ville->setDepartement($reference);
-        $ville->setPostal($tableau_postal);
+        $ville->setPostal('0'.$tableau_postal);
 
         return $ville;
     }

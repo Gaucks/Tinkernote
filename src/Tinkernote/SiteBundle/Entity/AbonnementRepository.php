@@ -12,16 +12,16 @@ use Doctrine\ORM\EntityRepository;
  */
 class AbonnementRepository extends EntityRepository
 {
-    public function countAbonnement($user)
+    public function followed($user)
     {
         $qb = $this->createQueryBuilder('a')
-            ->select('COUNT(a.id)')
-            ->where('a.follower = :user')
-            ->setParameter('user', $user);
+            ->select('a','b')
+            ->leftJoin('a.follower', 'b')
+            ->where('b.id = :follower')
+            ->setParameter('follower', $user);
 
-        $count = $qb->getQuery()->getSingleScalarResult();
+        $result = $qb->getQuery()->getResult();
 
-        return $count;
-
+        return $result;
     }
 }

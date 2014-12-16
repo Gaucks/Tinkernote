@@ -34,4 +34,18 @@ class UserRepository extends EntityRepository
         return  $response;
 
     }
+
+    public function findUserToPropose($user, $followed)
+    {
+        $qb = $this->createQueryBuilder('u')
+                    ->where('u.id != :user')
+                    ->andWhere('u.id NOT IN (:followed)')
+                    ->setParameters(array('user' => $user, 'followed' => $followed))
+                    ->setMaxResults(5)
+                    ->getQuery();
+
+        $result = $qb->getResult();
+
+        return $result;
+    }
 }

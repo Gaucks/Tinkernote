@@ -69,122 +69,201 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="annonce.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="2700">
-              <caret line="379" column="53" selection-start-line="379" selection-start-column="53" selection-end-line="379" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.5972435" vertical-offset="15" max-vertical-offset="4380">
+              <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
               <folding>
-                <element signature="e#72#94#0" expanded="false" />
-                <element signature="e#116#155#0" expanded="false" />
-                <element signature="e#204#297#0" expanded="false" />
-                <element signature="e#337#430#0" expanded="false" />
-                <element signature="e#457#501#0" expanded="false" />
-                <element signature="e#559#602#0" expanded="false" />
-                <element signature="e#646#671#0" expanded="false" />
-                <element signature="e#703#728#0" expanded="false" />
-                <element signature="e#753#904#0" expanded="false" />
-                <element signature="e#940#1808#0" expanded="false" />
-                <element signature="e#1842#1862#0" expanded="false" />
-                <element signature="e#1904#1927#0" expanded="false" />
-                <element signature="e#1984#2006#0" expanded="false" />
-                <element signature="e#2065#2141#0" expanded="false" />
-                <element signature="e#2154#2178#0" expanded="false" />
-                <element signature="e#2190#2214#0" expanded="false" />
-                <element signature="e#2228#2252#0" expanded="false" />
-                <element signature="e#2263#2287#0" expanded="false" />
-                <element signature="e#2333#2966#0" expanded="false" />
-                <element signature="e#3055#3277#0" expanded="false" />
-                <element signature="e#3354#3426#0" expanded="false" />
-                <element signature="e#3497#3589#0" expanded="false" />
-                <element signature="e#3611#4674#0" expanded="false" />
-                <element signature="e#4727#4774#0" expanded="false" />
-                <element signature="e#4821#5024#0" expanded="false" />
-                <element signature="e#5052#6042#0" expanded="false" />
-                <element signature="e#6131#6353#0" expanded="false" />
-                <element signature="e#6394#6477#0" expanded="false" />
-                <element signature="e#6491#7524#0" expanded="false" />
-                <element signature="e#7543#7568#0" expanded="false" />
-                <element signature="e#7591#7662#0" expanded="false" />
-                <element signature="e#7697#7763#0" expanded="false" />
-                <element signature="e#7800#7885#0" expanded="false" />
-                <element signature="e#7922#7947#0" expanded="false" />
-                <element signature="e#8003#8059#0" expanded="false" />
-                <element signature="e#8121#8190#0" expanded="false" />
-                <element signature="e#8211#8234#0" expanded="false" />
-                <element signature="e#8271#8404#0" expanded="false" />
-                <element signature="e#8448#8475#0" expanded="false" />
-                <element signature="e#8564#8589#0" expanded="false" />
-                <element signature="e#8605#8719#0" expanded="false" />
-                <element signature="e#8739#8759#0" expanded="false" />
-                <element signature="e#9593#9677#0" expanded="false" />
-                <element signature="e#9705#9733#0" expanded="false" />
-                <element signature="e#9761#9787#0" expanded="false" />
-                <element signature="e#9807#9844#0" expanded="false" />
-                <element signature="e#9868#9930#0" expanded="false" />
-                <element signature="e#9951#9977#0" expanded="false" />
-                <element signature="e#10002#10048#0" expanded="false" />
-                <element signature="e#10077#10099#0" expanded="false" />
-                <element signature="e#10134#10164#0" expanded="false" />
-                <element signature="e#10182#10228#0" expanded="false" />
-                <element signature="e#10261#10295#0" expanded="false" />
-                <element signature="e#10343#10399#0" expanded="false" />
-                <element signature="e#10437#10636#0" expanded="false" />
-                <element signature="e#10665#10733#0" expanded="false" />
-                <element signature="e#10756#10797#0" expanded="false" />
-                <element signature="e#10860#10994#0" expanded="false" />
-                <element signature="e#11011#11132#0" expanded="false" />
-                <element signature="e#11187#11409#0" expanded="false" />
-                <element signature="e#11523#12249#0" expanded="false" />
-                <element signature="e#12426#12528#0" expanded="false" />
-                <element signature="e#12754#12814#0" expanded="false" />
-                <element signature="e#12945#12965#0" expanded="false" />
-                <element signature="e#13019#13045#0" expanded="false" />
-                <element signature="e#13198#13272#0" expanded="false" />
-                <element signature="e#13393#13462#0" expanded="false" />
-                <element signature="e#13575#13622#0" expanded="false" />
-                <element signature="e#13752#14555#0" expanded="false" />
-                <element signature="e#14589#14839#0" expanded="false" />
-                <element signature="e#14879#14899#0" expanded="false" />
-                <element signature="e#14917#14971#0" expanded="false" />
-                <element signature="e#14993#15060#0" expanded="false" />
-                <element signature="e#15078#15130#0" expanded="false" />
-                <element signature="e#15152#15205#0" expanded="false" />
-                <element signature="e#15234#15283#0" expanded="false" />
-                <element signature="e#15303#15337#0" expanded="false" />
-                <element signature="e#15370#15407#0" expanded="false" />
-                <element signature="e#15427#15431#0" expanded="false" />
-                <element signature="e#15462#15503#0" expanded="false" />
-                <element signature="e#15557#15634#0" expanded="false" />
-                <element signature="e#15707#15757#0" expanded="false" />
-                <element signature="e#15835#15922#0" expanded="false" />
-                <element signature="e#16011#16038#0" expanded="false" />
-                <element signature="e#16122#16150#0" expanded="false" />
-                <element signature="e#16238#16268#0" expanded="false" />
-                <element signature="e#16356#16448#0" expanded="false" />
-                <element signature="e#16531#16595#0" expanded="false" />
-                <element signature="e#16683#16752#0" expanded="false" />
-                <element signature="e#16945#16967#0" expanded="false" />
-                <element signature="e#17157#17180#0" expanded="false" />
-                <element signature="e#17277#17303#0" expanded="false" />
-                <element signature="e#17375#17425#0" expanded="false" />
-                <element signature="e#17436#17718#0" expanded="false" />
-                <element signature="e#17910#17956#0" expanded="false" />
-                <element signature="e#17975#17978#0" expanded="false" />
-                <element signature="e#18003#18064#0" expanded="false" />
-                <element signature="e#18101#18152#0" expanded="false" />
-                <element signature="e#18186#18209#0" expanded="false" />
+                <element signature="e#157#196#0" expanded="false" />
+                <element signature="e#199#249#0" expanded="false" />
+                <element signature="e#260#553#0" expanded="false" />
+                <element signature="e#559#585#0" expanded="false" />
+                <element signature="e#593#641#0" expanded="false" />
+                <element signature="e#721#740#0" expanded="false" />
+                <element signature="e#763#788#0" expanded="false" />
+                <element signature="e#810#834#0" expanded="false" />
+                <element signature="e#876#880#0" expanded="false" />
+                <element signature="e#899#924#0" expanded="false" />
+                <element signature="e#961#980#0" expanded="false" />
+                <element signature="e#1028#1053#0" expanded="false" />
+                <element signature="e#1094#1877#0" expanded="false" />
+                <element signature="e#1895#2678#0" expanded="false" />
+                <element signature="e#2718#2746#0" expanded="false" />
+                <element signature="e#2762#2790#0" expanded="false" />
+                <element signature="e#2799#2826#0" expanded="false" />
+                <element signature="e#2848#2876#0" expanded="false" />
+                <element signature="e#2894#2961#0" expanded="false" />
+                <element signature="e#3007#3028#0" expanded="false" />
+                <element signature="e#3045#3078#0" expanded="false" />
+                <element signature="e#3121#3234#0" expanded="false" />
+                <element signature="e#3298#3355#0" expanded="false" />
+                <element signature="e#3391#3653#0" expanded="false" />
+                <element signature="e#3667#4253#0" expanded="false" />
+                <element signature="e#4263#5068#0" expanded="false" />
+                <element signature="e#5135#5187#0" expanded="false" />
+                <element signature="e#5212#5243#0" expanded="false" />
+                <element signature="e#5272#5294#0" expanded="false" />
+                <element signature="e#5329#5351#0" expanded="false" />
+                <element signature="e#5508#5567#0" expanded="false" />
+                <element signature="e#5648#5711#0" expanded="false" />
+                <element signature="e#5760#5921#0" expanded="false" />
+                <element signature="e#5996#6016#0" expanded="false" />
+                <element signature="e#6045#6107#0" expanded="false" />
+                <element signature="e#6136#6162#0" expanded="false" />
+                <element signature="e#6197#6241#0" expanded="false" />
+                <element signature="e#6258#6281#0" expanded="false" />
+                <element signature="e#6295#6320#0" expanded="false" />
+                <element signature="e#6338#6381#0" expanded="false" />
+                <element signature="e#6414#6513#0" expanded="false" />
+                <element signature="e#6531#6615#0" expanded="false" />
+                <element signature="e#6647#6738#0" expanded="false" />
+                <element signature="e#6757#6777#0" expanded="false" />
+                <element signature="e#6865#6890#0" expanded="false" />
+                <element signature="e#6908#6933#0" expanded="false" />
+                <element signature="e#6945#6972#0" expanded="false" />
+                <element signature="e#7025#7156#0" expanded="false" />
+                <element signature="e#7194#7218#0" expanded="false" />
+                <element signature="e#7241#7258#0" expanded="false" />
+                <element signature="e#7310#7360#0" expanded="false" />
+                <element signature="e#7379#7450#0" expanded="false" />
+                <element signature="e#7491#7521#0" expanded="false" />
+                <element signature="e#7563#7593#0" expanded="false" />
+                <element signature="e#7637#7667#0" expanded="false" />
+                <element signature="e#7684#7702#0" expanded="false" />
+                <element signature="e#7717#7739#0" expanded="false" />
+                <element signature="e#7755#7827#0" expanded="false" />
+                <element signature="e#7835#7976#0" expanded="false" />
+                <element signature="e#7990#8049#0" expanded="false" />
+                <element signature="e#8082#8222#0" expanded="false" />
+                <element signature="e#8237#8271#0" expanded="false" />
+                <element signature="e#8287#8488#0" expanded="false" />
+                <element signature="e#8509#8866#0" expanded="false" />
+                <element signature="e#8878#8927#0" expanded="false" />
+                <element signature="e#8963#9689#0" expanded="false" />
+                <element signature="e#9739#9841#0" expanded="false" />
+                <element signature="e#9850#9872#0" expanded="false" />
+                <element signature="e#9934#10016#0" expanded="false" />
+                <element signature="e#10029#10832#0" expanded="false" />
+                <element signature="e#10846#11649#0" expanded="false" />
+                <element signature="e#11665#11690#0" expanded="false" />
+                <element signature="e#11698#11745#0" expanded="false" />
+                <element signature="e#11843#11903#0" expanded="false" />
+                <element signature="e#11951#11971#0" expanded="false" />
+                <element signature="e#11985#12212#0" expanded="false" />
+                <element signature="e#12252#12467#0" expanded="false" />
+                <element signature="e#12499#12525#0" expanded="false" />
+                <element signature="e#12532#12557#0" expanded="false" />
+                <element signature="e#12575#12980#0" expanded="false" />
+                <element signature="e#12995#13045#0" expanded="false" />
+                <element signature="e#13058#13204#0" expanded="false" />
+                <element signature="e#13215#13249#0" expanded="false" />
+                <element signature="e#13299#13333#0" expanded="false" />
+                <element signature="e#13345#13476#0" expanded="false" />
+                <element signature="e#13493#13582#0" expanded="false" />
+                <element signature="e#13597#13755#0" expanded="false" />
+                <element signature="e#13805#13872#0" expanded="false" />
+                <element signature="e#13984#14499#0" expanded="false" />
+                <element signature="e#14502#14525#0" expanded="false" />
+                <element signature="e#14532#14625#0" expanded="false" />
+                <element signature="e#14657#16354#0" expanded="false" />
+                <element signature="e#16405#16832#0" expanded="false" />
+                <element signature="e#16865#17984#0" expanded="false" />
+                <element signature="e#18024#19070#0" expanded="false" />
+                <element signature="e#19128#19151#0" expanded="false" />
+                <element signature="e#19197#20111#0" expanded="false" />
+                <element signature="e#20180#20497#0" expanded="false" />
+                <element signature="e#20560#20877#0" expanded="false" />
+                <element signature="e#20935#21176#0" expanded="false" />
+                <element signature="e#21239#21302#0" expanded="false" />
+                <element signature="e#21340#22386#0" expanded="false" />
+                <element signature="e#22442#22463#0" expanded="false" />
+                <element signature="e#22507#23421#0" expanded="false" />
+                <element signature="e#23488#23805#0" expanded="false" />
+                <element signature="e#23866#24183#0" expanded="false" />
+                <element signature="e#24239#24502#0" expanded="false" />
+                <element signature="e#24564#24585#0" expanded="false" />
+                <element signature="e#24665#24686#0" expanded="false" />
+                <element signature="e#24747#24810#0" expanded="false" />
+                <element signature="e#24861#24991#0" expanded="false" />
+                <element signature="e#25047#25104#0" expanded="false" />
+                <element signature="e#25155#25178#0" expanded="false" />
+                <element signature="e#25217#26131#0" expanded="false" />
+                <element signature="e#26193#26510#0" expanded="false" />
+                <element signature="e#26566#26883#0" expanded="false" />
+                <element signature="e#26928#27111#0" expanded="false" />
+                <element signature="e#27174#27246#0" expanded="false" />
+                <element signature="e#27290#27473#0" expanded="false" />
+                <element signature="e#27536#27563#0" expanded="false" />
+                <element signature="e#27625#27653#0" expanded="false" />
+                <element signature="e#27715#27737#0" expanded="false" />
+                <element signature="e#27788#27919#0" expanded="false" />
+                <element signature="e#27970#28105#0" expanded="false" />
+                <element signature="e#28161#28465#0" expanded="false" />
+                <element signature="e#28483#29765#0" expanded="false" />
+                <element signature="e#29796#29852#0" expanded="false" />
+                <element signature="e#29886#29952#0" expanded="false" />
+                <element signature="e#29992#30036#0" expanded="false" />
+                <element signature="e#30087#30107#0" expanded="false" />
+                <element signature="e#30153#30179#0" expanded="false" />
+                <element signature="e#30221#30241#0" expanded="false" />
+                <element signature="e#30275#30336#0" expanded="false" />
+                <element signature="e#30377#30402#0" expanded="false" />
+                <element signature="e#30449#30474#0" expanded="false" />
+                <element signature="e#30506#30789#0" expanded="false" />
+                <element signature="e#30828#30873#0" expanded="false" />
+                <element signature="e#30963#30986#0" expanded="false" />
+                <element signature="e#31032#31082#0" expanded="false" />
+                <element signature="e#31180#31201#0" expanded="false" />
+                <element signature="e#31253#31304#0" expanded="false" />
+                <element signature="e#31398#31468#0" expanded="false" />
+                <element signature="e#31502#31649#0" expanded="false" />
+                <element signature="e#31689#31885#0" expanded="false" />
+                <element signature="e#31932#31983#0" expanded="false" />
+                <element signature="e#32029#32057#0" expanded="false" />
+                <element signature="e#32183#32273#0" expanded="false" />
+                <element signature="e#32299#32327#0" expanded="false" />
+                <element signature="e#32365#33091#0" expanded="false" />
+                <element signature="e#33153#33191#0" expanded="false" />
+                <element signature="e#33227#33371#0" expanded="false" />
+                <element signature="e#33399#33475#0" expanded="false" />
+                <element signature="e#33510#33543#0" expanded="false" />
+                <element signature="e#33585#33636#0" expanded="false" />
+                <element signature="e#33680#33732#0" expanded="false" />
+                <element signature="e#33818#33963#0" expanded="false" />
+                <element signature="e#33975#34024#0" expanded="false" />
+                <element signature="e#34052#34322#0" expanded="false" />
+                <element signature="e#34411#34439#0" expanded="false" />
+                <element signature="e#34514#34534#0" expanded="false" />
+                <element signature="e#34583#34820#0" expanded="false" />
+                <element signature="e#34862#34886#0" expanded="false" />
+                <element signature="e#34919#35181#0" expanded="false" />
+                <element signature="e#35200#35295#0" expanded="false" />
+                <element signature="e#35309#36415#0" expanded="false" />
+                <element signature="e#36438#36461#0" expanded="false" />
+                <element signature="e#36529#36580#0" expanded="false" />
+                <element signature="e#36657#36707#0" expanded="false" />
+                <element signature="e#36732#36797#0" expanded="false" />
+                <element signature="e#36820#36842#0" expanded="false" />
+                <element signature="e#36885#37218#0" expanded="false" />
+                <element signature="e#37241#37260#0" expanded="false" />
+                <element signature="e#37297#37460#0" expanded="false" />
+                <element signature="e#37547#37574#0" expanded="false" />
+                <element signature="e#37613#37738#0" expanded="false" />
+                <element signature="e#37779#39003#0" expanded="false" />
+                <element signature="e#39050#40040#0" expanded="false" />
+                <element signature="e#40094#40272#0" expanded="false" />
+                <element signature="e#40286#41089#0" expanded="false" />
+                <element signature="e#41147#41235#0" expanded="false" />
+                <element signature="e#41272#41335#0" expanded="false" />
+                <element signature="e#41353#41597#0" expanded="false" />
+                <element signature="e#41626#41662#0" expanded="false" />
+                <element signature="e#41693#41729#0" expanded="false" />
+                <element signature="e#41759#41795#0" expanded="false" />
+                <element signature="e#41827#41863#0" expanded="false" />
+                <element signature="e#41888#42058#0" expanded="false" />
+                <element signature="e#42098#42252#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="col-right_annonce.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/col-right_annonce.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.118858956" vertical-offset="0" max-vertical-offset="1935">
-              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -196,62 +275,19 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_activity.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_sais.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_my_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Annonce/edit_annonce_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Form/StatusType.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/CommentActivity.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/CommentActivityRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Status.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_new_comment.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_new_ajax_status.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/Form/form_whatUp.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_new_status.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/UserRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AbonnementRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Abonnement.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/AbonnementActivity.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_fil_actu.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/AbonnementActivityRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_new_abonnement.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ProfileController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Stats.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Abonnement/board_user_abonnement.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AbonnementController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/BoardModal/AbonnementModal.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/interest.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/remove.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/abonnement.js" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_stat_recommandation.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/modalDefault.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/notConnected.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/MessageModal/newMessage.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/site/css/board.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/save_annonce.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/col-left-annonce.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/enAttente.css" />
         <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/col-left_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/annonce_base_template.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/show_annonce.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css" />
-        <option value="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/col-right_annonce.html.twig" />
       </list>
     </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
@@ -311,7 +347,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -337,6 +373,22 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Tests" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Tinkernote">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -353,246 +405,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Tinkernote" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Annonce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Annonce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Accueil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Annonce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Accueil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tinkernote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Tests" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Tinkernote">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -615,11 +427,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/BoardModal" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show" />
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal" />
-      <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/FacebookLike" />
@@ -653,7 +465,7 @@
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -712,28 +524,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28696924" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.284041" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796487" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28928047" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.319063" sideWeight="0.5009862" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7600969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3634895" sideWeight="0.4990138" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.319063" sideWeight="0.5009862" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28928047" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38529888" sideWeight="0.4990138" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39824304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796487" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39824304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39824304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -794,774 +606,638 @@
           <line>61</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleTwoData.php</url>
+          <line>38967</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="75" />
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/CommentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/ParentCategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/PictureRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/VilleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="735">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AbonnementRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45166403" vertical-offset="0" max-vertical-offset="631">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7606973" vertical-offset="0" max-vertical-offset="631">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Abonnement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.537931" vertical-offset="111" max-vertical-offset="2430">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31034482" vertical-offset="0" max-vertical-offset="1980">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/AbonnementActivity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4827586" vertical-offset="0" max-vertical-offset="1935">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_fil_actu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5467512" vertical-offset="0" max-vertical-offset="690">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_new_abonnement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5427632" vertical-offset="0" max-vertical-offset="608">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/AbonnementActivityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47543582" vertical-offset="0" max-vertical-offset="631">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Stats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.708333" vertical-offset="4" max-vertical-offset="1245">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Annonce/edit_annonce.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.049342107" vertical-offset="0" max-vertical-offset="608">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Abonnement/board_user_abonnement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8575949" vertical-offset="1078" max-vertical-offset="1710">
-          <caret line="108" column="9" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Abonnement/board_user_abonnement_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68938196" vertical-offset="360" max-vertical-offset="1200">
-          <caret line="62" column="85" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/board.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1595" max-vertical-offset="2295">
-          <caret line="707" column="17" selection-start-line="707" selection-start-column="17" selection-end-line="707" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7480916" vertical-offset="860" max-vertical-offset="1530">
-          <caret line="90" column="119" selection-start-line="90" selection-start-column="98" selection-end-line="90" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/myfunction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6781609" vertical-offset="455" max-vertical-offset="990">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/BoardModal/AbonnementModal.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77796054" vertical-offset="127" max-vertical-offset="735">
-          <caret line="40" column="22" selection-start-line="38" selection-start-column="15" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/interest.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85736924" vertical-offset="524" max-vertical-offset="1200">
-          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/remove.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57052296" vertical-offset="0" max-vertical-offset="631">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/abonnement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43206108" vertical-offset="2" max-vertical-offset="735">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AbonnementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6196513" vertical-offset="209" max-vertical-offset="840">
-          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/edit_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2505">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/notConnected.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Controller/ProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="1680">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/modalDefault.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39473686" vertical-offset="0" max-vertical-offset="608">
-          <caret line="16" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Annonce/edit_annonce_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1315372" vertical-offset="4040" max-vertical-offset="5670">
-          <caret line="359" column="12" selection-start-line="359" selection-start-column="12" selection-end-line="361" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/MessageModal/newMessage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.118858956" vertical-offset="0" max-vertical-offset="631">
-          <caret line="5" column="143" selection-start-line="5" selection-start-column="143" selection-end-line="5" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Resources/views/Profile/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85736924" vertical-offset="2249" max-vertical-offset="2880">
-          <caret line="186" column="66" selection-start-line="186" selection-start-column="66" selection-end-line="186" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.02377179" vertical-offset="240" max-vertical-offset="2085">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content_SAVE.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2925">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.166667" vertical-offset="1139" max-vertical-offset="2490">
-          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_stat_recommandation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02377179" vertical-offset="0" max-vertical-offset="2505">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/site/css/board.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="2025">
-          <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-          <folding>
-            <element signature="e#64#86#0" expanded="false" />
-            <element signature="e#107#182#0" expanded="false" />
-            <element signature="e#200#244#0" expanded="false" />
-            <element signature="e#276#304#0" expanded="false" />
-            <element signature="e#356#381#0" expanded="false" />
-            <element signature="e#422#467#0" expanded="false" />
-            <element signature="e#513#563#0" expanded="false" />
-            <element signature="e#606#627#0" expanded="false" />
-            <element signature="e#676#762#0" expanded="false" />
-            <element signature="e#807#1048#0" expanded="false" />
-            <element signature="e#1099#1262#0" expanded="false" />
-            <element signature="e#1313#1332#0" expanded="false" />
-            <element signature="e#1404#1461#0" expanded="false" />
-            <element signature="e#1477#1500#0" expanded="false" />
-            <element signature="e#1524#1546#0" expanded="false" />
-            <element signature="e#1577#1615#0" expanded="false" />
-            <element signature="e#1626#2026#0" expanded="false" />
-            <element signature="e#2037#2275#0" expanded="false" />
-            <element signature="e#2306#2403#0" expanded="false" />
-            <element signature="e#2419#2937#0" expanded="false" />
-            <element signature="e#2954#3472#0" expanded="false" />
-            <element signature="e#3507#4470#0" expanded="false" />
-            <element signature="e#4486#5004#0" expanded="false" />
-            <element signature="e#5038#6001#0" expanded="false" />
-            <element signature="e#6019#6537#0" expanded="false" />
-            <element signature="e#6573#7536#0" expanded="false" />
-            <element signature="e#7553#8071#0" expanded="false" />
-            <element signature="e#8106#9069#0" expanded="false" />
-            <element signature="e#9084#9602#0" expanded="false" />
-            <element signature="e#9635#10598#0" expanded="false" />
-            <element signature="e#10624#10837#0" expanded="false" />
-            <element signature="e#10862#11233#0" expanded="false" />
-            <element signature="e#11264#11329#0" expanded="false" />
-            <element signature="e#11348#11425#0" expanded="false" />
-            <element signature="e#11453#11495#0" expanded="false" />
-            <element signature="e#11537#11563#0" expanded="false" />
-            <element signature="e#11599#11643#0" expanded="false" />
-            <element signature="e#11681#11750#0" expanded="false" />
-            <element signature="e#11870#11945#0" expanded="false" />
-            <element signature="e#12021#12055#0" expanded="false" />
-            <element signature="e#12109#12150#0" expanded="false" />
-            <element signature="e#12158#12249#0" expanded="false" />
-            <element signature="e#12274#12318#0" expanded="false" />
-            <element signature="e#12355#12382#0" expanded="false" />
-            <element signature="e#12562#12631#0" expanded="false" />
-            <element signature="e#12658#12684#0" expanded="false" />
-            <element signature="e#12802#12887#0" expanded="false" />
-            <element signature="e#12926#13062#0" expanded="false" />
-            <element signature="e#13070#13122#0" expanded="false" />
-            <element signature="e#13162#13206#0" expanded="false" />
-            <element signature="e#13242#13444#0" expanded="false" />
-            <element signature="e#13499#13550#0" expanded="false" />
-            <element signature="e#13579#13896#0" expanded="false" />
-            <element signature="e#13967#14027#0" expanded="false" />
-            <element signature="e#14062#14082#0" expanded="false" />
-            <element signature="e#14113#14216#0" expanded="false" />
-            <element signature="e#14254#14377#0" expanded="false" />
-            <element signature="e#14392#14438#0" expanded="false" />
-            <element signature="e#14449#14569#0" expanded="false" />
-            <element signature="e#14588#14627#0" expanded="false" />
-            <element signature="e#14682#14916#0" expanded="false" />
-            <element signature="e#14943#14993#0" expanded="false" />
-            <element signature="e#15028#15048#0" expanded="false" />
-            <element signature="e#15099#15122#0" expanded="false" />
-            <element signature="e#15150#15200#0" expanded="false" />
-            <element signature="e#15236#15257#0" expanded="false" />
-            <element signature="e#15309#15332#0" expanded="false" />
-            <element signature="e#15349#15526#0" expanded="false" />
-            <element signature="e#15573#15633#0" expanded="false" />
-            <element signature="e#15656#15676#0" expanded="false" />
-            <element signature="e#15699#15719#0" expanded="false" />
-            <element signature="e#15749#15796#0" expanded="false" />
-            <element signature="e#15819#15840#0" expanded="false" />
-            <element signature="e#15853#16194#0" expanded="false" />
-            <element signature="e#16221#16396#0" expanded="false" />
-            <element signature="e#16423#16606#0" expanded="false" />
-            <element signature="e#16663#16811#0" expanded="false" />
-            <element signature="e#16845#16918#0" expanded="false" />
-            <element signature="e#16951#17024#0" expanded="false" />
-            <element signature="e#17046#17146#0" expanded="false" />
-            <element signature="e#17176#17223#0" expanded="false" />
-            <element signature="e#17260#17302#0" expanded="false" />
-            <element signature="e#17311#17337#0" expanded="false" />
-            <element signature="e#17356#17845#0" expanded="false" />
-            <element signature="e#17868#17978#0" expanded="false" />
-            <element signature="e#18008#18445#0" expanded="false" />
-            <element signature="e#18576#18648#0" expanded="false" />
-            <element signature="e#18785#18892#0" expanded="false" />
-            <element signature="e#18928#18975#0" expanded="false" />
-            <element signature="e#19003#19112#0" expanded="false" />
-            <element signature="e#19152#19199#0" expanded="false" />
-            <element signature="e#19235#19379#0" expanded="false" />
-            <element signature="e#19409#19451#0" expanded="false" />
-            <element signature="e#19488#19526#0" expanded="false" />
-            <element signature="e#19561#19649#0" expanded="false" />
-            <element signature="e#19700#19847#0" expanded="false" />
-            <element signature="e#19924#19969#0" expanded="false" />
-            <element signature="e#20008#20058#0" expanded="false" />
-            <element signature="e#20095#20821#0" expanded="false" />
-            <element signature="e#20885#20963#0" expanded="false" />
-            <element signature="e#20982#21044#0" expanded="false" />
-            <element signature="e#21070#21094#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/accueil_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/SAVEannonce.css">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Site/Accueil/Template/footer_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8700">
+        <state vertical-scroll-proportion="0.49586776" vertical-offset="555" max-vertical-offset="2580">
+          <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/SAVEshow_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/modalDefault.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+        <state vertical-scroll-proportion="0.38034865" vertical-offset="0" max-vertical-offset="631">
+          <caret line="16" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/AnnonceModal/commentAbonner.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Abonnement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14308426" vertical-offset="255" max-vertical-offset="2430">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="653">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/FacebookLike/col-right_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Show/show_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19017433" vertical-offset="0" max-vertical-offset="631">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding />
+        <state vertical-scroll-proportion="0.21462639" vertical-offset="1260" max-vertical-offset="2820">
+          <caret line="93" column="71" selection-start-line="93" selection-start-column="71" selection-end-line="93" selection-end-column="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/FacebookLike/col-left_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30903327" vertical-offset="0" max-vertical-offset="631">
-          <caret line="13" column="108" selection-start-line="13" selection-start-column="108" selection-end-line="13" selection-end-column="108" />
-          <folding />
+        <state vertical-scroll-proportion="0.8162328" vertical-offset="1147" max-vertical-offset="1890">
+          <caret line="112" column="14" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Activity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2713816" vertical-offset="0" max-vertical-offset="608">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5221519" vertical-offset="0" max-vertical-offset="632">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7480916" vertical-offset="860" max-vertical-offset="1530">
+          <caret line="90" column="160" selection-start-line="90" selection-start-column="160" selection-end-line="90" selection-end-column="160" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/annonce_accueil_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2139461" vertical-offset="119" max-vertical-offset="1215">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#3510#3568#0#Twig" expanded="false" />
-            <element signature="e#3626#3689#0#Twig" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.38193345" vertical-offset="434" max-vertical-offset="1065">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/annonce_base_template.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AbonnementController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9506579" vertical-offset="172" max-vertical-offset="840">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-          <folding />
+        <state vertical-scroll-proportion="0.6877971" vertical-offset="316" max-vertical-offset="1365">
+          <caret line="171" column="29" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/js/abonnement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3830" max-vertical-offset="4485">
-          <caret line="1157" column="2" selection-start-line="1157" selection-start-column="0" selection-end-line="1190" selection-end-column="3" />
-          <folding>
-            <element signature="e#4#200#0" expanded="false" />
-            <element signature="e#216#255#0" expanded="false" />
-            <element signature="e#258#308#0" expanded="false" />
-            <element signature="e#319#612#0" expanded="false" />
-            <element signature="e#618#644#0" expanded="false" />
-            <element signature="e#652#700#0" expanded="false" />
-            <element signature="e#780#799#0" expanded="false" />
-            <element signature="e#822#847#0" expanded="false" />
-            <element signature="e#869#893#0" expanded="false" />
-            <element signature="e#935#939#0" expanded="false" />
-            <element signature="e#958#983#0" expanded="false" />
-            <element signature="e#1020#1039#0" expanded="false" />
-            <element signature="e#1087#1112#0" expanded="false" />
-            <element signature="e#1153#1936#0" expanded="false" />
-            <element signature="e#1954#2737#0" expanded="false" />
-            <element signature="e#2777#2805#0" expanded="false" />
-            <element signature="e#2821#2849#0" expanded="false" />
-            <element signature="e#2858#2885#0" expanded="false" />
-            <element signature="e#2907#2935#0" expanded="false" />
-            <element signature="e#2953#3020#0" expanded="false" />
-            <element signature="e#3066#3087#0" expanded="false" />
-            <element signature="e#3104#3137#0" expanded="false" />
-            <element signature="e#3180#3293#0" expanded="false" />
-            <element signature="e#3357#3414#0" expanded="false" />
-            <element signature="e#3450#3712#0" expanded="false" />
-            <element signature="e#3725#4661#0" expanded="false" />
-            <element signature="e#4728#4780#0" expanded="false" />
-            <element signature="e#4805#4836#0" expanded="false" />
-            <element signature="e#4865#4887#0" expanded="false" />
-            <element signature="e#4922#4944#0" expanded="false" />
-            <element signature="e#5101#5160#0" expanded="false" />
-            <element signature="e#5241#5304#0" expanded="false" />
-            <element signature="e#5353#5514#0" expanded="false" />
-            <element signature="e#5589#5609#0" expanded="false" />
-            <element signature="e#5638#5700#0" expanded="false" />
-            <element signature="e#5729#5755#0" expanded="false" />
-            <element signature="e#5790#5834#0" expanded="false" />
-            <element signature="e#5851#5874#0" expanded="false" />
-            <element signature="e#5888#5913#0" expanded="false" />
-            <element signature="e#5931#5974#0" expanded="false" />
-            <element signature="e#6007#6106#0" expanded="false" />
-            <element signature="e#6124#6208#0" expanded="false" />
-            <element signature="e#6240#6331#0" expanded="false" />
-            <element signature="e#6350#6370#0" expanded="false" />
-            <element signature="e#6458#6483#0" expanded="false" />
-            <element signature="e#6501#6526#0" expanded="false" />
-            <element signature="e#6538#6565#0" expanded="false" />
-            <element signature="e#6618#6749#0" expanded="false" />
-            <element signature="e#6787#6811#0" expanded="false" />
-            <element signature="e#6834#6851#0" expanded="false" />
-            <element signature="e#6903#6953#0" expanded="false" />
-            <element signature="e#6972#7043#0" expanded="false" />
-            <element signature="e#7084#7114#0" expanded="false" />
-            <element signature="e#7156#7186#0" expanded="false" />
-            <element signature="e#7230#7260#0" expanded="false" />
-            <element signature="e#7277#7295#0" expanded="false" />
-            <element signature="e#7310#7332#0" expanded="false" />
-            <element signature="e#7348#7420#0" expanded="false" />
-            <element signature="e#7428#7569#0" expanded="false" />
-            <element signature="e#7583#7642#0" expanded="false" />
-            <element signature="e#7675#7815#0" expanded="false" />
-            <element signature="e#7830#7864#0" expanded="false" />
-            <element signature="e#7880#8081#0" expanded="false" />
-            <element signature="e#8471#8520#0" expanded="false" />
-            <element signature="e#8556#9282#0" expanded="false" />
-            <element signature="e#9332#9434#0" expanded="false" />
-            <element signature="e#9443#9465#0" expanded="false" />
-            <element signature="e#9527#9609#0" expanded="false" />
-            <element signature="e#9622#10425#0" expanded="false" />
-            <element signature="e#10439#11242#0" expanded="false" />
-            <element signature="e#11258#11283#0" expanded="false" />
-            <element signature="e#11291#11338#0" expanded="false" />
-            <element signature="e#11436#11496#0" expanded="false" />
-            <element signature="e#11544#11564#0" expanded="false" />
-            <element signature="e#11578#11805#0" expanded="false" />
-            <element signature="e#11845#12060#0" expanded="false" />
-            <element signature="e#12092#12118#0" expanded="false" />
-            <element signature="e#12125#12150#0" expanded="false" />
-            <element signature="e#12168#12573#0" expanded="false" />
-            <element signature="e#12588#12638#0" expanded="false" />
-            <element signature="e#12651#12797#0" expanded="false" />
-            <element signature="e#12808#12842#0" expanded="false" />
-            <element signature="e#12892#12926#0" expanded="false" />
-            <element signature="e#12938#13069#0" expanded="false" />
-            <element signature="e#13086#13175#0" expanded="false" />
-            <element signature="e#13190#13348#0" expanded="false" />
-            <element signature="e#13398#13465#0" expanded="false" />
-            <element signature="e#13577#14092#0" expanded="false" />
-            <element signature="e#14125#14218#0" expanded="false" />
-            <element signature="e#14250#15947#0" expanded="false" />
-            <element signature="e#15998#16425#0" expanded="false" />
-            <element signature="e#16458#17577#0" expanded="false" />
-            <element signature="e#17617#18663#0" expanded="false" />
-            <element signature="e#18721#18744#0" expanded="false" />
-            <element signature="e#18790#19704#0" expanded="false" />
-            <element signature="e#19773#20090#0" expanded="false" />
-            <element signature="e#20153#20470#0" expanded="false" />
-            <element signature="e#20528#20769#0" expanded="false" />
-            <element signature="e#20832#20895#0" expanded="false" />
-            <element signature="e#20933#21979#0" expanded="false" />
-            <element signature="e#22035#22056#0" expanded="false" />
-            <element signature="e#22100#23014#0" expanded="false" />
-            <element signature="e#23081#23398#0" expanded="false" />
-            <element signature="e#23459#23776#0" expanded="false" />
-            <element signature="e#23832#24095#0" expanded="false" />
-            <element signature="e#24157#24178#0" expanded="false" />
-            <element signature="e#24258#24279#0" expanded="false" />
-            <element signature="e#24340#24403#0" expanded="false" />
-            <element signature="e#24454#24584#0" expanded="false" />
-            <element signature="e#24640#24697#0" expanded="false" />
-            <element signature="e#24748#24771#0" expanded="false" />
-            <element signature="e#24810#25724#0" expanded="false" />
-            <element signature="e#25786#26103#0" expanded="false" />
-            <element signature="e#26159#26476#0" expanded="false" />
-            <element signature="e#26521#26704#0" expanded="false" />
-            <element signature="e#26767#26839#0" expanded="false" />
-            <element signature="e#26883#27066#0" expanded="false" />
-            <element signature="e#27129#27156#0" expanded="false" />
-            <element signature="e#27218#27246#0" expanded="false" />
-            <element signature="e#27308#27330#0" expanded="false" />
-            <element signature="e#27381#27512#0" expanded="false" />
-            <element signature="e#27563#27698#0" expanded="false" />
-            <element signature="e#27754#28058#0" expanded="false" />
-            <element signature="e#28076#29358#0" expanded="false" />
-            <element signature="e#29389#29445#0" expanded="false" />
-            <element signature="e#29479#29545#0" expanded="false" />
-            <element signature="e#29585#29629#0" expanded="false" />
-            <element signature="e#29680#29700#0" expanded="false" />
-            <element signature="e#29746#29772#0" expanded="false" />
-            <element signature="e#29814#29834#0" expanded="false" />
-            <element signature="e#29868#29929#0" expanded="false" />
-            <element signature="e#29970#29995#0" expanded="false" />
-            <element signature="e#30042#30067#0" expanded="false" />
-            <element signature="e#30099#30382#0" expanded="false" />
-            <element signature="e#30421#30466#0" expanded="false" />
-            <element signature="e#30556#30579#0" expanded="false" />
-            <element signature="e#30625#30675#0" expanded="false" />
-            <element signature="e#30773#30794#0" expanded="false" />
-            <element signature="e#30846#30897#0" expanded="false" />
-            <element signature="e#30991#31061#0" expanded="false" />
-            <element signature="e#31095#31242#0" expanded="false" />
-            <element signature="e#31282#31478#0" expanded="false" />
-            <element signature="e#31525#31576#0" expanded="false" />
-            <element signature="e#31622#31650#0" expanded="false" />
-            <element signature="e#31776#31866#0" expanded="false" />
-            <element signature="e#31892#31920#0" expanded="false" />
-            <element signature="e#31958#32684#0" expanded="false" />
-            <element signature="e#32746#32784#0" expanded="false" />
-            <element signature="e#32820#32964#0" expanded="false" />
-            <element signature="e#32992#33068#0" expanded="false" />
-            <element signature="e#33103#33136#0" expanded="false" />
-            <element signature="e#33178#33229#0" expanded="false" />
-            <element signature="e#33273#33325#0" expanded="false" />
-            <element signature="e#33411#33556#0" expanded="false" />
-            <element signature="e#33568#33617#0" expanded="false" />
-            <element signature="e#33645#33915#0" expanded="false" />
-            <element signature="e#34004#34032#0" expanded="false" />
-            <element signature="e#34107#34127#0" expanded="false" />
-            <element signature="e#34176#34413#0" expanded="false" />
-            <element signature="e#34455#34479#0" expanded="false" />
-            <element signature="e#34512#34774#0" expanded="false" />
-            <element signature="e#34793#34888#0" expanded="false" />
-            <element signature="e#34902#36008#0" expanded="false" />
-            <element signature="e#36031#36054#0" expanded="false" />
-            <element signature="e#36122#36173#0" expanded="false" />
-            <element signature="e#36250#36300#0" expanded="false" />
-            <element signature="e#36325#36390#0" expanded="false" />
-            <element signature="e#36413#36435#0" expanded="false" />
-            <element signature="e#36478#36811#0" expanded="false" />
-            <element signature="e#36834#36853#0" expanded="false" />
-            <element signature="e#36890#37053#0" expanded="false" />
-            <element signature="e#37140#37167#0" expanded="false" />
-            <element signature="e#37206#37331#0" expanded="false" />
-            <element signature="e#37372#38596#0" expanded="false" />
-            <element signature="e#38643#39633#0" expanded="false" />
-            <element signature="e#39687#39865#0" expanded="false" />
-            <element signature="e#39879#40682#0" expanded="false" />
-            <element signature="e#40740#40828#0" expanded="false" />
-            <element signature="e#40865#40928#0" expanded="false" />
-            <element signature="e#40946#41186#0" expanded="false" />
-            <element signature="e#41215#41251#0" expanded="false" />
-            <element signature="e#41282#41318#0" expanded="false" />
-            <element signature="e#41348#41384#0" expanded="false" />
-            <element signature="e#41416#41452#0" expanded="false" />
-            <element signature="e#41477#41647#0" expanded="false" />
-            <element signature="e#41687#41841#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.6870229" vertical-offset="0" max-vertical-offset="655">
+          <caret line="164" column="10" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/FacebookLike/show_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Services/Abonnement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42789224" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="49" />
-          <folding />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="525">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/show_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AbonnementRegion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42789224" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="23" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.9904913" vertical-offset="1235" max-vertical-offset="2445">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/DepartementRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AbonnementRegionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35657686" vertical-offset="0" max-vertical-offset="631">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/StatusRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/CommentActivityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/AbonnementActivityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64144737" vertical-offset="0" max-vertical-offset="608">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Activity/ActivityType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/UserBundle/Entity/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35657686" vertical-offset="0" max-vertical-offset="631">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AnnonceRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7622821" vertical-offset="584" max-vertical-offset="1215">
+          <caret line="209" column="32" selection-start-line="209" selection-start-column="32" selection-end-line="209" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Abonnement/board_user_abonnement_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Abonnement/board_user_abonnement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/board_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/BoardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="285" max-vertical-offset="1815">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/AbonnementRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="330">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/proposition.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79372936" vertical-offset="104" max-vertical-offset="795">
+          <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/BoardModal/MyFollowerModal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.625" vertical-offset="99" max-vertical-offset="735">
+          <caret line="22" column="81" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/ModalBox/BoardModal/AbonnementModal.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5484897" vertical-offset="0" max-vertical-offset="735">
+          <caret line="23" column="152" selection-start-line="23" selection-start-column="152" selection-end-line="23" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Board/Template/board_stat_recommandation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7138315" vertical-offset="1696" max-vertical-offset="2520">
+          <caret line="143" column="121" selection-start-line="143" selection-start-column="121" selection-end-line="143" selection-end-column="121" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/annonce.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="2700">
-          <caret line="379" column="53" selection-start-line="379" selection-start-column="53" selection-end-line="379" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.9540582" vertical-offset="6637" max-vertical-offset="8070">
+          <caret line="484" column="87" selection-start-line="484" selection-start-column="80" selection-end-line="484" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/localisation_tableau.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="26.453447" vertical-offset="10127" max-vertical-offset="1168590">
+          <caret line="1698" column="16" selection-start-line="1698" selection-start-column="12" selection-end-line="1698" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleThreeData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4228935" vertical-offset="4" max-vertical-offset="1845">
+          <caret line="77920" column="66" selection-start-line="77920" selection-start-column="66" selection-end-line="77920" selection-end-column="66" />
           <folding>
-            <element signature="e#72#94#0" expanded="false" />
-            <element signature="e#116#155#0" expanded="false" />
-            <element signature="e#204#297#0" expanded="false" />
-            <element signature="e#337#430#0" expanded="false" />
-            <element signature="e#457#501#0" expanded="false" />
-            <element signature="e#559#602#0" expanded="false" />
-            <element signature="e#646#671#0" expanded="false" />
-            <element signature="e#703#728#0" expanded="false" />
-            <element signature="e#753#904#0" expanded="false" />
-            <element signature="e#940#1808#0" expanded="false" />
-            <element signature="e#1842#1862#0" expanded="false" />
-            <element signature="e#1904#1927#0" expanded="false" />
-            <element signature="e#1984#2006#0" expanded="false" />
-            <element signature="e#2065#2141#0" expanded="false" />
-            <element signature="e#2154#2178#0" expanded="false" />
-            <element signature="e#2190#2214#0" expanded="false" />
-            <element signature="e#2228#2252#0" expanded="false" />
-            <element signature="e#2263#2287#0" expanded="false" />
-            <element signature="e#2333#2966#0" expanded="false" />
-            <element signature="e#3055#3277#0" expanded="false" />
-            <element signature="e#3354#3426#0" expanded="false" />
-            <element signature="e#3497#3589#0" expanded="false" />
-            <element signature="e#3611#4674#0" expanded="false" />
-            <element signature="e#4727#4774#0" expanded="false" />
-            <element signature="e#4821#5024#0" expanded="false" />
-            <element signature="e#5052#6042#0" expanded="false" />
-            <element signature="e#6131#6353#0" expanded="false" />
-            <element signature="e#6394#6477#0" expanded="false" />
-            <element signature="e#6491#7524#0" expanded="false" />
-            <element signature="e#7543#7568#0" expanded="false" />
-            <element signature="e#7591#7662#0" expanded="false" />
-            <element signature="e#7697#7763#0" expanded="false" />
-            <element signature="e#7800#7885#0" expanded="false" />
-            <element signature="e#7922#7947#0" expanded="false" />
-            <element signature="e#8003#8059#0" expanded="false" />
-            <element signature="e#8121#8190#0" expanded="false" />
-            <element signature="e#8211#8234#0" expanded="false" />
-            <element signature="e#8271#8404#0" expanded="false" />
-            <element signature="e#8448#8475#0" expanded="false" />
-            <element signature="e#8564#8589#0" expanded="false" />
-            <element signature="e#8605#8719#0" expanded="false" />
-            <element signature="e#8739#8759#0" expanded="false" />
-            <element signature="e#9593#9677#0" expanded="false" />
-            <element signature="e#9705#9733#0" expanded="false" />
-            <element signature="e#9761#9787#0" expanded="false" />
-            <element signature="e#9807#9844#0" expanded="false" />
-            <element signature="e#9868#9930#0" expanded="false" />
-            <element signature="e#9951#9977#0" expanded="false" />
-            <element signature="e#10002#10048#0" expanded="false" />
-            <element signature="e#10077#10099#0" expanded="false" />
-            <element signature="e#10134#10164#0" expanded="false" />
-            <element signature="e#10182#10228#0" expanded="false" />
-            <element signature="e#10261#10295#0" expanded="false" />
-            <element signature="e#10343#10399#0" expanded="false" />
-            <element signature="e#10437#10636#0" expanded="false" />
-            <element signature="e#10665#10733#0" expanded="false" />
-            <element signature="e#10756#10797#0" expanded="false" />
-            <element signature="e#10860#10994#0" expanded="false" />
-            <element signature="e#11011#11132#0" expanded="false" />
-            <element signature="e#11187#11409#0" expanded="false" />
-            <element signature="e#11523#12249#0" expanded="false" />
-            <element signature="e#12426#12528#0" expanded="false" />
-            <element signature="e#12754#12814#0" expanded="false" />
-            <element signature="e#12945#12965#0" expanded="false" />
-            <element signature="e#13019#13045#0" expanded="false" />
-            <element signature="e#13198#13272#0" expanded="false" />
-            <element signature="e#13393#13462#0" expanded="false" />
-            <element signature="e#13575#13622#0" expanded="false" />
-            <element signature="e#13752#14555#0" expanded="false" />
-            <element signature="e#14589#14839#0" expanded="false" />
-            <element signature="e#14879#14899#0" expanded="false" />
-            <element signature="e#14917#14971#0" expanded="false" />
-            <element signature="e#14993#15060#0" expanded="false" />
-            <element signature="e#15078#15130#0" expanded="false" />
-            <element signature="e#15152#15205#0" expanded="false" />
-            <element signature="e#15234#15283#0" expanded="false" />
-            <element signature="e#15303#15337#0" expanded="false" />
-            <element signature="e#15370#15407#0" expanded="false" />
-            <element signature="e#15427#15431#0" expanded="false" />
-            <element signature="e#15462#15503#0" expanded="false" />
-            <element signature="e#15557#15634#0" expanded="false" />
-            <element signature="e#15707#15757#0" expanded="false" />
-            <element signature="e#15835#15922#0" expanded="false" />
-            <element signature="e#16011#16038#0" expanded="false" />
-            <element signature="e#16122#16150#0" expanded="false" />
-            <element signature="e#16238#16268#0" expanded="false" />
-            <element signature="e#16356#16448#0" expanded="false" />
-            <element signature="e#16531#16595#0" expanded="false" />
-            <element signature="e#16683#16752#0" expanded="false" />
-            <element signature="e#16945#16967#0" expanded="false" />
-            <element signature="e#17157#17180#0" expanded="false" />
-            <element signature="e#17277#17303#0" expanded="false" />
-            <element signature="e#17375#17425#0" expanded="false" />
-            <element signature="e#17436#17718#0" expanded="false" />
-            <element signature="e#17910#17956#0" expanded="false" />
-            <element signature="e#17975#17978#0" expanded="false" />
-            <element signature="e#18003#18064#0" expanded="false" />
-            <element signature="e#18101#18152#0" expanded="false" />
-            <element signature="e#18186#18209#0" expanded="false" />
+            <element signature="e#471#737092#0#PHP" expanded="false" />
+            <element signature="e#737111#1800000#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/col-right_annonce.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleTwoData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.118858956" vertical-offset="0" max-vertical-offset="1935">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.64228934" vertical-offset="1216" max-vertical-offset="1845">
+          <caret line="78010" column="47" selection-start-line="78010" selection-start-column="47" selection-end-line="78010" selection-end-column="47" />
+          <folding>
+            <element signature="e#469#737090#0#PHP" expanded="false" />
+            <element signature="e#737109#1799998#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70149255" vertical-offset="2472" max-vertical-offset="3135">
+          <caret line="4921" column="0" selection-start-line="4921" selection-start-column="0" selection-end-line="4922" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/DataFixtures/ORM/Localisation/LoadVilleFiveData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="184884" max-vertical-offset="1073250">
+          <caret line="12342" column="17" selection-start-line="12342" selection-start-column="13" selection-end-line="12342" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Controller/AnnonceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11923689" vertical-offset="180" max-vertical-offset="1005">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Entity/Ville.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6608558" vertical-offset="151" max-vertical-offset="2355">
+          <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/box-annonce.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2123613" vertical-offset="0" max-vertical-offset="855">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/navigation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="960">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/views/Annonce/Accueil/Template/annonce.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28526148" vertical-offset="0" max-vertical-offset="631">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/enAttente.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3664122" vertical-offset="0" max-vertical-offset="4710">
+          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+          <folding>
+            <element signature="e#2967#3122#2" expanded="true" />
+            <element signature="e#3958#4113#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38931298" vertical-offset="0" max-vertical-offset="96555">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/correctif.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16030534" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="e#39#188#0" expanded="false" />
+            <element signature="e#223#472#0" expanded="false" />
+            <element signature="e#518#564#0" expanded="false" />
+            <element signature="e#614#638#0" expanded="false" />
+            <element signature="e#657#1498#0" expanded="false" />
+            <element signature="e#1566#2292#0" expanded="false" />
+            <element signature="e#2398#2478#0" expanded="false" />
+            <element signature="e#2598#2658#0" expanded="false" />
+            <element signature="e#2737#2757#0" expanded="false" />
+            <element signature="e#2851#2925#0" expanded="false" />
+            <element signature="e#2988#3057#0" expanded="false" />
+            <element signature="e#3117#3145#0" expanded="false" />
+            <element signature="e#3199#3246#0" expanded="false" />
+            <element signature="e#3286#3306#0" expanded="false" />
+            <element signature="e#3324#3377#0" expanded="false" />
+            <element signature="e#3399#3441#0" expanded="false" />
+            <element signature="e#3459#3503#0" expanded="false" />
+            <element signature="e#3557#3634#0" expanded="false" />
+            <element signature="e#3707#3757#0" expanded="false" />
+            <element signature="e#3835#3942#0" expanded="false" />
+            <element signature="e#4031#4058#0" expanded="false" />
+            <element signature="e#4142#4170#0" expanded="false" />
+            <element signature="e#4258#4288#0" expanded="false" />
+            <element signature="e#4376#4485#0" expanded="false" />
+            <element signature="e#4556#4606#0" expanded="false" />
+            <element signature="e#4613#4687#0" expanded="false" />
+            <element signature="e#4699#4723#0" expanded="false" />
+            <element signature="e#4807#4834#0" expanded="false" />
+            <element signature="e#4870#5075#0" expanded="false" />
+            <element signature="e#5130#5180#0" expanded="false" />
+            <element signature="e#5209#5526#0" expanded="false" />
+            <element signature="e#5597#5657#0" expanded="false" />
+            <element signature="e#5692#5712#0" expanded="false" />
+            <element signature="e#5743#5849#0" expanded="false" />
+            <element signature="e#5887#6010#0" expanded="false" />
+            <element signature="e#6025#6071#0" expanded="false" />
+            <element signature="e#6082#6202#0" expanded="false" />
+            <element signature="e#6221#6260#0" expanded="false" />
+            <element signature="e#6315#6550#0" expanded="false" />
+            <element signature="e#6577#6627#0" expanded="false" />
+            <element signature="e#6662#6682#0" expanded="false" />
+            <element signature="e#6733#6756#0" expanded="false" />
+            <element signature="e#6808#6831#0" expanded="false" />
+            <element signature="e#6848#7025#0" expanded="false" />
+            <element signature="e#7072#7132#0" expanded="false" />
+            <element signature="e#7155#7175#0" expanded="false" />
+            <element signature="e#7198#7218#0" expanded="false" />
+            <element signature="e#7248#7294#0" expanded="false" />
+            <element signature="e#7317#7338#0" expanded="false" />
+            <element signature="e#7365#7540#0" expanded="false" />
+            <element signature="e#7567#7750#0" expanded="false" />
+            <element signature="e#7807#7955#0" expanded="false" />
+            <element signature="e#7989#8062#0" expanded="false" />
+            <element signature="e#8095#8168#0" expanded="false" />
+            <element signature="e#8190#8290#0" expanded="false" />
+            <element signature="e#8320#8366#0" expanded="false" />
+            <element signature="e#8375#8400#0" expanded="false" />
+            <element signature="e#8422#8443#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tinkernote/SiteBundle/Resources/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5972435" vertical-offset="15" max-vertical-offset="4380">
+          <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="e#157#196#0" expanded="false" />
+            <element signature="e#199#249#0" expanded="false" />
+            <element signature="e#260#553#0" expanded="false" />
+            <element signature="e#559#585#0" expanded="false" />
+            <element signature="e#593#641#0" expanded="false" />
+            <element signature="e#721#740#0" expanded="false" />
+            <element signature="e#763#788#0" expanded="false" />
+            <element signature="e#810#834#0" expanded="false" />
+            <element signature="e#876#880#0" expanded="false" />
+            <element signature="e#899#924#0" expanded="false" />
+            <element signature="e#961#980#0" expanded="false" />
+            <element signature="e#1028#1053#0" expanded="false" />
+            <element signature="e#1094#1877#0" expanded="false" />
+            <element signature="e#1895#2678#0" expanded="false" />
+            <element signature="e#2718#2746#0" expanded="false" />
+            <element signature="e#2762#2790#0" expanded="false" />
+            <element signature="e#2799#2826#0" expanded="false" />
+            <element signature="e#2848#2876#0" expanded="false" />
+            <element signature="e#2894#2961#0" expanded="false" />
+            <element signature="e#3007#3028#0" expanded="false" />
+            <element signature="e#3045#3078#0" expanded="false" />
+            <element signature="e#3121#3234#0" expanded="false" />
+            <element signature="e#3298#3355#0" expanded="false" />
+            <element signature="e#3391#3653#0" expanded="false" />
+            <element signature="e#3667#4253#0" expanded="false" />
+            <element signature="e#4263#5068#0" expanded="false" />
+            <element signature="e#5135#5187#0" expanded="false" />
+            <element signature="e#5212#5243#0" expanded="false" />
+            <element signature="e#5272#5294#0" expanded="false" />
+            <element signature="e#5329#5351#0" expanded="false" />
+            <element signature="e#5508#5567#0" expanded="false" />
+            <element signature="e#5648#5711#0" expanded="false" />
+            <element signature="e#5760#5921#0" expanded="false" />
+            <element signature="e#5996#6016#0" expanded="false" />
+            <element signature="e#6045#6107#0" expanded="false" />
+            <element signature="e#6136#6162#0" expanded="false" />
+            <element signature="e#6197#6241#0" expanded="false" />
+            <element signature="e#6258#6281#0" expanded="false" />
+            <element signature="e#6295#6320#0" expanded="false" />
+            <element signature="e#6338#6381#0" expanded="false" />
+            <element signature="e#6414#6513#0" expanded="false" />
+            <element signature="e#6531#6615#0" expanded="false" />
+            <element signature="e#6647#6738#0" expanded="false" />
+            <element signature="e#6757#6777#0" expanded="false" />
+            <element signature="e#6865#6890#0" expanded="false" />
+            <element signature="e#6908#6933#0" expanded="false" />
+            <element signature="e#6945#6972#0" expanded="false" />
+            <element signature="e#7025#7156#0" expanded="false" />
+            <element signature="e#7194#7218#0" expanded="false" />
+            <element signature="e#7241#7258#0" expanded="false" />
+            <element signature="e#7310#7360#0" expanded="false" />
+            <element signature="e#7379#7450#0" expanded="false" />
+            <element signature="e#7491#7521#0" expanded="false" />
+            <element signature="e#7563#7593#0" expanded="false" />
+            <element signature="e#7637#7667#0" expanded="false" />
+            <element signature="e#7684#7702#0" expanded="false" />
+            <element signature="e#7717#7739#0" expanded="false" />
+            <element signature="e#7755#7827#0" expanded="false" />
+            <element signature="e#7835#7976#0" expanded="false" />
+            <element signature="e#7990#8049#0" expanded="false" />
+            <element signature="e#8082#8222#0" expanded="false" />
+            <element signature="e#8237#8271#0" expanded="false" />
+            <element signature="e#8287#8488#0" expanded="false" />
+            <element signature="e#8509#8866#0" expanded="false" />
+            <element signature="e#8878#8927#0" expanded="false" />
+            <element signature="e#8963#9689#0" expanded="false" />
+            <element signature="e#9739#9841#0" expanded="false" />
+            <element signature="e#9850#9872#0" expanded="false" />
+            <element signature="e#9934#10016#0" expanded="false" />
+            <element signature="e#10029#10832#0" expanded="false" />
+            <element signature="e#10846#11649#0" expanded="false" />
+            <element signature="e#11665#11690#0" expanded="false" />
+            <element signature="e#11698#11745#0" expanded="false" />
+            <element signature="e#11843#11903#0" expanded="false" />
+            <element signature="e#11951#11971#0" expanded="false" />
+            <element signature="e#11985#12212#0" expanded="false" />
+            <element signature="e#12252#12467#0" expanded="false" />
+            <element signature="e#12499#12525#0" expanded="false" />
+            <element signature="e#12532#12557#0" expanded="false" />
+            <element signature="e#12575#12980#0" expanded="false" />
+            <element signature="e#12995#13045#0" expanded="false" />
+            <element signature="e#13058#13204#0" expanded="false" />
+            <element signature="e#13215#13249#0" expanded="false" />
+            <element signature="e#13299#13333#0" expanded="false" />
+            <element signature="e#13345#13476#0" expanded="false" />
+            <element signature="e#13493#13582#0" expanded="false" />
+            <element signature="e#13597#13755#0" expanded="false" />
+            <element signature="e#13805#13872#0" expanded="false" />
+            <element signature="e#13984#14499#0" expanded="false" />
+            <element signature="e#14502#14525#0" expanded="false" />
+            <element signature="e#14532#14625#0" expanded="false" />
+            <element signature="e#14657#16354#0" expanded="false" />
+            <element signature="e#16405#16832#0" expanded="false" />
+            <element signature="e#16865#17984#0" expanded="false" />
+            <element signature="e#18024#19070#0" expanded="false" />
+            <element signature="e#19128#19151#0" expanded="false" />
+            <element signature="e#19197#20111#0" expanded="false" />
+            <element signature="e#20180#20497#0" expanded="false" />
+            <element signature="e#20560#20877#0" expanded="false" />
+            <element signature="e#20935#21176#0" expanded="false" />
+            <element signature="e#21239#21302#0" expanded="false" />
+            <element signature="e#21340#22386#0" expanded="false" />
+            <element signature="e#22442#22463#0" expanded="false" />
+            <element signature="e#22507#23421#0" expanded="false" />
+            <element signature="e#23488#23805#0" expanded="false" />
+            <element signature="e#23866#24183#0" expanded="false" />
+            <element signature="e#24239#24502#0" expanded="false" />
+            <element signature="e#24564#24585#0" expanded="false" />
+            <element signature="e#24665#24686#0" expanded="false" />
+            <element signature="e#24747#24810#0" expanded="false" />
+            <element signature="e#24861#24991#0" expanded="false" />
+            <element signature="e#25047#25104#0" expanded="false" />
+            <element signature="e#25155#25178#0" expanded="false" />
+            <element signature="e#25217#26131#0" expanded="false" />
+            <element signature="e#26193#26510#0" expanded="false" />
+            <element signature="e#26566#26883#0" expanded="false" />
+            <element signature="e#26928#27111#0" expanded="false" />
+            <element signature="e#27174#27246#0" expanded="false" />
+            <element signature="e#27290#27473#0" expanded="false" />
+            <element signature="e#27536#27563#0" expanded="false" />
+            <element signature="e#27625#27653#0" expanded="false" />
+            <element signature="e#27715#27737#0" expanded="false" />
+            <element signature="e#27788#27919#0" expanded="false" />
+            <element signature="e#27970#28105#0" expanded="false" />
+            <element signature="e#28161#28465#0" expanded="false" />
+            <element signature="e#28483#29765#0" expanded="false" />
+            <element signature="e#29796#29852#0" expanded="false" />
+            <element signature="e#29886#29952#0" expanded="false" />
+            <element signature="e#29992#30036#0" expanded="false" />
+            <element signature="e#30087#30107#0" expanded="false" />
+            <element signature="e#30153#30179#0" expanded="false" />
+            <element signature="e#30221#30241#0" expanded="false" />
+            <element signature="e#30275#30336#0" expanded="false" />
+            <element signature="e#30377#30402#0" expanded="false" />
+            <element signature="e#30449#30474#0" expanded="false" />
+            <element signature="e#30506#30789#0" expanded="false" />
+            <element signature="e#30828#30873#0" expanded="false" />
+            <element signature="e#30963#30986#0" expanded="false" />
+            <element signature="e#31032#31082#0" expanded="false" />
+            <element signature="e#31180#31201#0" expanded="false" />
+            <element signature="e#31253#31304#0" expanded="false" />
+            <element signature="e#31398#31468#0" expanded="false" />
+            <element signature="e#31502#31649#0" expanded="false" />
+            <element signature="e#31689#31885#0" expanded="false" />
+            <element signature="e#31932#31983#0" expanded="false" />
+            <element signature="e#32029#32057#0" expanded="false" />
+            <element signature="e#32183#32273#0" expanded="false" />
+            <element signature="e#32299#32327#0" expanded="false" />
+            <element signature="e#32365#33091#0" expanded="false" />
+            <element signature="e#33153#33191#0" expanded="false" />
+            <element signature="e#33227#33371#0" expanded="false" />
+            <element signature="e#33399#33475#0" expanded="false" />
+            <element signature="e#33510#33543#0" expanded="false" />
+            <element signature="e#33585#33636#0" expanded="false" />
+            <element signature="e#33680#33732#0" expanded="false" />
+            <element signature="e#33818#33963#0" expanded="false" />
+            <element signature="e#33975#34024#0" expanded="false" />
+            <element signature="e#34052#34322#0" expanded="false" />
+            <element signature="e#34411#34439#0" expanded="false" />
+            <element signature="e#34514#34534#0" expanded="false" />
+            <element signature="e#34583#34820#0" expanded="false" />
+            <element signature="e#34862#34886#0" expanded="false" />
+            <element signature="e#34919#35181#0" expanded="false" />
+            <element signature="e#35200#35295#0" expanded="false" />
+            <element signature="e#35309#36415#0" expanded="false" />
+            <element signature="e#36438#36461#0" expanded="false" />
+            <element signature="e#36529#36580#0" expanded="false" />
+            <element signature="e#36657#36707#0" expanded="false" />
+            <element signature="e#36732#36797#0" expanded="false" />
+            <element signature="e#36820#36842#0" expanded="false" />
+            <element signature="e#36885#37218#0" expanded="false" />
+            <element signature="e#37241#37260#0" expanded="false" />
+            <element signature="e#37297#37460#0" expanded="false" />
+            <element signature="e#37547#37574#0" expanded="false" />
+            <element signature="e#37613#37738#0" expanded="false" />
+            <element signature="e#37779#39003#0" expanded="false" />
+            <element signature="e#39050#40040#0" expanded="false" />
+            <element signature="e#40094#40272#0" expanded="false" />
+            <element signature="e#40286#41089#0" expanded="false" />
+            <element signature="e#41147#41235#0" expanded="false" />
+            <element signature="e#41272#41335#0" expanded="false" />
+            <element signature="e#41353#41597#0" expanded="false" />
+            <element signature="e#41626#41662#0" expanded="false" />
+            <element signature="e#41693#41729#0" expanded="false" />
+            <element signature="e#41759#41795#0" expanded="false" />
+            <element signature="e#41827#41863#0" expanded="false" />
+            <element signature="e#41888#42058#0" expanded="false" />
+            <element signature="e#42098#42252#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

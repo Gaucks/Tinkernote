@@ -1,0 +1,52 @@
+{% if annonces is empty %}
+    <h3>Non....</h3>
+{% endif %}
+<ul class="list-inline">
+    {% for a in annonces %}
+        <li class="col-xs-4 box-annonce-list"> {# Tableau en 4 colonnes #}
+            <span class="triangle-button urgent"><span class="triangle-button-text">Urgent</span></span>
+            <a href="{{ path('annonce_show', {'id' : a.id }) }}">
+                <span class="label btn-success ">{{ a.price  }} €</span>
+                <div class="box-annonce-list-header">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {% if a.picture != NULL %}
+                                <img src="{{ asset('uploads/annonce/'~a.picture.path) }}" alt="{{ a.title }}" class="img-responsive"/>
+                            {% else %}
+                                <img src="{{ asset('bundles/site/images/No_image_available.svg') }}" alt="{{ a.title }}" class="img-responsive"/>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-annonce-list-corp">
+                    <h4>{{ a.title|truncate(50) }}</h4>
+
+                    <div class="box-annonce-list-desc">
+                        <ul class="list-inline">
+                            <li><a href="{{ path('ville_annonce',{'ville':  a.ville.slug} ) }}">{{ a.ville.nom }} ( {{ a.ville.postal|truncate(2, false, '') }} )</a> /
+                                <a href="{{ path('categorie_annonce',{'categorie':  a.category.category} ) }}">{{ a.category.category }}</a></li>
+                            <li>
+                                <img src="{{ asset('bundles/site/images/no_avatar.jpg') }}" alt="Avatar" class="img-thumbnail-annonce img-responsive circle"/>
+                                <span>{{ a.user.username }}</span>
+                                <div class="star star-blue">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <span class="news-time">{{ a.date|date('d') }}<span>{{ a.date|date('M') }}</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box-annonce-list-action text-center">
+                    <a href="#"><input class="btn-annonce" type="button" value="Interessé"/></a>
+                    <a href="{{ path('annonce_show', {'id' : a.id}) }}"><input class="btn-annonce" type="button" value="Details"/></a>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

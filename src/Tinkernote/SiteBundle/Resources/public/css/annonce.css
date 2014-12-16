@@ -90,6 +90,9 @@ textarea.form-annonce::-moz-placeholder{
 .star-red {
     color : #d9534f;
 }
+.star > span {
+    margin-right: -2px;
+}
 
 /* Pagination */
 .pagination > li > a:hover {
@@ -182,7 +185,6 @@ textarea.form-annonce::-moz-placeholder{
 }
 .show-annonce{
     padding: 15px 30px;
-    margin: 0px -15px 0 0;
     border-left: 1px solid #d4d4d4;
     height: 400px;
     display: inline-block;
@@ -252,46 +254,6 @@ textarea.form-annonce::-moz-placeholder{
 .img-supplement img{
     width: auto;
 }
-
-/* Show annonce V2
-.show-annonce-box{
-    margin-bottom: 20px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #cccccc;
-}
-.show-annonce{
-    font-size: 15px;
-}
-.show-annonce-img {
-    margin-top: 25px;
-}
-.show-annonce-img img {
-    margin: 0 auto;
-    max-height: 400px;
-}
-.show-annonce .show-annonce-title {
-    border-bottom: 1px solid #cccccc;
-    margin-bottom: 20px;
-}
-.show-annonce .show-annonce-title h3{
-    color: #252525;
-}
-.show-annonce .show-annonce-title p {
-    font-weight: 600;
-}
-.show-annonce .show-annonce-title .show-annonce-option {
-    display: inline-block;
-    padding-bottom: 10px;
-}
-.show-annonce .show-annonce-title .show-annonce-option .tarif{
-    font-weight: 600;
-    margin-left: 10px;
-    font-size: 20px;
-}
-.show-annonce-action{
-    margin: 20px 0;
-}
-*/
 
 /* Box commentaire */
 .box-commentaire{
@@ -365,7 +327,7 @@ textarea.form-annonce::-moz-placeholder{
 
 /* Accueil des annonces */
 
-.box-annonce, .box-annonce-movie{
+.box-annonce{
     background: #fbfbfb;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -377,14 +339,14 @@ textarea.form-annonce::-moz-placeholder{
     background: #fcf8e3;;
     box-shadow: 0 1px 2px #f9edc9 inset, 0 1px 1px #dfdfdf;
 }
-.box-annonce:hover,.annonce-movie-box-conteneur:hover {
+.box-annonce:hover {
     background: #f5f8fa;
     -webkit-box-shadow: 0 1px 2px #e9f0f6 inset, 0 1px 1px #f5f8fa;
     -moz-box-shadow: 0 1px 2px #e9f0f6 inset, 0 1px 1px #f5f8fa;
     box-shadow: 0 1px 2px #e9f0f6 inset, 0 1px 1px #dfdfdf;
 
 }
-.box-annonce .box-annonce-header, .box-annonce .box-annonce-footer, .box-annonce-movie .box-annonce-movie-header {
+.box-annonce .box-annonce-header, .box-annonce .box-annonce-footer {
     background: #eaeaea;
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
     background-size: 100%;
@@ -398,7 +360,7 @@ textarea.form-annonce::-moz-placeholder{
     color: #636363;
     font-weight: 600;
 }
-.box-annonce .box-annonce-header .box-annonce-title , .box-annonce .box-annonce-footer .box-annonce-title, .box-annonce-movie .box-annonce-movie-header .box-annonce-movie-title{
+.box-annonce .box-annonce-header .box-annonce-title , .box-annonce .box-annonce-footer .box-annonce-title{
     float: left;
     display: block;
     padding: 10px;
@@ -408,9 +370,7 @@ textarea.form-annonce::-moz-placeholder{
 
 .box-annonce .box-annonce-header:before,
 .box-annonce .box-annonce-header:after,
-.box-annonce .box-annonce-footer:after,
-.box-annonce-movie .box-annonce-movie-header:before,
-.box-annonce-movie .box-annonce-movie-header:after{
+.box-annonce .box-annonce-footer:after{
     display: table;
     content: "";
     line-height: 0;
@@ -423,22 +383,22 @@ textarea.form-annonce::-moz-placeholder{
 .box-annonce-title, .box-annonce-movie-title  > span {
     margin-right: 5px;
 }
-.box-annonce .box-annonce-header .box-toolbar, .box-annonce .box-annonce-header .box-toolbar, .box-annonce-movie .box-annonce-movie-header .box-toolbar {
+.box-annonce .box-annonce-header .box-toolbar, .box-annonce .box-annonce-header .box-toolbar {
     margin: 0;
     padding: 0;
     float: right;
     list-style: none;
 }
-.box-annonce .box-annonce-header .box-toolbar,.box-annonce-movie .box-annonce-movie-header .box-toolbar, .label, .badge {
+.box-annonce .box-annonce-header .box-toolbar, .label, .badge {
     font-weight: 500;
     margin-top: 8px;
     margin-right: 5px;
 }
-.box-annonce .box-annonce-header .box-toolbar,.box-annonce-movie .box-annonce-movie-header .box-toolbar, .label {
+.box-annonce .box-annonce-header .box-toolbar .label {
     font-size: 13px;
     text-shadow: none;
 }
-.box-annonce .box-annonce-header .box-toolbar .label-green,.box-annonce-movie .box-annonce-movie-header .box-toolbar .label-green{
+.box-annonce .box-annonce-header .box-toolbar .label-green{
     background: #6eb056;
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
     background-size: 100%;
@@ -570,30 +530,4 @@ textarea.form-annonce::-moz-placeholder{
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
-}
-
-.annonce-movie-box-conteneur{
-    border: 1px solid transparent;
-    border-bottom: 1px solid #d4d4d4;
-    padding: 10px 0px 5px 0;
-    max-height: 150px;
-}
-
-.annonce-movie-box-conteneur img{
-    max-height: 120px;
-    margin: 0 auto;
-}
-.annonce-movie-box{
-}
-.annonce-movie-box > h3 {
-    margin: 0;
-    font-size: 15px;
-    font-weight: 600;
-}
-.annonce-movie-box p.movie-categorie{
-    margin-bottom: 5px;
-    font-style: italic;
-}
-.annonce-movie-box-options .label{
-   margin-top: 0px;
 }

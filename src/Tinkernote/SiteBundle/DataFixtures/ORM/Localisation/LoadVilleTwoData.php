@@ -78008,7 +78008,7 @@ class LoadVilleTwoData extends AbstractFixture implements OrderedFixtureInterfac
 
         $ville->setNom(ucfirst(strtolower($insee)));
         $ville->setDepartement($reference);
-        $ville->setPostal($tableau_postal);
+        $ville->setPostal('0'.$tableau_postal);
 
         return $ville;
     }

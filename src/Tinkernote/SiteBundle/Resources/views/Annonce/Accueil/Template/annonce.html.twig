@@ -1,0 +1,13 @@
+<div class="col-xs-3 div-no-padding-left">
+        <div class="action-nav-normal action-nav-normal-annonce-page">
+            {% include 'SiteBundle:Annonce/Accueil/Template:navigation.html.twig' %}
+        </div>
+        <div class="box-annonce-suggestion">
+            {% include 'SiteBundle:Annonce/Accueil/Template:proposition.html.twig' %}
+        </div>
+</div>
+<div class="col-xs-9 box box-annonce-list-content div-no-padding">
+    {% include 'SiteBundle:Annonce/Accueil/Template:box-annonce.html.twig' %}
+</div>
+
+{% include '@Site/ModalBox/AnnonceModal/commentAbonner.html.twig' %}

@@ -104,6 +104,18 @@ board_remove_followed:
     requirements:
         followed: \d+
 
+board_remove_region_followed:
+    path: /board/remove-region-followed/{followed}
+    defaults: { _controller: SiteBundle:Abonnement:desabonnementRegion }
+    requirements:
+        followed: \d+
+
+board_add_region_followed:
+    path: /board/add-region-followed/{followed}
+    defaults: { _controller: SiteBundle:Abonnement:abonnementRegion }
+    requirements:
+        followed: \d+
+
 board_my_abonnement:
     path: /board/abonnement
     defaults: { _controller: SiteBundle:Abonnement:myAbonnement }

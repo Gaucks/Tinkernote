@@ -80,12 +80,12 @@
     margin-top: 5px;
     margin-right: 3px;
 }
-.box-annonce .box-annonce-header .box-toolbar,.label {
-    font-size: 10px;
-    text-shadow: none;
-}
 .box-annonce .box-annonce-header .box-toolbar .label-yellow{
     background: #f4aa31;
+}
+.box-annonce .box-annonce-header .box-toolbar .label {
+    font-size: 11px;
+    text-shadow: none;
 }
 .box-annonce .box-annonce-section:after{
     clear: both;
